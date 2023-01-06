@@ -30,6 +30,11 @@ Irish Cyber Security Blog
 ### Heroku Deployment
 ### Run Locally
 ### Fork Project
-## Credits 
+## Credits
+
+### GitHub Projects
+
+* Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
+
 ## Content
 ## Acknowledgements
