@@ -16,6 +16,8 @@ become interested in this critical topic.
 
 #### Agile Planning
 
+This project was completed using the agile method, in which small features were delivered in four incremental sprints over a period of two weeks.
+
 #### Epics
 
 #### User Stories
@@ -65,6 +67,8 @@ become interested in this critical topic.
 ### GitHub Projects
 
 * Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
+
+* Used *[Adding and creating labels for GitHub Issues](https://www.youtube.com/watch?v=KoFBpfSFmuY)* for information on setting more than one label.
 
 ## Content
 
