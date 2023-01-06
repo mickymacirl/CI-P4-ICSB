@@ -1,12 +1,14 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
+Irish Cyber Security Blog
+
 # User Experience Design (UX) 
 ##	The Strategy Plane 
 ###	Site Goals
 ####	Agile Planning 
 ####	Epics
 ####	User Stories
-o	
+
 ## The Scope Plane
 ### The Structure Plane 
 ### Features
