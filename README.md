@@ -27,7 +27,7 @@ This has been done to ensure that all foundational requirements were completed i
 
 #### Epics
 
-This project has 6 main Milestone/Epics:
+This project has 6 main Epics/Milestones:
 
 1. Basic Setup
 
