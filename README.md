@@ -16,9 +16,30 @@ become interested in this critical topic.
 
 #### Agile Planning
 
-This project was completed using the agile method, in which small features were delivered in four incremental sprints over a period of two weeks.
+This project was devised using agile practices, with small features delivered in incremental sprints.
+There were four sprints in total, that were distributed out at two weeks.
+
+All issues were assigned to epics and prioritized utilizing the labels must, should, could, and nice to have.
+
+They were divided into sprints based on six milestones. "Must have" stories were finished first, followed by "should have" stories, and ultimately "could have" and "nice to have" stories.
+
+This has been done to ensure that all foundational requirements were completed initially, providing the application a complete feel, with must-have features added.
 
 #### Epics
+
+This project has 6 main Milestone/Epics:
+
+1. Basic Setup
+
+2. Stand Alone Pages Setup
+
+3. Authentication Setup
+
+4. Admin Setup
+
+5. User Views
+
+6. Documentation
 
 #### User Stories
 
