@@ -39,33 +39,33 @@ This project has 6 main Epics/Milestones:
     be produced since all other functionalities are dependent on the successful completion
     of the basic setup.
 
- 1. Stand Alone Pages Setup
+ 2. Stand Alone Pages Setup
 
     > The stand alone pages milestone is for comparatively tiny pages with insufficient stories
     to justify a full milestone. Rather than generating milestones for minimal features like
     error pages, these minimal features were categorized under this milestone.
 
- 1. Authentication Setup
+ 3. Authentication Setup
 
     >The authentication milestone includes all stories concerning registration, login, and
     authentication. This milestone is critical and important because otherwise, the blog's
     administrators would be unable to manage posts or comments securely without normal users
     having the ability to see and execute administrator commands.
 
- 1. Admin Setup
+ 4. Admin Setup
 
     >The milestone admin setup includes all stories concerning creating, viewing, updating, and
     deleting posts, in addition to managing comments, users, and categories. This makes it
     simple for administrators to view posts, manage posts, manage comments on these posts,
     and manage administrator users and categories.
 
- 1. User Views
+ 5. User Views
 
     > The milestone users views feature allows a blog user to leave a comment on a post,
     filter categories, and bookmark a post. This milestone is critical and essential for
     an user in order to create a comment, filter, and categorize posts.
 
- 1. Documentation
+ 6. Documentation
 
     > This milestone includes all document-related stories and tasks required to
     document the software development process for the application. It aspires to
