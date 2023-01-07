@@ -1,6 +1,7 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Irish Cyber Security Blog
+
+Irish Cyber Secrity Blog is a blog to store information about cyber security topics. It allows users to read and comment on posts posted by the administrators of the blog.
 
 # User Experience Design (UX)
 
