@@ -15,14 +15,14 @@ It allows users to **read**, **comment on** and **bookmark** posts posted by the
 
 The project was developed using agile practices, with small features delivered in incremental sprints over a two-week period. Issues were organized into milestones and prioritized using labels such as "must have," "should have," "could have," and "nice to have." These milestones were divided into sprints based on six milestones, with "must have" stories being completed first, followed by "should have" stories, and finally "could have" and "nice to have" stories. This prioritization ensured that all essential requirements were completed first, providing a solid foundation for the application and allowing for the addition of must-have features.
 
-## Epics/Milestones
+## Milestones
 
-This project has 6 main Epics/Milestones:
+This project has 6 main Milestones:
 
  1. Basic Setup
 
     > The basic setup milestone contains all of the stories needed for the blog's initial setup.
-    The blog wouldn't be feasible without the basic setup, so it was the initial epic to
+    The blog wouldn't be feasible without the basic setup, so it was the initial milestone to
     be produced since all other functionalities are dependent on the successful completion
     of the basic setup.
 
