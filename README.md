@@ -70,27 +70,27 @@ During the four sprints, the following user stories were completed (in order of 
 
 >*[Issue 2 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/2)* for information.
 
-#### 1.2 As a developer, I must create a footer with social media links and contact information
-
->*[Issue 3 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/3)* for information.
-
-#### 1.3 As a developer, I need to create the main website header with logo and web page links
-
->*[Issue 4 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/4)* for information.
-
-#### 1.4 As a developer, I must create a navigation bar that works on any device
-
->*[Issue 8 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/8)* for information.
-
-#### 1.5 As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
-
->*[Issue 9 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/9)* for information.
-
-#### 1.6 As a developer, I must set up static files and folders so that the project images, CSS and javascript work on the website
+#### 1.2 As a developer, I must set up static files and folders so that the project images, CSS and javascript work on the website
 
 >*[Issue 12 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/12)* for information.
 
-#### 1.7 As a developer, I must create the basic base.html page and project structure so the layout is uniform
+#### 1.3 As a developer, I must create the basic base.html page and project structure so the layout is uniform
+
+#### 1.4 As a developer, I must create a footer with social media links and contact information
+
+>*[Issue 3 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/3)* for information.
+
+#### 1.5 As a developer, I need to create the main website header with logo and web page links
+
+>*[Issue 4 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/4)* for information.
+
+#### 1.6 As a developer, I must create a navigation bar that works on any device
+
+>*[Issue 8 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/8)* for information.
+
+#### 1.7 As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
+
+>*[Issue 9 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/9)* for information.
 
 >*[Issue 13 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/13)* for information.
 
