@@ -1,6 +1,6 @@
 **Irish Cyber Security Blog**
 
-Irish Cyber Secrity Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions* .
+Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
 # User Experience Design (UX)
@@ -9,7 +9,7 @@ It allows users to **read**, **comment on** and **bookmark** posts posted by the
 
 ## Site Goals
 
- The goal of this Irish cyber security blog is to provide readers in Ireland with accurate and up-to-date information about cyber security, educate the Irish public on how to stay safe online and protect themselves from cyber threats, assist Irish businesses and organizations in improving their cyber security practices and defending themselves against cyber attacks, act as a resource for Irish cyber security professionals by bringing them up to date on the latest research and news in the field, and raise awareness of cyber security issues in Ireland to encourage more people to become interested in this critical topic.
+ The goal of this Irish cyber security blog is to provide readers in Ireland with accurate and up-to-date information about cyber security, educate the Irish public on how to stay safe online and protect themselves from cyber threats, assist Irish businesses and organizations in improving their cyber security practices and defending themselves against cyber-attacks, act as a resource for Irish cyber security professionals by bringing them up to date on the latest research and news in the field, and raise awareness of cyber security issues in Ireland to encourage more people to become interested in this critical topic.
 
 ## Agile Planning
 
@@ -28,7 +28,7 @@ This project has 6 main Milestones:
 
  2. Stand Alone Pages Setup
 
-    > The stand alone pages milestone is for comparatively tiny pages with insufficient stories
+    > The standalone pages milestone is for comparatively tiny pages with insufficient stories
     to justify a full milestone. Rather than generating milestones for minimal features like
     error pages, these minimal features were categorized under this milestone.
 
@@ -48,9 +48,9 @@ This project has 6 main Milestones:
 
  5. User Views
 
-    > The milestone users views feature allows a blog user to leave a comment on a post,
+    > The milestone users' views feature allows a blog user to leave a comment on a post,
     filter categories, and bookmark a post. This milestone is critical and essential for
-    an user in order to create a comment, filter, and categorize posts.
+    a user in order to create a comment, filter, and categorize posts.
 
  6. Documentation
 
@@ -96,7 +96,7 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 2 - Stand Alone Pages Setup
 
-#### 2.1 As a developer, I must implement a 404 error page to alert users when they try to access a page that doesn't exist
+#### 2.1 As a developer, I must implement a 404-error page to alert users when they try to access a page that doesn't exist
 
 >*[Issue 5 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/5)* for information.
 
@@ -170,7 +170,7 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 * Mobile designed responsive blog
 * Admin section for website owner
 * Enable the administer of all functions for the post and comment sections
-* Multi-layered security approval administation for posts and comments
+* Multi-layered security approval administration for posts and comments
 * Main page for users to view posts
 
 ## The Structure Plane
