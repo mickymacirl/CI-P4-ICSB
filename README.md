@@ -167,7 +167,11 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 # The Scope Plane
 
-* 
+* Mobile designed responsive blog
+* Admin section for website owner
+* Enable the administer of all functions for the post and comment sections
+* Multi-layered security approval administation for posts and comments
+* Main page for users to view posts
 
 ## The Structure Plane
 
