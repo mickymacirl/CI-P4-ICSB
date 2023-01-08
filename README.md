@@ -1,11 +1,11 @@
-# Irish Cyber Security Blog
+**Irish Cyber Security Blog**
 
 Irish Cyber Secrity Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions* .
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
 # User Experience Design (UX)
 
-# The Strategy Plane
+## The Strategy Plane
 
 ## Site Goals
 
@@ -61,6 +61,109 @@ This project has 6 main Milestones:
     and operating the application.
 
 ## User Stories
+
+During the four sprints, the following user stories were completed (in order of milestone).
+
+### Milestone 1 - Basic Setup
+
+#### 1.1 As a developer, I must set up the project so that it can implement the core features
+
+>*[Issue 2 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/2)* for information.
+
+#### 1.2 As a developer, I must create a footer with social media links and contact information
+
+>*[Issue 3 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/3)* for information.
+
+#### 1.3 As a developer, I need to create the main website header with logo and web page links
+
+>*[Issue 4 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/4)* for information.
+
+#### 1.4 As a developer, I must create a navigation bar that works on any device
+
+>*[Issue 8 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/8)* for information.
+
+#### 1.5 As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
+
+>*[Issue 9 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/9)* for information.
+
+#### 1.6 As a developer, I must set up static files and folders so that the project images, CSS and javascript work on the website
+
+>*[Issue 12 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/12)* for information.
+
+#### 1.7 As a developer, I must create the basic base.html page and project structure so the layout is uniform
+
+>*[Issue 13 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/13)* for information.
+
+### Milestone 2 - Stand Alone Pages Setup
+
+#### 2.1 As a developer, I must implement a 404 error page to alert users when they try to access a page that doesn't exist
+
+>*[Issue 5 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/5)* for information.
+
+#### 2.2 As a developer, I need to create a 500-error page to alert website users when the application generates an internal server error
+
+>*[Issue 7 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/7)* for information.
+
+#### 2.3 As a developer, I must implement a 403-error page to alert users when they do not the right to access this page
+
+>*[Issue 24 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/24)* for information.
+
+#### 2.4 As a Cybersecurity professional, I want to be able to contact the Irish Cyber Security Blog so that I can express my option on a post
+
+>*[Issue 22 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/22)* for information.
+
+#### 2.5 As a Cybersecurity professional, I want to be able to find out information about the site owners of the Irish Cyber Security Blog so that I am kept informed
+
+>*[Issue 23 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/23)* for information.
+
+### Milestone 3 – Authentication Setup
+
+#### 3.1 As a developer, I must set up AllAuth so that website users can sign up and access the features
+
+>*[Issue 6 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/6)* for information.
+
+#### 3.2 As a Cybersecurity professional, I want to be able to register to Irish Cyber Security News so that I can stay up-to-date on the latest news and events in the industry
+
+>*[Issue 14 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/14)* for information.
+
+### Milestone 4 – Admin Setup
+
+#### 4.1 As an admin, I need to be able to administer Posts
+
+>*[Issue 17 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/17)* for information.
+
+#### 4.2 As an admin, I need to be able to administer comments
+
+>*[Issue 16 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/16)* for information.
+
+#### 4.3 As an admin, I need to be able to administer users
+
+>*[Issue 18 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/18)* for information.
+>
+#### 4.4 As an admin, I need to be able to administer categories
+
+>*[Issue 19 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/19)* for information.
+
+### Milestone 5 – User Views
+
+#### 5.1 As a Cybersecurity professional, I want to be able to comment on posts on Irish Cyber Security Blog so that I can share my thoughts and insights with others in the community
+
+>*[Issue 15 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/15)* for information.
+
+#### 5.2 As a Cybersecurity professional, I want to be able to filter Irish Cyber Security Blog posts by category (e.g., Threats, Solutions, Industry) so that I can focus on the topics that are most relevant to me
+
+>*[Issue 20 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/20)* for information.
+
+#### 5.3 As a Cybersecurity professional, I want to save Irish Cyber Security News articles for later reading so that I can revisit them when I have more time
+
+>*[Issue 21 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/21)* for information.
+
+### Milestone 6 - Documentation
+
+#### 6.1 Complete all Documentation
+
+> Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/10](https://github.com/mickymacirl/CI-P4-ICSB/issues/10)
+Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://github.com/mickymacirl/CI-P4-ICSB/issues/11)
 
 # The Scope Plane
 
