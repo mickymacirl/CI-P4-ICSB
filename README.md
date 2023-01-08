@@ -167,6 +167,8 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 # The Scope Plane
 
+* 
+
 ## The Structure Plane
 
 ## Features
@@ -212,6 +214,10 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 * Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
 
 * Used *[Adding and creating labels for GitHub Issues](https://www.youtube.com/watch?v=KoFBpfSFmuY)* for information on setting more than one label.
+
+## Agile and Agile Project Management
+
+* Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Ailge Project Management
 
 # Content
 
