@@ -76,6 +76,8 @@ During the four sprints, the following user stories were completed (in order of 
 
 #### 1.3 As a developer, I must create the basic base.html page and project structure so the layout is uniform
 
+>*[Issue 13 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/13)* for information.
+
 #### 1.4 As a developer, I must create a footer with social media links and contact information
 
 >*[Issue 3 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/3)* for information.
@@ -91,8 +93,6 @@ During the four sprints, the following user stories were completed (in order of 
 #### 1.7 As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
 
 >*[Issue 9 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/9)* for information.
-
->*[Issue 13 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/13)* for information.
 
 ### Milestone 2 - Stand Alone Pages Setup
 
