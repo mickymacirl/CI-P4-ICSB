@@ -177,9 +177,11 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 ## Features
 
-### User Story - As a developer, I must create a navigation bar that works on any device. Implementation of Navigation Menu
+### User Story - As a developer, I must create a navigation bar that works on any device. 
 
-- [Home] index.html - All users can see
+Implementation of Navigation Menu
+
+- [X] Home - index.html - All users can see
 - [ ] Update the website
 - [ ] Contact the media 
 
