@@ -215,9 +215,9 @@ Navbar Image
 
 ### User Story - As a developer, I must set up the project so that it can implement the core features
 
-This user story focuses on setting up the necessary infrastructure for the project. It specifies that the developer must ensure that the project is properly set up and the environment and deployment configured so that it is able to implement the core features that are essential to its function. This involves setting up the necessary databases, and other components like the settings.py file that are needed to support the project, as well as configuring the project's codebase and dependencies. By ensuring that the project is properly set up, we can ensure that it is able to deliver the key functionality that users expect and rely on.
+This user story focuses on setting up the necessary infrastructure for the project. It specifies that the developer must ensure that the project is appropriately set up and the environment and deployment configured to implement the core features essential to its function. This story involves setting up the necessary databases and other components, like the settings.py file needed to support the project and configuring the project's codebase and dependencies. By ensuring that the project is working correctly, we can deliver the critical functionality that users expect and are comfortable using.
 
-Implementation of Navigation Menu
+Implementation of Core Features
 
 * [X] Django - Install and configure Django and any dependencies.
 
@@ -230,6 +230,42 @@ Implementation of Navigation Menu
 * [X] Deploy to Heroku - Deploy base project to heroku.
 
 Implement Core Image
+
+### User Story - As a developer, I need to create the main website header with logo and web page links
+
+The main website header is the top portion of the website that typically includes the logo and links to other pages on the site. This user story involves setting up the header to be functional and correctly displaying the logo and page links.
+
+Implementation of Header
+
+* [X] Django - Install and configure Django and any dependencies.
+
+* [X] Project created - Create Django project and configure any settings.
+
+* [X] Environment setup - Setup environment for the project blog.
+
+* [X] Settings.py file - Setup settings.py file to reduce sensitive information leaking.
+
+* [X] Deploy to Heroku - Deploy base project to heroku.
+
+Implement Core Image
+
+### User Story - As a developer, I must create a footer with social media links and contact information
+
+As a developer, I must create a footer for the website with links to the blog's social media pages and contact information, such as an email address or phone number, for users to easily access and contact the blog owners.
+
+Implementation of Footer
+
+* [X] Footer created - Create footer for blog.
+
+* [X] Social media links - Create Social media links.
+
+* [X] Social media links open in a new tab - Ensure social media links open in new tab.
+
+* [X] Social media links connect to the correct website URLs - Ensure social media links connect to the correct website URLs.
+
+* [X] Contact information is correct - Ensure contact information is correct
+
+Footer Image
 
 ### Future Features
 
