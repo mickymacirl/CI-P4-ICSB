@@ -267,9 +267,9 @@ Footer Image
 
 The user wants to be able to view the Irish Cyber Security Blog in order to stay informed about the latest threats and solutions in the field of cybersecurity.
 
-Implementation of Page
+Implementation of Home Page
 
-* [X] The home page is created with the theme of the website layout - Create home page to view blog posts.
+* [X] The home page is created with the theme of the website layout - Create home page to view main blog.
 
 Home Page Image
 
@@ -377,7 +377,7 @@ Implementation of Registration
 
 * [X] User can register - Create user register.
 
-* [X] Test functionality - Test that users can register for the blog
+* [X] Test functionality - Test that users can register for the blog.
 
 Register Image
 
@@ -387,35 +387,35 @@ As an administrator, I need to be able to manage posts on the Irish Cyber Securi
 
 Implementation of Posts
 
-* [X] Admin can create a post
+* [X] Admin can create a post:
 
 > The admin can create a new post by filling out the necessary fields (title, content, etc.) and submitting the form.
 
-* [X] Admin can filter by Status, Author, Created On, Category and Pinned
+* [X] Admin can filter by Status, Author, Created On, Category and Pinned:
 
 > The admin can filter the list of posts by various criteria, including status (published, draft, disabled), author, creation date, category, and pinned status.
 
-* [X] Admin can edit a post
+* [X] Admin can edit a post:
 
 > The admin can edit an existing post by making changes to its fields and saving the changes.
 
-* [X] Admin can set a post to Published
+* [X] Admin can set a post to Published:
 
 > The admin can set a post to the "published" status, making it visible to users on the website.
 
-* [X] Admin can delete a post
+* [X] Admin can delete a post:
 
 > The admin can delete a post from the website permanently.
 
-* [X] Admin can set a post to Draft
+* [X] Admin can set a post to Draft:
 
 > The admin can set a post to the "draft" status, which means it is not yet ready to be published but can be worked on further.
 
-* [X] Admin can set a post to Disabled
+* [X] Admin can set a post to Disabled:
 
 > The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
 
-* [X] Admin can set a post as is_pinned
+* [X] Admin can set a post as is_pinned:
 
 > The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
 
