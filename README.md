@@ -183,31 +183,31 @@ The navigation bar is a key element of any website, as it allows users to easily
 
 Implementation of Navigation Menu
 
-* [X] Home - index.html - All users can see
+* [X] Home - index.html - All users can see:
 
 > The home page for the blog, which should provide an overview of the blog's content and purpose, as well as links to other pages and features.
 
-* [X] Contact Us - contactus.html - All users can see
+* [X] Contact Us - contactus.html - All users can see:
 
 > A page with contact information for the blog, including email addresses, phone numbers, and social media profiles.
 
-* [X] About Us - aboutus.html - All users can see
+* [X] About Us - aboutus.html - All users can see:
 
 > A page with information about the blog's authors, mission, and any other relevant background information.
 
-* [X] Blog Posts - index.html - All users can see
+* [X] Blog Posts - index.html - All users can see:
 
 > A list of all blog posts, sorted by publication date or some other relevant criteria.
 
-* [X] Register - register.html Only logged-out users can see
+* [X] Register - register.html Only logged-out users can see:
 
 > A page that allows users to create a new account on the blog.
 
-* [X] Login - login.html - All users can see
+* [X] Login - login.html - All users can see:
 
 > A page that allows users to log in to the blog using their username and password.
 
-* [X] Logout - logout.html - Only logged-in users can see
+* [X] Logout - logout.html - Only logged-in users can see:
 
 > A page that allows users to log out of the blog.
 
