@@ -483,6 +483,36 @@ Implementation of Categories
 
 Categories Image
 
+### User Story - As a Cybersecurity professional, I want to be able to comment on posts on Irish Cyber Security Blog so that I can share my thoughts and insights with others in the community
+
+A user can comment on a post on the Irish Cyber Security Blog. This user story allows them to share their thoughts and insights with other community members and engage in discussions about the post's topic.
+
+Implementation of User Comments
+
+* [X] Users can comment on posts - Users can leave their thoughts and insights on posts on the Irish Cyber Security Blog.
+
+User Comments Image
+
+### User Story - As a Cybersecurity professional, I want to be able to filter Irish Cyber Security Blog posts by category (e.g., Threats, Solutions, Industry) so that I can focus on the topics that are most relevant to me
+
+A user should be able to filter the blog posts by specific categories to narrow down and focus on the topics that are most interesting to them. This user story will allow the user to quickly find posts related to specific subjects, such as threats, solutions, or industry updates, within the more extensive collection of all blog posts.
+
+Implementation of Filter Posts
+
+* [X] User can filter posts by categories - Users can filter Irish Cyber Security Blog posts by categories (e.g., Threats, Solutions, Industry) so that they can focus on the most relevant topics.
+
+Filter Posts Image
+
+### User Story - As a Cybersecurity professional, I want to save Irish Cyber Security News articles for later reading so that I can revisit them when I have more time
+
+By bookmarking, a user can save Irish Cyber Security News posts for later reading. This user story allows users to revisit the posts later when they have more time to read them.
+
+Implementation of Bookmark Post
+
+* [X] User can bookmark the post for later reading - A user can save a post on the Irish Cyber Security Blog for later reading so they can revisit the post later when they have more time.
+
+Bookmark Posts Image
+
 ### Future Features
 
 ## The Skeleton Plane
