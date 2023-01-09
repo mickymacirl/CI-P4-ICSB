@@ -179,6 +179,8 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 ### User Story - As a developer, I must create a navigation bar that works on any device
 
+The navigation bar is a key element of any website, as it allows users to easily find and access different pages within the site. This user story specifies that the navigation bar must be designed to be responsive, meaning that it should work correctly on any device, whether it be a desktop computer, a tablet, or a smartphone. This is important because it ensures that users can access the site and navigate through it easily regardless of the device they are using.
+
 Implementation of Navigation Menu
 
 * [X] Home - index.html - All users can see
@@ -209,7 +211,25 @@ Implementation of Navigation Menu
 
 > A page that allows users to log out of the blog.
 
-This menu is displayed on every page with a small menu for mobile devices. User will be able to navigate the website and the menu should be responsive.
+Navbar Image
+
+### User Story - As a developer, I must set up the project so that it can implement the core features
+
+This user story focuses on setting up the necessary infrastructure for the project. It specifies that the developer must ensure that the project is properly set up and the environment and deployment configured so that it is able to implement the core features that are essential to its function. This involves setting up the necessary databases, and other components like the settings.py file that are needed to support the project, as well as configuring the project's codebase and dependencies. By ensuring that the project is properly set up, we can ensure that it is able to deliver the key functionality that users expect and rely on.
+
+Implementation of Navigation Menu
+
+* [X] Django - Install and configure Django and any dependencies.
+
+* [X] Project created - Create Django project and configure any settings.
+
+* [X] Environment setup - Setup environment for the project blog.
+
+* [X] Settings.py file - Setup settings.py file to reduce sensitive information leaking.
+
+* [X] Deploy to Heroku - Deploy base project to heroku.
+
+Implement Core Image
 
 ### Future Features
 
