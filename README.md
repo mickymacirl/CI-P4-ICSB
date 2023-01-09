@@ -421,6 +421,38 @@ Implementation of Posts
 
 Post Image
 
+### User Story - As an admin, I need to be able to administer comments
+
+As an admin, I can manage comments on the Irish Cyber Security Blog, including editing, approving, and deleting comments and filtering them by different criteria, such as their status, creation date, and associated post. I can also set the status of a comment to review, accepted, or spam and activate or deactivate a comment. This user story will allow an admin to ensure that all comments on the blog are appropriate and align with the community guidelines.
+
+Implementation of Comments
+
+* [X] Admin can edit a comment:
+
+> The admin can make changes to the content of a comment.
+
+* [X] Admin can approve a comment:
+
+> The admin can mark a comment as approved for publication.
+
+* [X] Admin can delete a comment:
+
+> The admin can remove a comment from the website.
+
+* [X] Admin can filter by Active, Created On, Name, Post or Status:
+
+> The admin can search for comments based on various criteria such as whether they are active, the date they were created, the name of the person who made the comment, the post they are associated with, or their current status (e.g., review, accepted, spam)
+
+* [X] Admin can set Status to Review, Accepted or Spam:
+
+> The admin can change the status of a comment to either "review," "accepted," or "spam".
+
+* [X] Admin can set comment to Active:
+
+> The admin can mark a comment as active, making it visible on the website.
+
+Comment Image
+
 ### Future Features
 
 ## The Skeleton Plane
