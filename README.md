@@ -179,45 +179,21 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 ### User Story - As a developer, I must create a navigation bar that works on any device. 
 
-Implementation of Navigation Menu
+**Implementation of Navigation Menu**
 
 * [X] Home - index.html - All users can see
-- [ ] Update the website
-- [ ] Contact the media
-- [ ] Update the website
-- [ ] Contact the media
-- [ ] Update the website
-- [ ] Contact the media
-- [ ] Update the website
-- [ ] Contact the media
 
-#### Home
+* [X] Contact Us - contactus.html - All users can see
 
-> * index.html - All users can see
+* [X] About Us - aboutus.html - All users can see
 
-#### About Us
+* [X] Blog Posts = index.html - All users can see
 
-> * aboutus.html - All users can see
+* [X] Register = register.html Only logged-out users can see
 
-#### Contact Us
+* [X] Login - login.html - All users can see
 
-> * contactus.html - All users can see
-
-#### Blog Posts
-
-> * index.html - All users can see
-
-#### Register
-
-> * register.html Only logged-out users can see
-
-#### Login
-
-> * login.html - All users can see
-
-#### Logout
-
-> * logout.html - Only logged-in users can see
+* [X] Logout - logout.html - Only logged-in users can see
 
 This menu is displayed on every page with a small menu for mobile devices. User will be able to navigate the website and the menu should be responsive.
 
