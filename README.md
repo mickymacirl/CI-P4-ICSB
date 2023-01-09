@@ -3,6 +3,8 @@
 Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
+Responsive Placeholder Image
+
 ## User Experience Design (UX)
 
 ## The Strategy Plane
@@ -16,6 +18,8 @@ It allows users to **read**, **comment on** and **bookmark** posts posted by the
 The project was developed using agile practices, with small features delivered in incremental sprints over a two-week period. Issues were organized into milestones and prioritized using labels such as "must have," "should have," "could have," and "nice to have."
 
 These milestones were divided into sprints based on six milestones, with "must have" stories being completed first, followed by "should have" stories, and finally "could have" and "nice to have" stories. This prioritization ensured that all essential requirements were completed first, providing a solid foundation for the application and allowing for the addition of must-have features.
+
+GitHub Projects was used to create a Kanban board, which can be found [here](https://github.com/users/mickymacirl/projects/2/views/1?layout=table&visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Milestone%22%2C%22Labels%22%5D). Each story, such as the documentation milestones, is an issue. Each story contains a description of the relevant acceptance criteria that must be fulfilled.
 
 ## Milestones
 
