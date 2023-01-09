@@ -541,7 +541,7 @@ Bookmark Posts Image
 
 The following are some potential future blog features:
 
-1. Users can use this search function to look for specific posts or keywords within specific posts.
+1. Users can use a search function to look for specific posts or keywords within specific posts.
 
 2. A newsletter subscription feature that sends users a monthly or weekly update on new blog posts.
 
@@ -549,7 +549,7 @@ The following are some potential future blog features:
 
 4. Integration with social media, such as the ability to share posts on Facebook or Twitter.
 
-5. Users can vote up or down on posts, and the most popular ones appear on the homepage.
+5. Users could vote up or down on posts, and the most popular ones appear on the homepage.
 
 6. A calendar system integration that allows users to save blog events to their personal calendar.
 
