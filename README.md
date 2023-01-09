@@ -1,9 +1,9 @@
-**Irish Cyber Security Blog**
+# Irish Cyber Security Blog
 
 Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
-# User Experience Design (UX)
+## User Experience Design (UX)
 
 ## The Strategy Plane
 
@@ -165,7 +165,7 @@ During the four sprints, the following user stories were completed (in order of 
 > Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/10](https://github.com/mickymacirl/CI-P4-ICSB/issues/10)
 Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://github.com/mickymacirl/CI-P4-ICSB/issues/11)
 
-# The Scope Plane
+## The Scope Plane
 
 * Mobile designed responsive blog
 * Admin section for website owner
@@ -173,13 +173,13 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 * Multi-layered security approval administration for posts and comments
 * Main page for users to view posts
 
-# The Structure Plane
+## The Structure Plane
 
 ## Features
 
-### User Story - As a developer, I must create a navigation bar that works on any device. 
+### User Story - As a developer, I must create a navigation bar that works on any device
 
-**Implementation of Navigation Menu**
+Implementation of Navigation Menu
 
 * [X] Home - index.html - All users can see
 
@@ -199,7 +199,7 @@ This menu is displayed on every page with a small menu for mobile devices. User 
 
 ### Future Features
 
-# The Skeleton Plane
+## The Skeleton Plane
 
 ## Wireframes
 
@@ -207,7 +207,7 @@ This menu is displayed on every page with a small menu for mobile devices. User 
 
 ## Security
 
-# The Surface Plane
+## The Surface Plane
 
 ## Design
 
@@ -217,38 +217,38 @@ This menu is displayed on every page with a small menu for mobile devices. User 
 
 ## Imagery
 
-# Technologies
+## Technologies
 
-# Testing
+## Testing
 
-# Deployment
+## Deployment
 
-## Version Control
+### Version Control
 
-## Heroku Deployment
+### Heroku Deployment
 
-## Run Locally
+### Run Locally
 
-## Fork Project
+### Fork Project
 
-# Credits
+## Credits
 
-## Markdown
+### Markdown
 
 * Used *[Markdown Guide Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)* for markdown syntax.
 
 * Used *[Stack Edit.io](https://stackedit.io/)* for markdown testing and format.
 
-## GitHub Projects
+### GitHub Projects
 
 * Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
 
 * Used *[Adding and creating labels for GitHub Issues](https://www.youtube.com/watch?v=KoFBpfSFmuY)* for information on setting more than one label.
 
-## Agile and Agile Project Management
+### Agile and Agile Project Management
 
 * Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Ailge Project Management
 
-# Content
+## Content
 
-# Acknowledgements
+## Acknowledgements
