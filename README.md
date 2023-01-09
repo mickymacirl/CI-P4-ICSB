@@ -447,21 +447,41 @@ Implementation of Users
 
 * [X] Admin can create users:
 
-   > Admin can create new users for the website.
+   > The admin can create new users for the website.
 
 * [X] Admin can set superuser status:
 
-   > Admin can set a user as a superuser, which gives them access to all features of the website.
+   > The admin can set a user as a superuser, which gives them access to all features of the website.
 
 * [X] Admin can set user permissions:
 
-   > Admin can set specific permissions for a user, such as the ability to create or edit content on the website.
+   > The admin can set specific permissions for a user, such as the ability to create or edit content on the website.
 
 * [X] Admin can set admin permissions:
 
-   > Admin can set permissions for themselves as an administrator, such as the ability to edit user details or delete content from the website.
+   > The admin can set permissions for themselves as an administrator, such as the ability to edit user details or delete content from the website.
 
 Users Image
+
+### User Story - As an admin, I need to be able to administer categories
+
+The admin can manage categories by editing, deleting, or adding new categories. This user story allows them to keep the categories up-to-date and relevant to the Irish Cyber Security Blog content.
+
+Implementation of Categories
+
+* [X] Admin can edit categories:
+
+   > The admin can modify the name of a category.
+
+* [X] Admin can delete categories:
+
+   > The admin can remove a category from the list of available categories.
+
+* [X] Admin can add categories:
+
+   > The admin can create a new category which adds it to the list of available categories.
+
+Categories Image
 
 ### Future Features
 
