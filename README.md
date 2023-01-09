@@ -245,6 +245,12 @@ This menu is displayed on every page with a small menu for mobile devices. User 
 
 # Credits
 
+## Markdown
+
+* Used *[Markdown Guide Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)* for markdown syntax.
+
+* Used *[Stack Edit.io](https://stackedit.io/)* for markdown testing and format.
+
 ## GitHub Projects
 
 * Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
