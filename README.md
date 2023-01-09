@@ -13,7 +13,9 @@ It allows users to **read**, **comment on** and **bookmark** posts posted by the
 
 ## Agile Planning
 
-The project was developed using agile practices, with small features delivered in incremental sprints over a two-week period. Issues were organized into milestones and prioritized using labels such as "must have," "should have," "could have," and "nice to have." These milestones were divided into sprints based on six milestones, with "must have" stories being completed first, followed by "should have" stories, and finally "could have" and "nice to have" stories. This prioritization ensured that all essential requirements were completed first, providing a solid foundation for the application and allowing for the addition of must-have features.
+The project was developed using agile practices, with small features delivered in incremental sprints over a two-week period. Issues were organized into milestones and prioritized using labels such as "must have," "should have," "could have," and "nice to have."
+
+These milestones were divided into sprints based on six milestones, with "must have" stories being completed first, followed by "should have" stories, and finally "could have" and "nice to have" stories. This prioritization ensured that all essential requirements were completed first, providing a solid foundation for the application and allowing for the addition of must-have features.
 
 ## Milestones
 
@@ -66,6 +68,8 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 1 - Basic Setup
 
+---
+
 #### 1.1 As a developer, I must set up the project so that it can implement the core features
 
 >*[Issue 2 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/2)* for information.
@@ -96,6 +100,8 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 2 - Stand Alone Pages Setup
 
+---
+
 #### 2.1 As a developer, I must implement a 404-error page to alert users when they try to access a page that doesn't exist
 
 >*[Issue 5 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/5)* for information.
@@ -118,6 +124,8 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 3 – Authentication Setup
 
+---
+
 #### 3.1 As a developer, I must set up AllAuth so that website users can sign up and access the features
 
 >*[Issue 6 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/6)* for information.
@@ -127,6 +135,8 @@ During the four sprints, the following user stories were completed (in order of 
 >*[Issue 14 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/14)* for information.
 
 ### Milestone 4 – Admin Setup
+
+---
 
 #### 4.1 As an admin, I need to be able to administer Posts
 
@@ -146,6 +156,8 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 5 – User Views
 
+---
+
 #### 5.1 As a Cybersecurity professional, I want to be able to comment on posts on Irish Cyber Security Blog so that I can share my thoughts and insights with others in the community
 
 >*[Issue 15 GitHub Project](https://github.com/mickymacirl/CI-P4-ICSB/issues/15)* for information.
@@ -160,6 +172,7 @@ During the four sprints, the following user stories were completed (in order of 
 
 ### Milestone 6 - Documentation
 
+---
 #### 6.1 Complete all Documentation
 
 > Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/10](https://github.com/mickymacirl/CI-P4-ICSB/issues/10)
@@ -185,31 +198,31 @@ Implementation of Navigation Menu
 
 * [X] Home - index.html - All users can see:
 
-> The home page for the blog, which should provide an overview of the blog's content and purpose, as well as links to other pages and features.
+   > The home page for the blog, which should provide an overview of the blog's content and purpose, as well as links to other pages and features.
 
 * [X] Contact Us - contactus.html - All users can see:
 
-> A page with contact information for the blog, including email addresses, phone numbers, and social media profiles.
+   > A page with contact information for the blog, including email addresses, phone numbers, and social media profiles.
 
 * [X] About Us - aboutus.html - All users can see:
 
-> A page with information about the blog's authors, mission, and any other relevant background information.
+   > A page with information about the blog's authors, mission, and any other relevant background information.
 
 * [X] Blog Posts - index.html - All users can see:
 
-> A list of all blog posts, sorted by publication date or some other relevant criteria.
+   > A list of all blog posts, sorted by publication date or some other relevant criteria.
 
 * [X] Register - register.html Only logged-out users can see:
 
-> A page that allows users to create a new account on the blog.
+   > A page that allows users to create a new account on the blog.
 
 * [X] Login - login.html - All users can see:
 
-> A page that allows users to log in to the blog using their username and password.
+   > A page that allows users to log in to the blog using their username and password.
 
 * [X] Logout - logout.html - Only logged-in users can see:
 
-> A page that allows users to log out of the blog.
+   > A page that allows users to log out of the blog.
 
 Navbar Image
 
@@ -219,15 +232,15 @@ This user story focuses on setting up the necessary infrastructure for the proje
 
 Implementation of Core Features
 
-* [X] Django - Install and configure Django and any dependencies.
+   * [X] Django - Install and configure Django and any dependencies.
 
-* [X] Project created - Create Django project and configure any settings.
+   * [X] Project created - Create Django project and configure any settings.
 
-* [X] Environment setup - Setup environment for the project blog.
+   * [X] Environment setup - Setup environment for the project blog.
 
-* [X] Settings.py file - Setup settings.py file to reduce sensitive information leaking.
+   * [X] Settings.py file - Setup settings.py file to reduce sensitive information leaking.
 
-* [X] Deploy to Heroku - Deploy base project to heroku.
+   * [X] Deploy to Heroku - Deploy base project to heroku.
 
 Implement Core Image
 
@@ -441,7 +454,7 @@ Implementation of Comments
 
 * [X] Admin can filter by Active, Created On, Name, Post or Status:
 
-> The admin can search for comments based on various criteria such as whether they are active, the date they were created, the name of the person who made the comment, the post they are associated with, or their current status (e.g., review, accepted, spam)
+> The admin can search for comments based on various criteria such as whether they are active, the date they were created, the name of the person who made the comment, the post they are associated with, or their current status (e.g., review, accepted, spam).
 
 * [X] Admin can set Status to Review, Accepted or Spam:
 
