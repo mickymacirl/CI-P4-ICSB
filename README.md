@@ -181,9 +181,15 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 Implementation of Navigation Menu
 
-- [X] Home - index.html - All users can see
+* [X] Home - index.html - All users can see
 - [ ] Update the website
-- [ ] Contact the media 
+- [ ] Contact the media
+- [ ] Update the website
+- [ ] Contact the media
+- [ ] Update the website
+- [ ] Contact the media
+- [ ] Update the website
+- [ ] Contact the media
 
 #### Home
 
