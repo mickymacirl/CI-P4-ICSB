@@ -257,7 +257,7 @@ Implementation of Footer
 
 * [X] Footer created - Create footer for blog.
 
-* [X] Social media links - Create Social media links.
+* [X] Social media links - Create social media links.
 
 * [X] Social media links open in a new tab - Ensure social media links open in new tab.
 
@@ -266,6 +266,28 @@ Implementation of Footer
 * [X] Contact information is correct - Ensure contact information is correct
 
 Footer Image
+
+### User Story - As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
+
+The user wants to be able to view the Irish Cyber Security Blog in order to stay informed about the latest threats and solutions in the field of cybersecurity.
+
+Implementation of Page
+
+* [X] The home page is created with the theme of the website layout - Create home page to view blog posts.
+
+Home Page Image
+
+### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
+
+The developer needs to set up static files and folders for the project images, CSS, and JavaScript to function correctly on the website. This user story is necessary for the website to work properly and have a cohesive design.
+
+Implementation of Static Files
+
+* [X] Static folders and settings setup - Create static folders and setup the correct settings.
+
+* [X] Subfolders created for images, CSS, and JavaScript - Create and setup folders for the likes of images, CSS, and JavaScript
+
+Static Files Image
 
 ### Future Features
 
