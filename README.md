@@ -303,9 +303,9 @@ Implementation of Base.html
 
 Base.html Image
 
-### User Story - As a developer, I must implement a 404-error page to alert users when they try to access a page that doesn't exist
+### User Story - As a developer, I must implement a 404 error page to alert users when they try to access a page that doesn't exist
 
-The 404-error page will be displayed when a user tries to access a page that does not exist on the website. This page will alert the user that the page they are trying to access does not exist and provide them with options to navigate to other pages on the website.
+The 404 error page will be displayed when a user tries to access a page that does not exist on the website. This page will alert the user that the page they are trying to access does not exist and provide them with options to navigate to other pages on the website.
 
 Implementation of 404 Error Page
 
@@ -315,9 +315,9 @@ Implementation of 404 Error Page
 
 404 Error Page Image
 
-### User Story - As a developer, I need to create a 500-error page to alert website users when the application generates an internal server error
+### User Story - As a developer, I need to create a 500 error page to alert website users when the application generates an internal server error
 
-The 500-error page will be displayed to website users when an application issue generates an internal server error. This page will alert the user that there has been an issue and provide a way for them to contact the website team to report the problem.
+The 500 error page will be displayed to website users when an application issue generates an internal server error. This page will alert the user that there has been an issue and provide a way for them to contact the website team to report the problem.
 
 Implementation of 500 Error Page
 
@@ -327,15 +327,15 @@ Implementation of 500 Error Page
 
 500 Error Page Image
 
-### User Story - As a developer, I must implement a 403-error page to alert users when they do not the right to access this page
+### User Story - As a developer, I must implement a 403 error page to alert users when they do not the right to access this page
 
-The developer must create a 403 error page that will be displayed to users when they attempt to access a page or resource they do not have permission to view. This page will alert the user that they do not have the necessary rights to access the requested content and may provide instructions on requesting permission or access. This feature is essential for maintaining security and protecting sensitive information on the website.
+The developer must create a 403 error page that will be displayed to users when they attempt to access a page or resource they do not have permission to view. This page will alert the user that they do not have the necessary rights to access the requested content and provides instructions on requesting permission or access. This feature is essential for maintaining security and protecting sensitive information on the website.
 
 Implementation of 403 Error Page
 
-* [X] 500 error page is created - Create 500 error page.
+* [X] 403 error page is created - Create 403 error page.
 
-* [X] Error information is expanded upon - Ensure message is explained and maybe an option to request access to the page or feature.
+* [X] Error information is expanded upon - Ensure message is explained and an option to request access to the page or feature.
 
 403 Error Page Image
 
@@ -377,13 +377,53 @@ AllAuth Image
 
 This user story involves creating a registration feature on the Irish Cyber Security News website that allows Cybersecurity professionals to sign up and receive updates on the latest news and events in the industry. This feature will enable users to stay informed about developments in the field and keep track of relevant events.
 
-Implementation of AllAuth
+Implementation of Registration
 
 * [X] User can register - Create user register.
 
 * [X] Test functionality - Test that users can register for the blog
 
 Register Image
+
+### User Story - As an admin, I need to be able to administer Posts
+
+As an administrator, I need to be able to manage posts on the Irish Cyber Security Blog, including creating, filtering, editing, publishing, deleting, setting the status of posts, and setting a post as pinned. This user story will allow an admin to effectively manage the content on the blog and ensure that it is up-to-date and relevant to the community.
+
+Implementation of Posts
+
+* [X] Admin can create a post
+
+> The admin can create a new post by filling out the necessary fields (title, content, etc.) and submitting the form.
+
+* [X] Admin can filter by Status, Author, Created On, Category and Pinned
+
+> The admin can filter the list of posts by various criteria, including status (published, draft, disabled), author, creation date, category, and pinned status.
+
+* [X] Admin can edit a post
+
+> The admin can edit an existing post by making changes to its fields and saving the changes.
+
+* [X] Admin can set a post to Published
+
+> The admin can set a post to the "published" status, making it visible to users on the website.
+
+* [X] Admin can delete a post
+
+> The admin can delete a post from the website permanently.
+
+* [X] Admin can set a post to Draft
+
+> The admin can set a post to the "draft" status, which means it is not yet ready to be published but can be worked on further.
+
+* [X] Admin can set a post to Disabled
+
+The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
+
+* [X] Admin can set a post as is_pinned
+
+The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
+
+Post Image
 
 ### Future Features
 
