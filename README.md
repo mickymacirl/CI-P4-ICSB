@@ -431,6 +431,38 @@ Implementation of Comments
 
 Comment Image
 
+### User Story - As an admin, I need to be able to administer users
+
+As an admin, I can manage the users on the site, including editing user information, resetting passwords, creating new users, granting superuser status, setting user permissions, and setting admin permissions. This user story will allow an admin to manage the user accounts on the site and ensure that users have the appropriate access and permissions.
+
+Implementation of Users
+
+* [X] Admin can edit users:
+
+   > The admin can edit user details such as name, email, and password.
+
+* [X] Admin can edit user password:
+
+   > The admin Admin can reset a user's password if they have forgotten their login credentials.
+
+* [X] Admin can create users:
+
+   > Admin can create new users for the website.
+
+* [X] Admin can set superuser status:
+
+   > Admin can set a user as a superuser, which gives them access to all features of the website.
+
+* [X] Admin can set user permissions:
+
+   > Admin can set specific permissions for a user, such as the ability to create or edit content on the website.
+
+* [X] Admin can set admin permissions:
+
+   > Admin can set permissions for themselves as an administrator, such as the ability to edit user details or delete content from the website.
+
+Users Image
+
 ### Future Features
 
 ## The Skeleton Plane
