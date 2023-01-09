@@ -279,7 +279,7 @@ Home Page Image
 
 ### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
 
-The developer needs to set up static files and folders for the project images, CSS, and JavaScript to function correctly on the website. This user story is necessary for the website to work properly and have a cohesive design.
+The goal of this user story is to properly set up static files and folders within the project so that the images, CSS and JavaScript will be displayed and function correctly on the website. This user story is essential for ensuring users' cohesive and visually appealing website experience.
 
 Implementation of Static Files
 
@@ -302,6 +302,62 @@ Implementation of Base.html
 * [X] The footer information  is correct - Ensure The footer information is correct.
 
 Base.html Image
+
+### User Story - As a developer, I must implement a 404-error page to alert users when they try to access a page that doesn't exist
+
+The 404-error page will be displayed when a user tries to access a page that does not exist on the website. This page will alert the user that the page they are trying to access does not exist and provide them with options to navigate to other pages on the website.
+
+Implementation of 404 Error Page
+
+* [X] 404 error page is created - Create 404 error page.
+
+* [X] Error information is expanded upon - Ensure message is explained and navigation to other pages.
+
+404 Error Page Image
+
+### User Story - As a developer, I need to create a 500-error page to alert website users when the application generates an internal server error
+
+The 500-error page will be displayed to website users when an application issue generates an internal server error. This page will alert the user that there has been an issue and provide a way for them to contact the website team to report the problem.
+
+Implementation of 500 Error Page
+
+* [X] 500 error page is created - Create 500 error page.
+
+* [X] Error information is expanded upon - Ensure message is explained and option to report to blog admins.
+
+500 Error Page Image
+
+### User Story - As a developer, I must implement a 403-error page to alert users when they do not the right to access this page
+
+The developer must create a 403 error page that will be displayed to users when they attempt to access a page or resource they do not have permission to view. This page will alert the user that they do not have the necessary rights to access the requested content and may provide instructions on requesting permission or access. This feature is essential for maintaining security and protecting sensitive information on the website.
+
+Implementation of 403 Error Page
+
+* [X] 500 error page is created - Create 500 error page.
+
+* [X] Error information is expanded upon - Ensure message is explained and maybe an option to request access to the page or feature.
+
+403 Error Page Image
+
+### User Story - As a Cybersecurity professional, I want to be able to contact the Irish Cyber Security Blog so that I can express my option on a post
+
+A user wants to be able to contact the Irish Cyber Security Blog to express their opinion on a specific post.
+
+Implementation of Contact Us Page
+
+* [X] Contact Us page so users can contact the site owners - Create Contact Us page.
+
+Contact Us Page Image
+
+### User Story - As a Cybersecurity professional, I want to be able to find out information about the site owners of the Irish Cyber Security Blog so that I am kept informed
+
+As a Cybersecurity professional, I want to be able to find information about the site owners of the Irish Cyber Security Blog so that I am informed about who is responsible for the content on the site.
+
+Implementation of About Us Page
+
+* [X] About Us page so users can find information about the site owners - Create About Us page.
+
+About Us Page Image
 
 ### Future Features
 
