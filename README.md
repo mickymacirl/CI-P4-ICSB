@@ -263,8 +263,6 @@ The navigation bar is a vital element of any website, allowing users to find and
 
 Implementation of Navigation Bar
 
-
-
 * [X] Home - All users can see - The Home page is visible to all users.
 
 * [X] About Us - All users can see - The About Us page is visible to all users.
