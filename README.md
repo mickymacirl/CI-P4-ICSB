@@ -443,27 +443,27 @@ Implementation of Comments
 
 * [X] Admin can edit a comment:
 
-> The admin can make changes to the content of a comment.
+   > The admin can make changes to the content of a comment.
 
 * [X] Admin can approve a comment:
 
-> The admin can mark a comment as approved for publication.
+   > The admin can mark a comment as approved for publication.
 
 * [X] Admin can delete a comment:
 
-> The admin can remove a comment from the website.
+   > The admin can remove a comment from the website.
 
 * [X] Admin can filter by Active, Created On, Name, Post or Status:
 
-> The admin can search for comments based on various criteria such as whether they are active, the date they were created, the name of the person who made the comment, the post they are associated with, or their current status (e.g., review, accepted, spam).
+   > The admin can search for comments based on various criteria such as whether they are active, the date they were created, the name of the person who made the comment, the post they are associated with, or their current status (e.g., review, accepted, spam).
 
 * [X] Admin can set Status to Review, Accepted or Spam:
 
-> The admin can change the status of a comment to either "review," "accepted," or "spam".
+   > The admin can change the status of a comment to either "review," "accepted," or "spam".
 
 * [X] Admin can set comment to Active:
 
-> The admin can mark a comment as active, making it visible on the website.
+   > The admin can mark a comment as active, making it visible on the website.
 
 Comment Image
 
