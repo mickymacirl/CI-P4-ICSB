@@ -253,6 +253,30 @@ Implementation of Footer
 
 Footer Image
 
+### User Story - As a developer, I must create a navigation bar that works on any device
+
+The navigation bar is a vital element of any website, allowing users to find and access different site pages easily. This user story specifies that the navigation bar will be designed to be responsive, meaning that it should work correctly on any device, whether a desktop computer, a tablet or a smartphone. This user story is important because it ensures users can access and navigate the site easily, regardless of their device.
+
+Implementation of Navigation Bar
+
+
+
+* [X] Home - All users can see - The Home page is visible to all users.
+
+* [X] About Us - All users can see - The About Us page is visible to all users.
+
+* [X] Contact Us - All users can see - The Contact Us page is visible to all users.
+
+* [X] Blog Posts - All users can see - The Blog Posts page is visible to all users.
+
+* [X] Register - Only logged-out users can see - The Register page is only visible to users who are not logged in.
+
+* [X] Login - All users can see - The Login page is visible to all users.
+
+* [X] Logout - Only logged-in users can see - The Logout page is only visible to users who are logged in.
+
+Navigation Bar Image
+
 ### User Story - As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
 
 The user wants to be able to view the Irish Cyber Security Blog in order to stay informed about the latest threats and solutions in the field of cybersecurity.
