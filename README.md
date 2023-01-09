@@ -237,17 +237,13 @@ The main website header is the top portion of the website that typically include
 
 Implementation of Header
 
-* [X] Django - Install and configure Django and any dependencies.
+* [X] Header created - Create header for website.
 
-* [X] Project created - Create Django project and configure any settings.
+* [X] Links created - Create links for the header of the website.
 
-* [X] Environment setup - Setup environment for the project blog.
+* [X] Logo setup - Create logo and configure logo in header of the website.
 
-* [X] Settings.py file - Setup settings.py file to reduce sensitive information leaking.
-
-* [X] Deploy to Heroku - Deploy base project to heroku.
-
-Implement Core Image
+Header Image
 
 ### User Story - As a developer, I must create a footer with social media links and contact information
 
@@ -417,11 +413,11 @@ Implementation of Posts
 
 * [X] Admin can set a post to Disabled
 
-The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
+> The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
 
 * [X] Admin can set a post as is_pinned
 
-The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
+> The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
 
 Post Image
 
