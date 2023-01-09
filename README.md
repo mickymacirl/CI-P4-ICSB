@@ -289,6 +289,20 @@ Implementation of Static Files
 
 Static Files Image
 
+### User Story - As a developer, I must create the basic base.html page and project structure so the layout is uniform
+
+This user story is about creating the base HTML page and the overall project structure to ensure that the website layout is consistent. The base.html page will serve as a template for other pages on the website, allowing for easy modification of the form and design. The project structure will also be set up to ensure that all necessary files and folders are organized in an easily accessible manner.
+
+Implementation of Base.html
+
+* [X] Base.html page created with the uniform layout - Create Base.html file and all settings and requirements.
+
+* [X] Navigation menu is correct - Ensure the navigation menu is correct.
+
+* [X] The footer information  is correct - Ensure The footer information is correct.
+
+Base.html Image
+
 ### Future Features
 
 ## The Skeleton Plane
