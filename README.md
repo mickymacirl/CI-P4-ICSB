@@ -191,42 +191,6 @@ Testing Readme: [https://github.com/mickymacirl/CI-P4-ICSB/issues/11](https://gi
 
 ## Features
 
-### User Story - As a developer, I must create a navigation bar that works on any device
-
-The navigation bar is a key element of any website, as it allows users to easily find and access different pages within the site. This user story specifies that the navigation bar must be designed to be responsive, meaning that it should work correctly on any device, whether it be a desktop computer, a tablet, or a smartphone. This is important because it ensures that users can access the site and navigate through it easily regardless of the device they are using.
-
-Implementation of Navigation Menu
-
-* [X] Home - index.html - All users can see:
-
-   > The home page for the blog, which should provide an overview of the blog's content and purpose, as well as links to other pages and features.
-
-* [X] Contact Us - contactus.html - All users can see:
-
-   > A page with contact information for the blog, including email addresses, phone numbers, and social media profiles.
-
-* [X] About Us - aboutus.html - All users can see:
-
-   > A page with information about the blog's authors, mission, and any other relevant background information.
-
-* [X] Blog Posts - index.html - All users can see:
-
-   > A list of all blog posts, sorted by publication date or some other relevant criteria.
-
-* [X] Register - register.html Only logged-out users can see:
-
-   > A page that allows users to create a new account on the blog.
-
-* [X] Login - login.html - All users can see:
-
-   > A page that allows users to log in to the blog using their username and password.
-
-* [X] Logout - logout.html - Only logged-in users can see:
-
-   > A page that allows users to log out of the blog.
-
-Navbar Image
-
 ### User Story - As a developer, I must set up the project so that it can implement the core features
 
 This user story focuses on setting up the necessary infrastructure for the project. It specifies that the developer must ensure that the project is appropriately set up and the environment and deployment configured to implement the core features essential to its function. This story involves setting up the necessary databases and other components, like the settings.py file needed to support the project and configuring the project's codebase and dependencies. By ensuring that the project is working correctly, we can deliver the critical functionality that users expect and are comfortable using.
@@ -244,6 +208,18 @@ Implementation of Core Features
 * [X] Deploy to Heroku - Deploy base project to heroku.
 
 Implement Core Image
+
+### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
+
+The goal of this user story is to properly set up static files and folders within the project so that the images, CSS and JavaScript will be displayed and function correctly on the website. This user story is essential for ensuring users' cohesive and visually appealing website experience.
+
+Implementation of Static Files
+
+* [X] Static folders and settings setup - Create static folders and setup the correct settings.
+
+* [X] Subfolders created for images, CSS, and JavaScript - Create and setup folders for the likes of images, CSS, and JavaScript
+
+Static Files Image
 
 ### User Story - As a developer, I need to create the main website header with logo and web page links
 
@@ -286,18 +262,6 @@ Implementation of Home Page
 * [X] The home page is created with the theme of the website layout - Create home page to view main blog.
 
 Home Page Image
-
-### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
-
-The goal of this user story is to properly set up static files and folders within the project so that the images, CSS and JavaScript will be displayed and function correctly on the website. This user story is essential for ensuring users' cohesive and visually appealing website experience.
-
-Implementation of Static Files
-
-* [X] Static folders and settings setup - Create static folders and setup the correct settings.
-
-* [X] Subfolders created for images, CSS, and JavaScript - Create and setup folders for the likes of images, CSS, and JavaScript
-
-Static Files Image
 
 ### User Story - As a developer, I must create the basic base.html page and project structure so the layout is uniform
 
@@ -403,35 +367,35 @@ Implementation of Posts
 
 * [X] Admin can create a post:
 
-> The admin can create a new post by filling out the necessary fields (title, content, etc.) and submitting the form.
+   > The admin can create a new post by filling out the necessary fields (title, content, etc.) and submitting the form.
 
 * [X] Admin can filter by Status, Author, Created On, Category and Pinned:
 
-> The admin can filter the list of posts by various criteria, including status (published, draft, disabled), author, creation date, category, and pinned status.
+   > The admin can filter the list of posts by various criteria, including status (published, draft, disabled), author, creation date, category, and pinned status.
 
 * [X] Admin can edit a post:
 
-> The admin can edit an existing post by making changes to its fields and saving the changes.
+   > The admin can edit an existing post by making changes to its fields and saving the changes.
 
 * [X] Admin can set a post to Published:
 
-> The admin can set a post to the "published" status, making it visible to users on the website.
+   > The admin can set a post to the "published" status, making it visible to users on the website.
 
 * [X] Admin can delete a post:
 
-> The admin can delete a post from the website permanently.
+   > The admin can delete a post from the website permanently.
 
 * [X] Admin can set a post to Draft:
 
-> The admin can set a post to the "draft" status, which means it is not yet ready to be published but can be worked on further.
+   > The admin can set a post to the "draft" status, which means it is not yet ready to be published but can be worked on further.
 
 * [X] Admin can set a post to Disabled:
 
-> The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
+   > The admin can set a post to the "disabled" status, which means it is not visible to users on the website.
 
 * [X] Admin can set a post as is_pinned:
 
-> The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
+   > The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
 
 Post Image
 
