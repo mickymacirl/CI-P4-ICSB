@@ -359,6 +359,32 @@ Implementation of About Us Page
 
 About Us Page Image
 
+### User Story - As a developer, I must set up AllAuth so that website users can sign up and access the features
+
+As a developer, I must set up AllAuth so that website users can create an account and log in to the website to access certain features. This user story will allow users to register and manage their accounts and access restricted content on the site.
+
+Implementation of AllAuth
+
+* [X] AllAuth plugin installed and configured - Install AllAuth and configure.
+
+* [X] Users can sign up and log in - Ensure users can sign up and log in.
+
+* [X] Customize AllAuth templates to the site theme - Ensure AllAuth templates have the sites theme.
+
+AllAuth Image
+
+### User Story - As a Cybersecurity professional, I want to be able to register to Irish Cyber Security News so that I can stay up-to-date on the latest news and events in the industry
+
+This user story involves creating a registration feature on the Irish Cyber Security News website that allows Cybersecurity professionals to sign up and receive updates on the latest news and events in the industry. This feature will enable users to stay informed about developments in the field and keep track of relevant events.
+
+Implementation of AllAuth
+
+* [X] User can register - Create user register.
+
+* [X] Test functionality - Test that users can register for the blog
+
+Register Image
+
 ### Future Features
 
 ## The Skeleton Plane
