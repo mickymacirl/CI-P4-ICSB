@@ -607,10 +607,6 @@ Home Page
 
 ![Admin Page](./docs/wireframes/wireframe_home.jpg)
 
-Home Page
-
-![Home](./docs/wireframes/wireframe_home.jpg)
-
 ## Database Design
 
 ## Security
