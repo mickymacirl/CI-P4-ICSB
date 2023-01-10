@@ -561,6 +561,30 @@ The following are some potential future blog features:
 
 ![Home](./docs/wireframes/wireframe_home.jpg)
 
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
+[Home](./docs/wireframes/wireframe_home.jpg)
+
 ## Database Design
 
 ## Security
