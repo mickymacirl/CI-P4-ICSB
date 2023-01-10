@@ -581,7 +581,7 @@ About Us Page
 
 Contact Us Page
 
-![Contact Us](./docs/wireframes/wireframe_home.jpg)
+![Contact Us](./docs/wireframes/wireframe_contactus.jpg)
 
 Login Page
 
