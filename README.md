@@ -567,9 +567,21 @@ The following are some potential future blog features:
 
 ## Design
 
+## Logo
+
+Logo designed using Smashing Logos with references to cyber security topics.
+
+Logo Image
+
 ## Colour Scheme
 
+
+
 ## Typography
+
+Throughout the website, the Open Sans font was used. This font was imported into the style sheet from Google Fonts.
+
+Logo fonts are Comfortaa and Audiowide.
 
 ## Imagery
 
@@ -604,6 +616,12 @@ The following are some potential future blog features:
 ### Agile and Agile Project Management
 
 * Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Ailge Project Management
+
+### Design Sites
+
+* Used *[Smashing Logos](https://smashinglogo.com)* to design logo.
+
+* Used *[Color Hunt](https://colorhunt.co/)* to help with color design.
 
 ## Content
 
