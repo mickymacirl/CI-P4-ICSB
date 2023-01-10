@@ -559,11 +559,19 @@ The following are some potential future blog features:
 
 ## Wireframes
 
+Home Page
+
 ![Home](./docs/wireframes/wireframe_home.jpg)
+
+403 Error Page
 
 ![403](./docs/wireframes/wireframe_403.jpg)
 
+404 Error Page
+
 ![404](./docs/wireframes/wireframe_404.jpg)
+
+500 Error Page
 
 ![500](./docs/wireframes/wireframe_500.jpg)
 
