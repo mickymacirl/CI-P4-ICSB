@@ -593,7 +593,7 @@ Logout Page
 
 Register Page
 
-![Register](./docs/wireframes/wireframe_home.jpg)
+![Register](./docs/wireframes/wireframe_register.jpg)
 
 Post Page
 
