@@ -577,7 +577,7 @@ Home Page
 
 About Us Page
 
-![About Us](./docs/wireframes/wireframe_home.jpg)
+![About Us](./docs/wireframes/wireframe_about us.jpg)
 
 Contact Us Page
 
