@@ -575,13 +575,23 @@ Home Page
 
 ![500](./docs/wireframes/wireframe_500.jpg)
 
-[About Us](./docs/wireframes/wireframe_home.jpg)
+About Us Page
 
-[Contact Us](./docs/wireframes/wireframe_home.jpg)
+![About Us](./docs/wireframes/wireframe_home.jpg)
 
-[Login](./docs/wireframes/wireframe_home.jpg)
+Contact Us Page
 
-[Logout](./docs/wireframes/wireframe_home.jpg)
+![Contact Us](./docs/wireframes/wireframe_home.jpg)
+
+Login Page
+
+![Login](./docs/wireframes/wireframe_home.jpg)
+
+Logout Page
+
+![Logout](./docs/wireframes/wireframe_home.jpg)
+
+Register Page
 
 ![Register](./docs/wireframes/wireframe_home.jpg)
 
@@ -589,11 +599,17 @@ Post Page
 
 ![Post](.docs/wireframes/wireframe_post.jpg)
 
+Comment Page
+
 ![Comment](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+Home Page
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+![Home](./docs/wireframes/wireframe_home.jpg)
+
+Home Page
+
+![Home](./docs/wireframes/wireframe_home.jpg)
 
 ## Database Design
 
