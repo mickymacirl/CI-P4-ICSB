@@ -601,7 +601,7 @@ Post Page
 
 Comment Page
 
-![Comment](./docs/wireframes/wireframe_home.jpg)
+![Comment](./docs/wireframes/wireframe_comment.jpg)
 
 Home Page
 
