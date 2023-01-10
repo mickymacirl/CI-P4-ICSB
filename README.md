@@ -575,19 +575,19 @@ Home Page
 
 ![500](./docs/wireframes/wireframe_500.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[About Us](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Contact Us](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Login](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Logout](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Register](./docs/wireframes/wireframe_post.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Post](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[Comment](./docs/wireframes/wireframe_home.jpg)
 
 [Home](./docs/wireframes/wireframe_home.jpg)
 
