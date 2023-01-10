@@ -3,6 +3,8 @@
 Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
+The Irish Cyber Security Blog can be found *[here](https://icsblogp4.herokuapp.com/)*.
+
 Responsive Placeholder Image
 
 ## User Experience Design (UX)
