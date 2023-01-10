@@ -585,11 +585,11 @@ Contact Us Page
 
 Login Page
 
-![Login](./docs/wireframes/wireframe_home.jpg)
+![Login](./docs/wireframes/wireframe_login.jpg)
 
 Logout Page
 
-![Logout](./docs/wireframes/wireframe_home.jpg)
+![Logout](./docs/wireframes/wireframe_out.jpg)
 
 Register Page
 
