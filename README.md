@@ -575,6 +575,10 @@ Logo designed using Smashing Logos with references to cyber security topics.
 
 ## Colour Scheme
 
+The website's primary color scheme is white on white. To match the color of the logo, Bunker (#101820) and Bondi Blue (#00a7b5) were added to borders, button text, and hover effects.
+
+![Colors](./docs/readme/rm_colors.jpg)
+
 ## Typography
 
 Throughout the website, the *[Open Sans](https://fonts.google.com/specimen/Open+Sans)* font was used. This font was imported into the style sheet from Google Fonts.
