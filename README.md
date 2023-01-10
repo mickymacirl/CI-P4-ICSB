@@ -583,9 +583,9 @@ Home Page
 
 [Logout](./docs/wireframes/wireframe_home.jpg)
 
-[Register](./docs/wireframes/wireframe_post.jpg)
+![Register](./docs/wireframes/wireframe_post.jpg)
 
-[Post](./docs/wireframes/wireframe_home.jpg)
+![Post](./docs/wireframes/wireframe_home.jpg)
 
 [Comment](./docs/wireframes/wireframe_home.jpg)
 
