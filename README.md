@@ -579,7 +579,15 @@ Logo Image
 
 Throughout the website, the Open Sans font was used. This font was imported into the style sheet from Google Fonts.
 
-Logo fonts are Comfortaa and Audiowide.
+Logo fonts are:
+
+### Comfortaa
+
+![Comfortaa](./docs/readme/rm_font_Comfortaa.jpg)
+
+### Audiowide
+
+![Audiowide](./docs/readme/rm_font_Audiowide.jpg)
 
 ## Imagery
 
