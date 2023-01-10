@@ -583,11 +583,13 @@ Home Page
 
 [Logout](./docs/wireframes/wireframe_home.jpg)
 
-![Register](./docs/wireframes/wireframe_post.jpg)
+![Register](./docs/wireframes/wireframe_home.jpg)
 
-![Post](./docs/wireframes/wireframe_home.jpg)
+Post Page
 
-[Comment](./docs/wireframes/wireframe_home.jpg)
+![Post](.docs/wireframes/wireframe_post.jpg)
+
+![Comment](./docs/wireframes/wireframe_home.jpg)
 
 [Home](./docs/wireframes/wireframe_home.jpg)
 
