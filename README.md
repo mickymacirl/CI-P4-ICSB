@@ -577,7 +577,7 @@ Logo designed using Smashing Logos with references to cyber security topics.
 
 ## Typography
 
-Throughout the website, the Open Sans font was used. This font was imported into the style sheet from Google Fonts.
+Throughout the website, the *[Open Sans](https://fonts.google.com/specimen/Open+Sans)* font was used. This font was imported into the style sheet from Google Fonts.
 
 Logo fonts are:
 
