@@ -669,6 +669,10 @@ Logo fonts are:
 
 * Used *[Stack Edit.io](https://stackedit.io/)* for markdown testing and format.
 
+### Deployment and Install
+
+* Used *[CI Django Blog Cheat Sheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/)* to build base deployment.
+
 ### GitHub Projects
 
 * Used *[Using Labels and Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/managing-labels)* for information on create project labels and milestones.
