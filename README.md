@@ -559,6 +559,8 @@ The following are some potential future blog features:
 
 ## Wireframes
 
+![Home](./docs/wireframes/wireframe_home.jpg)
+
 ## Database Design
 
 ## Security
@@ -573,7 +575,7 @@ Logo designed using Smashing Logos with references to cyber security topics.
 
 ![Logo](./docs/readme/rm_logo.jpg)
 
-## Colour Scheme
+## Color Scheme
 
 The website's primary color scheme is white on white. To match the color of the logo, Bunker (#101820) and Bondi Blue (#00a7b5) were added to borders, button text, and hover effects.
 
