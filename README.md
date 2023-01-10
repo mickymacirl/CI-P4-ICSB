@@ -21,6 +21,8 @@ These milestones were divided into sprints based on six milestones, with "must h
 
 GitHub Projects was used to create a Kanban board, which can be found [here](https://github.com/users/mickymacirl/projects/2/views/1?layout=table&visibleFields=%5B%22Title%22%2C%22Assignees%22%2C%22Status%22%2C%22Milestone%22%2C%22Labels%22%5D). Each story, such as the documentation milestones, is an issue. Each story contains a description of the relevant acceptance criteria that must be fulfilled. There is a "won't do" option for any features that are not implemented.
 
+![Kanban](./docs/readme/rm_kanban.jpg)
+
 ## Milestones
 
 This project has 6 main Milestones:
