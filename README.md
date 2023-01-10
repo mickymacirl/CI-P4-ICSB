@@ -597,7 +597,7 @@ Register Page
 
 Post Page
 
-![Post](.docs/wireframes/wireframe_post.jpg)
+![Post](./docs/wireframes/wireframe_post.jpg)
 
 Comment Page
 
