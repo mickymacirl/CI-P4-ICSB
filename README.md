@@ -575,8 +575,6 @@ Logo Image
 
 ## Colour Scheme
 
-
-
 ## Typography
 
 Throughout the website, the Open Sans font was used. This font was imported into the style sheet from Google Fonts.
@@ -622,6 +620,10 @@ Logo fonts are Comfortaa and Audiowide.
 * Used *[Smashing Logos](https://smashinglogo.com)* to design logo.
 
 * Used *[Color Hunt](https://colorhunt.co/)* to help with color design.
+
+* Used *[Name that color](https://chir.ag/projects/name-that-color/)* for color names.
+
+* Used *[Color Wheel](https://www.canva.com/colors/color-wheel/)* for color compatibility.
 
 ## Content
 
