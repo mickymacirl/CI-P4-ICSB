@@ -613,7 +613,7 @@ Logo fonts are Comfortaa and Audiowide.
 
 ### Agile and Agile Project Management
 
-* Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Ailge Project Management
+* Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Agile Project Management
 
 ### Design Blog
 
@@ -621,7 +621,7 @@ Logo fonts are Comfortaa and Audiowide.
 
 * Used *[Color Hunt](https://colorhunt.co/)* to help with color design.
 
-* Used *[Name that color](https://chir.ag/projects/name-that-color/)* for color names.
+* Used *[Name that color](https://chir.ag/projects/name-that-color/)* for name colors.
 
 * Used *[Color Wheel](https://www.canva.com/colors/color-wheel/)* for color compatibility.
 
