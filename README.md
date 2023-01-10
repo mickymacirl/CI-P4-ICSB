@@ -603,9 +603,9 @@ Comment Page
 
 ![Comment](./docs/wireframes/wireframe_comment.jpg)
 
-Home Page
+Admin Page
 
-![Admin Page](./docs/wireframes/wireframe_home.jpg)
+![Admin Page](./docs/wireframes/wireframe_admin.jpg)
 
 ## Database Design
 
