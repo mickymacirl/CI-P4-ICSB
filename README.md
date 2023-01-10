@@ -615,9 +615,9 @@ Logo fonts are Comfortaa and Audiowide.
 
 * Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Ailge Project Management
 
-### Design Sites
+### Design Blog
 
-* Used *[Smashing Logos](https://smashinglogo.com)* to design logo.
+* Used *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
 
 * Used *[Color Hunt](https://colorhunt.co/)* to help with color design.
 
