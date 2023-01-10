@@ -605,7 +605,7 @@ Comment Page
 
 Home Page
 
-![Home](./docs/wireframes/wireframe_home.jpg)
+![Admin Page](./docs/wireframes/wireframe_home.jpg)
 
 Home Page
 
