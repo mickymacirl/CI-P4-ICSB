@@ -561,11 +561,11 @@ The following are some potential future blog features:
 
 ![Home](./docs/wireframes/wireframe_home.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[403](./docs/wireframes/wireframe_403.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[404](./docs/wireframes/wireframe_404.jpg)
 
-[Home](./docs/wireframes/wireframe_home.jpg)
+[500](./docs/wireframes/wireframe_500.jpg)
 
 [Home](./docs/wireframes/wireframe_home.jpg)
 
