@@ -589,7 +589,7 @@ Login Page
 
 Logout Page
 
-![Logout](./docs/wireframes/wireframe_out.jpg)
+![Logout](./docs/wireframes/wireframe_logout.jpg)
 
 Register Page
 
