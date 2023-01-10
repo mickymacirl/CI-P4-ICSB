@@ -571,7 +571,7 @@ The following are some potential future blog features:
 
 Logo designed using Smashing Logos with references to cyber security topics.
 
-Logo Image
+![Logo](./docs/readme/rm_logo.jpg)
 
 ## Colour Scheme
 
