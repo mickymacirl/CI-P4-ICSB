@@ -717,6 +717,10 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 ## Credits
 
+### Bootstrap
+
+* Used elements of the *[Clean Blog](https://startbootstrap.com/theme/clean-blog)* bootstrap template for the styling and layout of the blog. 
+
 ### Markdown
 
 * Used *[Markdown Guide Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)* for markdown syntax.
