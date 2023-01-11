@@ -653,13 +653,67 @@ Logo fonts are:
 
 ## Deployment
 
+### Template
+
+* A repository called 'CI-P4-ICSB' was created using the *[Code Institute Python Essentials Template](https://github.com/Code-Institute-Org/python-essentials-template)*.
+
 ### Version Control
+
+Both *[Visual Studio](https://visualstudio.microsoft.com/)* code editor and *[GitPod](https://gitpod.io/workspaces)* were used to create this site and then pushed to the **GitHub** remote repository named ‘*[CI-P4-ICSB](https://github.com/mickymacirl/CI-P4-ICSB)*’.
+
+The following commands were used to push code to the remote repository:
+
+1. *git add .* was used to stage all files for commit changes.
+
+2. *git commit -m “commit message”* was used to add the changes to the local repository for upload during a push.
+
+3. *git push* was used to push all local changes to the remote repository on **GitHub**.
+
+### Deploying New Changes
+
+Once **GitHub Pages** is set up, normal **GithHub** flow updates the live page.
+
+### Forking the Repository
+
+Forking creates a copy of the repository to view and/or make changes without affecting the original.
+
+Below are the steps required:
+
+1. In **GitHub**, access the specific **GitHub** Repository - *[CI-P4-ICSB](https://github.com/mickymacirl/CI-P4-ICSB)*
+2. You will find and click the **"Fork"** button on the top right of the repository page underneath the user icon.
+3. You will have successfully created a copy of the original repository within the logged-in **GitHub** account.
+
+### Clone the 'CI-P4-ICSB' GitHub Code Repository locally
+
+1. Go to the page of the repository that you want to clone, the **CI-P4-ICSB GitHub** site: *[here](https://github.com/mickymacirl/CI-P4-ICSB)*
+2. Click on the **“Code”** menu and copy the URL.
+3. Use the git clone command along with the copied URL.
+4. git clone [https://github.com/USERNAME/REPOSITORY](https://github.com/USERNAME/REPOSITORY)
 
 ### Heroku Deployment
 
-### Run Locally
+This cyber security blog is deployed via Heroku.
 
-### Fork Project
+The steps for deployment are outlined in the Code Institute Template referenced above and are required.
+
+Pip3 freeze > requirements.txt was used to add imports for django, dj-database-url, dj3 cloudinary storage, psycopg2 and cloudinary prior to deployment to Heroku.
+
+1. Open an existing **Heroku** account or create a new one.  
+2. Next, choose to **Create New App** from the drop-down menu and the New button on the dashboard's upper right corner.
+3. You have to enter a distinct app name.
+4. Next, please select your region.
+5. Click on the **Create App button**.
+6. The project's **Deploy Tab** will appear on the following page.
+7. **Config Vars** is located after selecting the **Settings Tab**.
+8. Click **Reveal Config Vars**, type **DATABASE_URL** and **The ElephantSQL Postgres DB URL** into the Key and Value boxes, and then click **Add**.
+9. Click **Reveal Config Vars**, type **SECRET_KEY** and **The Random SecretKey** into the Key and Value boxes, and then click **Add**.
+10. Click **Reveal Config Vars**, type **COUDINARY_URL** and **The Cloudinary URL** into the Key and Value boxes, and then click **Add**.
+11. Click **Reveal Config Vars**, type **DISABLE_COLLECTSTATIC** and **1** into the Key and Value boxes, and then click **Add**.
+12. Scroll to the top of the page and now choose the **Deploy tab**.
+13. Select **GitHub**.
+14. Connect to **GitHub**.
+15. Search for the repository name and choose the connect button.
+16. Select the **Deploy** button at the bottom of the page and select the preferred deployment type, **Automatic** or **Manual Deploys**.
 
 ## Credits
 
