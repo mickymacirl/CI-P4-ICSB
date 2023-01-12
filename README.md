@@ -753,4 +753,6 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 ## Content
 
+* Used *[Circle Tech](https://pixabay.com/photos/circle-tech-technology-abstract-5090539/)* for background image.
+
 ## Acknowledgements

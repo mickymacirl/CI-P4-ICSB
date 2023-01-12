@@ -2,118 +2,160 @@
 <html class="font-weight-light" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Irish Cyber Security Blog</title>
-    <meta name="description" content="Irish Cyber Security Blog">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../assets/css/Corporate-Footer-Clean.css">
-    <link rel="stylesheet" href="https://res.cloudinary.com/ds197sglr/raw/upload/v1673400120/clean_f6pxlg.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Home - Irish Cyber Security Blog</title>
+  <meta name="description" content="Irish Cyber Security Blog">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://res.cloudinary.com/ds197sglr/raw/upload/v1673400120/clean_f6pxlg.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="index.html">Irish Cyber Security Blog</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="post.html">Blog Posts</a></li>
-                </ul>
-            </div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
+        class="navbar-brand-img" alt="logo">
+      <a class="navbar-brand" href="">Irish Cyber Security Blog</a>
+      <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+          class="fa fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto justify-content-end">
+          <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Contact us</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Blog Posts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead"
+    style="background-image:url('https://res.cloudinary.com/ds197sglr/image/upload/v1673452403/circle-g350c28cb3_1920_custom_tdf4vf.png');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+          <div class="site-heading">
+            <h1>Irish Cyber Security Blog</h1><span class="subheading">- Application - Network - Cloud - IoT -</span>
+          </div>
         </div>
-    </nav>
-    <header class="masthead" style="background-image:url('https://res.cloudinary.com/ds197sglr/image/upload/v1667237614/cld-sample-3.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="site-heading">
-                        <h1 data-bss-hover-animate="shake">Irish Cyber Security Blog</h1><span class="subheading">Irish Cyber Security News</span>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+  </header>
+  {% block content %}
+  <!-- Content Goes here -->
+  {% endblock content %}
+
+  <footer class="bg-primary text-center text-lg-start text-white page-footer">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673457796/base_logo_transparent_background_ynczwc.png" height="170" alt=""
+                 loading="lazy" />
+          </div>
+
+          <p class="text-center">Irish Cyber Security Blog - News and Comment</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white px-2" href="#!">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
-    </header>
-    {% block content %}
-    <!-- Content Goes here -->
-    {% endblock content %}
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-md-3">
-                    <h4>Lorem Ipsum dolor</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Consectetur adipiscing</a></li>
-                        <li><a href="#">Facilisis vulputate est eget</a></li>
-                        <li><a href="#">Lorem ipsum dolor</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h4>Sed elit eros</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Aenean condimentum viverra</a></li>
-                        <li><a href="#">Proin porta diam</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h4>Donec quis turpis vel</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Proin laoreet volutpat</a></li>
-                        <li><a href="#">Aenean tincidunt est</a></li>
-                    </ul>
-                    <h4>Nulla cursus finibus</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Curabitur elementum odio</a></li>
-                        <li><a href="#">Proin condimentum ac</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h4>Nullam ut rutrum elit</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Praesent gravida</a></li>
-                        <li><a href="#">Praesent egestas</a></li>
-                    </ul>
-                    <h4>Ut eget feugiat ante</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Etiam ornare vestibulum</a></li>
-                        <li><a href="#">Donec tincidunt tempus</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            <hr>
-            <div class="footer-legal">
-                <div class="float-md-right region"><a href="#"><img src="../assets/img/united-states-flag.png">United States</a></div>
-                <div class="d-inline-block copyright">
-                    <p class="d-inline-block">Copyright © 2018. All rights reserved.<br></p>
-                </div>
-                <div class="d-inline-block legal-links">
-                    <div class="d-inline-block item">
-                        <h5>Privacy Policy</h5>
-                    </div>
-                    <div class="d-inline-block item">
-                        <h5>Terms of Use</h5>
-                    </div>
-                    <div class="d-inline-block item">
-                        <h5>Legal</h5>
-                    </div>
-                    <div class="d-inline-block item">
-                        <h5>License</h5>
-                    </div>
-                </div>
-            </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Posts</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>Post List</a>
+            </li>
+            <li class="mb-2">
+              <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>Recent Posts</a>
+            </li>
+            <ul>
         </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/bs-init.js"></script>
-    <script src="../assets/js/clean-blog.js"></script>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Irish Cyber Security Blog</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>All Posts</a>
+            </li>
+            <li class="mb-2">
+              <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>About Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">Contact</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p><i class="fas fa-map-marker-alt pe-1"></i>Island Key, Teeling Way, North Strand, County Dublin, Ireland</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-1"></i>+ 01 234 567 89</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-1 mb-0"></i>info@irishcybersecurityblog.ie</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2023 Copyright:
+      <a class="text-white" href="https://icsblogp4.herokuapp.com/">ICSBlog</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/acbd4edc31.js" crossorigin="anonymous"></script>
+<script src="https://res.cloudinary.com/ds197sglr/raw/upload/v1673450757/blog_zszdui.js"></script>
 </body>
 
 </html>
