@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<style>
+<!-- <style>
     body {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
@@ -14,7 +14,7 @@
     .card {
         box-shadow: 0 16px 48px #E3E7EB;
     }
-</style>
+</style> -->
 
 <header class="masthead">
     <div class="overlay"></div>
@@ -31,16 +31,6 @@
     </div>
 </header>
 <div class="container">
-    <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
-            <div class="card mb-4">
-                Test
-            </div>
-            {% endfor %}
-        </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-    </div>
+    Index.html
 </div>
 {%endblock%}
