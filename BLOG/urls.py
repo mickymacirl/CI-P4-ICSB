@@ -10,7 +10,7 @@ urlpatterns = [
 ]
 
 # This is a list of URL patterns for the blog app.
-#urlpatterns = [
+# urlpatterns = [
 #    path('', views.PostList.as_view(), name='home'),
 #    # path('<slug:slug>/', views.post_detail, name='post_detail'),
-#]
+# ]
