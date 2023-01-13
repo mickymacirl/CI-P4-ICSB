@@ -9,6 +9,7 @@ STATUS = (
     (2, "Disabled"),
 )
 
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -28,10 +29,11 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Comment(models.Model):
-    PENDING=0
-    APPROVED=1
-    REJECTED=2
+    PENDING = 0
+    APPROVED = 1
+    REJECTED = 2
 
     STATUS_CHOICES = (
         (PENDING, 'Pending'),
@@ -40,13 +42,22 @@ class Comment(models.Model):
     )
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='comments', null=True)
+    # author = models.ForeignKey(User, on_delete=models.CASCADE,
+    # related_name='comments', null=True)
+    author = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='comments',
+        null=True
+    )
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
-    status = models.CharField(max_length=10, default='pending', choices=[('review', 'Review'), ('accepted', 'Accepted'), ('spam', 'Spam')])
+    status = models.CharField(max_length=10, default='pending', choices=[
+            ('review', 'Review'), ('accepted', 'Accepted'), ('spam', 'Spam')
+        ])
 
     class Meta:
         ordering = ['created_on']

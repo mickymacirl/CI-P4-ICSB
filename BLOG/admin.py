@@ -2,11 +2,13 @@ from django.contrib import admin
 from .models import Post, Comment
 
 # class PostAdmin(SummernoteModelAdmin):
-    # Fields to be rendered with the Summernote editor
+# Fields to be rendered with the Summernote editor
 #    summernote_fields = '__all__'
 
-# The PostAdmin class inherits from ModelAdmin, and defines a list_display, list_filter,
+# The PostAdmin class inherits from ModelAdmin,
+# and defines a list_display, list_filter,
 # search_fields, and prepopulated_fields
+
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'slug', 'author', 'created_on',
@@ -51,6 +53,7 @@ class PostAdmin(admin.ModelAdmin):
     save_on_top = True
     save_as = True
     actions = ['make_published', 'make_draft', 'make_disabled']
+
 
 class CommentAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'post', 'created_on', 'active', 'status',)

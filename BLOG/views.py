@@ -5,8 +5,6 @@ from django.views.generic import ListView
 from .models import Post, Comment
 from .forms import CommentForm
 
-
-
 # "This is a list view of the Post model,
 # and it will be rendered using the template
 # index.html."
@@ -18,10 +16,12 @@ from .forms import CommentForm
 class PostList(ListView):
     template_name = 'index.html'
 
+
 class AllPostView(ListView):
     model = Post
     template_name = 'all_posts.html'
     context_object_name = 'all_posts'
+
 
 def about(request):
     """
@@ -45,18 +45,19 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
     template_name = 'index.html'
 
+
 def post_list(request):
     """
-    It takes a request, gets the first five posts from the database, and returns a rendered template
-    with the list of posts
-    
-    :param request: The request is what's sent from the browser to the server. It contains all the
-    information about the request, such as the HTTP method, the GET and POST parameters, the cookies,
-    etc
+    It takes a request, gets the first five posts from the database, and
+    returns a rendered template with the list of posts
+    :param request: The request is what's sent from the browser to the server.
+    It contains all the     information about the request, such as the HTTP
+    method, the GET and POST parameters, the cookies, etc
     :return: The post_list is being returned.
     """
     post_list = Post.objects.all()[:5]
     return render(request, 'index.html', {'post_list': post_list})
+
 
 def post_detail(request, slug):
     template_name = 'post_detail.html'
@@ -82,4 +83,3 @@ def post_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
-
