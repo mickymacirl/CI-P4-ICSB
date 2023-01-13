@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
+from django.views.generic.list import ListView
+# from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+# from pure_pagination import PaginationMixin
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -16,6 +19,11 @@ from .forms import CommentForm
 class PostList(ListView):
     template_name = 'index.html'
 
+# class AllPostView(PaginationMixin, ListView):
+#     model = Post
+#     template_name = 'all_posts.html'
+#     context_object_name = 'all_posts'
+#     paginate_by = 5  # Number of items per page
 
 class AllPostView(ListView):
     model = Post
@@ -57,7 +65,6 @@ def post_list(request):
     """
     post_list = Post.objects.all()[:5]
     return render(request, 'index.html', {'post_list': post_list})
-
 
 def post_detail(request, slug):
     template_name = 'post_detail.html'

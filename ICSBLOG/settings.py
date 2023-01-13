@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
 #    'cloudinary_storage',
+#    'pure_pagination',
     'django.contrib.staticfiles',
 #    'cloudinary',
     'BLOG',
@@ -54,6 +55,11 @@ INSTALLED_APPS = [
 # This is a setting for the crispy forms package. It tells the package to use the bootstrap4 template
 # pack.
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+PAGINATION_SETTINGS = {
+    'PAGE_RANGE_DISPLAYED': 5,
+    'MARGIN_PAGES_DISPLAYED': 2,
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

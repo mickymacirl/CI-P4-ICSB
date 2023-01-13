@@ -24,8 +24,22 @@
                 </div>
             </div>
             {% endfor %}
+            <div class="post_detail">
+                <span class="post-meta">
+                    {% if all_posts.has_previous %}
+                        <a href="?page={{ all_posts.previous_page_number }}">previous</a>
+                    {% endif %}
+            
+                    <span class="current">{{ all_posts.number }}</span>
+            
+                    {% if all_posts.has_next %}
+                        <a href="?page={{ all_posts.next_page_number }}">next</a>
+                    {% endif %}
+                </span>
+            </div>    
         </div>
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
 </div>
+
 {% endblock %}

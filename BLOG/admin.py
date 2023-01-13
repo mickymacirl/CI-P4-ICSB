@@ -1,10 +1,6 @@
 from django.contrib import admin
 from .models import Post, Comment
 
-# class PostAdmin(SummernoteModelAdmin):
-# Fields to be rendered with the Summernote editor
-#    summernote_fields = '__all__'
-
 # The PostAdmin class inherits from ModelAdmin,
 # and defines a list_display, list_filter,
 # search_fields, and prepopulated_fields
