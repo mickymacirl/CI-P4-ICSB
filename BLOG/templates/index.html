@@ -31,6 +31,28 @@
     </div>
 </header>
 <div class="container">
-    Index.html
+    <div class="container">
+        <h2><i class="fa-regular fa-newspaper pe-2"></i>Latest Posts</h2>
+    </div>
+    <div class="container post-preview">
+        <div class="row">
+            <div class="col-md-8 mt-3 left">
+                {% for post in post_list %}
+                <div class="card mb-4">
+                    <div class="post-preview card-body">
+                        <a href="{% url 'post_detail' post.slug  %}">
+                            <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                        </a>
+                        <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
+                            {{ post.category }}</p>
+                        <p class="post-detail">{{post.content}}</p>
+                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary text-white">Read More &rarr;</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        </div>
+    </div>
 </div>
 {%endblock%}

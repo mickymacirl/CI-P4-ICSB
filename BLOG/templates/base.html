@@ -21,16 +21,16 @@
     <div class="container">
       <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
         class="navbar-brand-img" alt="logo">
-      <a class="navbar-brand" style="font-size: 0.9rem" href="{% url 'index' %}">Irish Cyber Security Blog</a>
+      <a class="navbar-brand" style="font-size: 0.9rem" href="{% url 'home' %}">Irish Cyber Security Blog</a>
       <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
           class="fa fa-bars"></i></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto justify-content-end">
-          <li class="nav-item"><a class="nav-link" href="{% url 'index' %}">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact us</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Blog Posts</a></li>
+          <li class="nav-item"><a class="nav-link" href="/all_posts/">Blog Posts</a></li>
         </ul>
       </div>
     </div>
@@ -101,7 +101,7 @@
               <a href="" class="text-white"><i class="fas fa-shield pe-2"></i>Post List</a>
             </li>
             <li class="mb-2">
-              <a href="{% url 'index' %}" class="text-white"><i class="fas fa-shield pe-2"></i>Recent Posts</a>
+              <a href="{% url 'home' %}" class="text-white"><i class="fas fa-shield pe-2"></i>Recent Posts</a>
             </li>
             <ul>
         </div>
