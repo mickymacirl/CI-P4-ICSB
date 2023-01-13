@@ -11,7 +11,7 @@
                     {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | Status:
                     {{ post.get_status_display }} | {% if post.is_pinned %}
                     <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}
-                </span></p>
+                    </span></p>
                 <p class="post-detail">{{post.content}}</p>
             </div>
         </div>

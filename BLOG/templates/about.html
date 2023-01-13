@@ -3,30 +3,38 @@
 {% block content %}
 
 <div class="container">
-    <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2 fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;" ></i>About Us</h2>
+    <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2 fa-fade"
+            style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>About Us</h2>
 </div>
-    <div class="container post-preview">
-        <div class="row">
-            <!-- Blog Entries Column -->
-            <div class="col-md-8 mt-3 left">
-                          <div class="card mb-2">
-                    <div class="post-preview card-body">
-                        <a href="{% url 'about' %}">
-                            <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2 fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;" ></i>About Us</h2>
-                        </a>
-                        <p class="post-title">
-                            Welcome to the Irish Cyber Security Blog, where we strive to provide the latest and most relevant information on cyber security and technology trends to keep you and your business safe online. </p>
-                        <p class="post-meta">Our team of experts is dedicated to keeping you informed and educated about the ever-evolving world of cyber threats and how to protect yourself and your organization from them. From thought-provoking commentary to actionable advice, we aim to be your go-to source for all things cyber security.</p>    
-                        <p class="post-meta">From thought-provoking commentary to actionable advice, we aim to be your go-to source for all things cyber security.</p>
-                        <a href="{% url 'contact' %}" class="btn btn-primary text-white">Find out more here &rarr;</a>
-                    </div>
+<div class="container post-preview">
+    <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8 mt-3 left">
+            <div class="card mb-2">
+                <div class="post-preview card-body">
+                    <a href="{% url 'about' %}">
+                        <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2 fa-fade"
+                                style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i>About Us</h2>
+                    </a>
+                    <p class="post-title">
+                        Welcome to the Irish Cyber Security Blog, where we strive to provide the latest and most
+                        relevant information on cyber security and technology trends to keep you and your business safe
+                        online. </p>
+                    <p class="post-meta">Our team of experts is dedicated to keeping you informed and educated about the
+                        ever-evolving world of cyber threats and how to protect yourself and your organization from
+                        them. From thought-provoking commentary to actionable advice, we aim to be your go-to source for
+                        all things cyber security.</p>
+                    <p class="post-meta">From thought-provoking commentary to actionable advice, we aim to be your go-to
+                        source for all things cyber security.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-primary text-white">Find out more here &rarr;</a>
                 </div>
-                
             </div>
-            {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
         </div>
-        <p class="text-white"></p>
-        <p class="text-white"></p>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
+    <p class="text-white"></p>
+    <p class="text-white"></p>
+</div>
 
 {% endblock %}
