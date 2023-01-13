@@ -1,6 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container">
+    <h2><i class="fa-regular fa-newspaper pe-2"></i>Post Detail</h2>
+</div>
+<div class="container">
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body post-preview">
@@ -16,11 +19,24 @@
             </div>
         </div>
 
+    <!--    <div class="container">
+            <h2><i class="fa-regular fa-newspaper pe-2"></i>Post Comments</h2>
+        </div> -->
+
         <div class="col-md-8 card mb-4  mt-3 ">
             <div class="card-body post-preview">
                 <!-- comments -->
-                <h2 class="post-meta">{{ comments.count }} comments</h2>
-
+                <h2 class="post-detail">{{ comments.count }} comments</h2>
+<!--                {% if comment.count == 0 %}
+                0 Comments
+                {% elif comment.count == 1 %}
+                1 Comment
+                {% else %}
+                {{ comment.count }} Comments
+                {% endif %}
+                {% for comment in comments %}
+                <p>{{ comment.status }} comments: {{ comment.count }}</p>
+                {% endfor %} -->
                 {% for comment in comments %}
                 <div class="post-detail" style="padding: 10px;">
                     <p class="font-weight-bold"><i class="fa-regular fa-comment"></i>
@@ -34,19 +50,23 @@
                     </p>
                     {{ comment.body | linebreaks }}
                     {{ comment.body }}</p>
-                    {% if comment.active %}
+<!--                    {% if comment.active %}
                     <p class="comment-status">Comment is active</p>
                     {% else %}
                     <p class="comment-status">Comment is inactive</p>
                     {% endif %}
-                    {% if comment.status == "Approved" %}
-                    Red Approved
-                    {% elif comment.status == "Pending" %}
-                    Yellow Pending
-                    {% elif comment.status == "Rejected" %}
-                    Red Rejected
+
+                    {% if comment.count == 0 %}
+                    Comments
+                    {% elif comment.count == 1 %}
+                    Comment
+                    {% else %}
+                    Comments
                     {% endif %}
-                    <!--                    <p class="post-detail>">{{ comment.body }} Status: {{ comment.get_status_display }}</p>
+
+
+
+                    <p class="post-detail>">{{ comment.body }} Status: {{ comment.get_status_display }}</p>
                     Status: {{ comment.get_status_display }} -->
                 </div>
                 {% endfor %}
@@ -72,5 +92,6 @@
         </div>
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
+    
 </div>
 {% endblock content %}

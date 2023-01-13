@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import RegexValidator
 
 
 # A tuple of tuples.
@@ -11,7 +12,7 @@ STATUS = (
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=200, unique=True)
+    title = models.CharField(max_length=100, unique=True, validators=[RegexValidator(r'^[a-zA-Z\s-]+$', 'Only alphabet, spaces and - characters are allowed')])
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_posts')
@@ -28,6 +29,25 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+# class Post(models.Model):
+#    title = models.CharField(max_length=200, unique=True)
+#    slug = models.SlugField(max_length=200, unique=True)
+#    author = models.ForeignKey(
+#        User, on_delete=models.CASCADE, related_name='blog_posts')
+#    updated_on = models.DateTimeField(auto_now=True)
+#    category = models.CharField(max_length=200, unique=False)
+#    content = models.TextField()
+#    created_on = models.DateTimeField(auto_now_add=True)
+#    status = models.IntegerField(choices=STATUS, default=2)
+#    is_pinned = models.BooleanField(default=False)
+
+#    class Meta:
+#        ordering = ['-is_pinned', '-id']
+        # ordering = ['-created_on']
+
+#    def __str__(self):
+#        return self.title
 
 
 class Comment(models.Model):

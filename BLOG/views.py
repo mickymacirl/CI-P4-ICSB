@@ -25,6 +25,7 @@ class PostList(ListView):
 #     context_object_name = 'all_posts'
 #     paginate_by = 5  # Number of items per page
 
+
 class AllPostView(ListView):
     model = Post
     template_name = 'all_posts.html'
@@ -49,6 +50,10 @@ def contact(request):
     return render(request, 'contact.html')
 
 
+# This view will return a list of posts that are published and ordered by the
+# most recently published post.
+# The first line of the class defines the model that will be used to retrieve
+# objects for the view.
 class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
     template_name = 'index.html'
@@ -66,7 +71,14 @@ def post_list(request):
     post_list = Post.objects.all()[:5]
     return render(request, 'index.html', {'post_list': post_list})
 
+
 def post_detail(request, slug):
+    """
+    It's rendering the template with the context
+    :param request: The current request object
+    :param slug: The slug is the URL-friendly version of the title
+    :return: The template is being rendered with the context.
+    """
     template_name = 'post_detail.html'
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True)

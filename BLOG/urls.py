@@ -3,6 +3,7 @@ from django.urls import path
 from .views import AllPostView
 from django.views.generic import TemplateView
 
+# A list of url patterns.
 urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
