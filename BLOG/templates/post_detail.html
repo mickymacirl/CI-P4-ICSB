@@ -9,8 +9,9 @@
                 </a>
                 <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                     {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | Status:
-                    {{ post.get_status_display }}</span></p>
-
+                    {{ post.get_status_display }} | {% if post.is_pinned %}
+                    <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}
+                </span></p>
                 <p class="post-detail">{{post.content}}</p>
             </div>
         </div>
