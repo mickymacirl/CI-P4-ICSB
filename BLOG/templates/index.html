@@ -1,20 +1,5 @@
 {% extends "base.html" %}
 {% block content %}
-<!-- <style>
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 18px;
-        background-color: #fdfdfd;
-    }
-
-    .head_text {
-        color: white;
-    }
-
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-    }
-</style> -->
 
 <header class="masthead">
     <div class="overlay"></div>
@@ -44,7 +29,7 @@
                             <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
                         </a>
                         <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
-                            {{ post.category }}</p>
+                            {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i></p>
                         <p class="post-detail">{{post.content}}</p>
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary text-white">Read More &rarr;</a>
                     </div>

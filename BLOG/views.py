@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
-from django.shortcuts import render, get_object_or_404
+
 
 
 # "This is a list view of the Post model,
@@ -15,9 +15,13 @@ from django.shortcuts import render, get_object_or_404
 # In this case, we're using the template index.html
 
 
-#class PostList(ListView):
-#    template_name = 'index.html'
+class PostList(ListView):
+    template_name = 'index.html'
 
+class AllPostView(ListView):
+    model = Post
+    template_name = 'all_posts.html'
+    context_object_name = 'all_posts'
 
 def about(request):
     """
@@ -79,7 +83,3 @@ def post_detail(request, slug):
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
 
-class AllPostView(ListView):
-    model = Post
-    template_name = 'all_posts.html'
-    context_object_name = 'all_posts'

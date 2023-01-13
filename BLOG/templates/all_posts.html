@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h2><i class="fa-regular fa-newspaper pe-2"></i>All Posts</h2>
+</div>
+    <div class="container post-preview">
+        <div class="row">
+            <!-- Blog Entries Column -->
+            <div class="col-md-8 mt-3 left">
+                {% for post in all_posts %}
+                <div class="card mb-4">
+                    <div class="post-preview card-body">
+                        <a href="{% url 'post_detail' post.slug %}">
+                            <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                        </a>
+                        <p class="post-meta">
+                            Created: {{ post.created_on }}<br>
+                            Category: {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i>
+                        </p>
+                        <p class="post-detail">{{ post.content|slice:":50" }}</p>
+                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary text-white">Read More &rarr;</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        </div>
+    </div>
+{% endblock %}
