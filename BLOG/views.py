@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
-from django.views.generic.list import ListView
 # from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # from pure_pagination import PaginationMixin
+from django.views.generic.list import ListView
 from .models import Post, Comment
 from .forms import CommentForm
 

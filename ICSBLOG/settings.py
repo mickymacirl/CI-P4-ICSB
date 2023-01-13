@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 #    'cloudinary',
     'BLOG',
     'crispy_forms',
+#    'pagination',
 ]
 
 # This is a setting for the crispy forms package. It tells the package to use the bootstrap4 template
@@ -66,6 +67,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+#    'pagination.middleware.PaginationMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
