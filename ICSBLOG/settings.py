@@ -132,9 +132,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'ds197sglr',
-    'API_KEY': '386852544353939',
-    'API_SECRET': '12edWFkIggh8fDyL73YaOcWuZAU',
+    'CLOUD_NAME': '',
+    'API_KEY': '',
+    'API_SECRET': '',
 }
 
 STATIC_URL = '/static/'
