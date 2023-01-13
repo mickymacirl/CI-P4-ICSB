@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 # A tuple of tuples.
 STATUS = (
     (0, "Draft"),
-    (1, "Publish"),
+    (1, "Published"),
     (2, "Disabled"),
 )
 
