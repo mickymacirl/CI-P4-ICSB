@@ -34,19 +34,19 @@
                     </p>
                     {{ comment.body | linebreaks }}
                     {{ comment.body }}</p>
-        {% if comment.active %}
-            <p class="comment-status">Comment is active</p>
-        {% else %}
-            <p class="comment-status">Comment is inactive</p>
-        {% endif %}
-        {% if comment.status == "1" %}
-            Red Approved
-        {% elif comment.status == "0" %}
-            Yellow Pending
-        {% elif comment.status == "2" %}
-            Red Rejected
-        {% endif %}
-<!--                    <p class="post-detail>">{{ comment.body }} Status: {{ comment.get_status_display }}</p>
+                    {% if comment.active %}
+                    <p class="comment-status">Comment is active</p>
+                    {% else %}
+                    <p class="comment-status">Comment is inactive</p>
+                    {% endif %}
+                    {% if comment.status == "Approved" %}
+                    Red Approved
+                    {% elif comment.status == "Pending" %}
+                    Yellow Pending
+                    {% elif comment.status == "Rejected" %}
+                    Red Rejected
+                    {% endif %}
+                    <!--                    <p class="post-detail>">{{ comment.body }} Status: {{ comment.get_status_display }}</p>
                     Status: {{ comment.get_status_display }} -->
                 </div>
                 {% endfor %}
