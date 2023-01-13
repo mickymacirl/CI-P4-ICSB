@@ -615,6 +615,10 @@ Admin Page
 
 ## Security
 
+### csrf_token
+
+{% csrf_token %} template tag is used to include a CSRF token in a Django template to protect against cross-site request forgery attacks by ensuring that form submissions are coming from an authenticated user and not from a malicious attacker. By including the CSRF token in forms that are sent via POST, PUT and DELETE methods, the server can verify the authenticity of the request and prevent unauthorized actions.
+
 ## The Surface Plane
 
 ## Design
@@ -726,6 +730,10 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 * Used *[Markdown Guide Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)* for markdown syntax.
 
 * Used *[Stack Edit.io](https://stackedit.io/)* for markdown testing and format.
+
+### Footer
+
+* Used elements of the *[Bootrap 4 footer template](https://www.mockplus.com/blog/post/bootstrap-4-footer-template)* for footer.
 
 ### Deployment and Install
 
