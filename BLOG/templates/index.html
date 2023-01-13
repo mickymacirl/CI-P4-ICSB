@@ -29,7 +29,7 @@
                             <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
                         </a>
                         <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
-                            {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i></p>
+                            {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | Status: {{ post.get_status_display }}</span></p>
                         <p class="post-detail">{{post.content}}</p>
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary text-white">Read More &rarr;</a>
                     </div>

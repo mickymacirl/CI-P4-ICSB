@@ -1,66 +1,75 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 left  top">
-      <div class="card-body post-preview">
-        <a href="{% url 'post_detail' post.slug  %}">
-          <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
-      </a>
-      <p class="post-meta">Posted by: {{ post.author }}</span> | Created: {{ post.created_on }}<br>Category:
-        {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i></p>
-    <p class="post-meta">Status: {{ post.get_status_display }}</p>
+    <div class="row">
+        <div class="col-md-8 card mb-4  mt-3 left  top">
+            <div class="card-body post-preview">
+                <a href="{% url 'post_detail' post.slug  %}">
+                    <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                </a>
+                <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
+                    {{ post.category }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | Status:
+                    {{ post.get_status_display }}</span></p>
 
-    <p class="post-detail">{{post.content}}</p>
-      </div>
-    </div>
-    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-
-    <div class="col-md-8 card mb-4  mt-3 ">
-      <div class="card-body post-preview">
-        <!-- comments -->
-        <h2 class="post-meta">{{ comments.count }} comments</h2>
-
-        {% for comment in comments %}
-        <div class="post-detail" style="padding: 10px;">
-          <p class="font-weight-bold"><i class="fa-regular fa-comment"></i>
-            {{ comment.name }} | 
-            <span class="post-detail">
-              {{ comment.created_on }} |
-            </span>
-            <span>
-              Approved by: <span class="font-weight-bold" style="color: #00a7b5;">{{ post.author }}</span>
-            </span>
-          </p>
-          {{ comment.body | linebreaks }}
-          <p class="post-detail>">{{ comment.body }}</p>
-          {% if comment.active %}
-              <p class="comment-status">g</p>
-          {% else %}
-              <p class="comment-status">r</p>
-          {% endif %}
+                <p class="post-detail">{{post.content}}</p>
+            </div>
         </div>
-        {% endfor %}
-        
-      </div>
-    </div>
-    <div class="col-md-8 card mb-4  mt-3 ">
-      {% load crispy_forms_tags %}
-      <div class="card-body post-preview comment">
-        {% if new_comment %}
-        <div class="alert alert-success" role="alert">
-          Thank you for Commenting! Please wait for approval?
-        </div>
+        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
+        <div class="col-md-8 card mb-4  mt-3 ">
+            <div class="card-body post-preview">
+                <!-- comments -->
+                <h2 class="post-meta">{{ comments.count }} comments</h2>
+
+                {% for comment in comments %}
+                <div class="post-detail" style="padding: 10px;">
+                    <p class="font-weight-bold"><i class="fa-regular fa-comment"></i>
+                        {{ comment.name }} |
+                        <span class="post-detail">
+                            {{ comment.created_on }} |
+                        </span>
+                        <span>
+                            Approved by: <span class="font-weight-bold" style="color: #00a7b5;">{{ post.author }}</span>
+                        </span>
+                    </p>
+                    {{ comment.body | linebreaks }}
+                    {{ comment.body }}</p>
+        {% if comment.active %}
+            <p class="comment-status">Comment is active</p>
         {% else %}
-        <h3>Leave a comment</h3>
-        <form method="post" style="margin-top: 1.3em;">
-          {{ comment_form | crispy }}
-          {% csrf_token %}
-          <button type="submit" class="btn btn-primary head_text">Submit</button>
-        </form>
+            <p class="comment-status">Comment is inactive</p>
         {% endif %}
-      </div>
+        {% if comment.status == "1" %}
+            Red Approved
+        {% elif comment.status == "0" %}
+            Yellow Pending
+        {% elif comment.status == "2" %}
+            Red Rejected
+        {% endif %}
+<!--                    <p class="post-detail>">{{ comment.body }} Status: {{ comment.get_status_display }}</p>
+                    Status: {{ comment.get_status_display }} -->
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+        <div class="col-md-8 card mb-4  mt-3 ">
+            {% load crispy_forms_tags %}
+            <div class="card-body post-preview comment">
+                {% if new_comment %}
+                <div class="alert alert-success" role="alert">
+                    Thank you for Commenting! Please wait for approval?
+                </div>
+                {% else %}
+                <h3>Leave a comment</h3>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary head_text">Submit</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 {% endblock content %}
