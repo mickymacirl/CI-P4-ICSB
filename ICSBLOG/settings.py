@@ -48,7 +48,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'BLOG',
+    'crispy_forms',
 ]
+
+# This is a setting for the crispy forms package. It tells the package to use the bootstrap4 template
+# pack.
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
