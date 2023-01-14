@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block head_title %}{% trans "404 Error" %}{% endblock %}
+
+{% block content %}
+<div class="container post-preview">
+  <div class="row">
+      <div class="col-md-8 mt-3 left">
+
+  <div class="card mb-4">
+    <div class="col-md-6 mx-auto">
+      <p class="card-title text-center">
+        <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png" alt="Icon">
+        <h2 style="text-align: center;">{% trans "404 Error" %}</h2>
+    </p>
+      <p>{% trans 'The page you requested could not be found, Error 404.' %}</p>
+      <p>{% trans 'Please check the URL and try again.' %}</p>
+      <br>
+      <br>
+  </div>    
+  </div>
+  </div>
+  {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+
+  </div>
+  </div>
+</div>
+</div>
+
+{% endblock %}

@@ -105,3 +105,13 @@ def post_detail(request, slug):
                                            'comments': comments,
                                            'new_comment': new_comment,
                                            'comment_form': comment_form})
+
+
+def custom_403(request, exception):
+    return render(request, '403.html')
+
+# in urls.py
+handler403 = 'path.to.custom_403'
+
+def handle_500(request):
+    return render(request, '500.html')

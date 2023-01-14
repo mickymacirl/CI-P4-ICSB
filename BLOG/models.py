@@ -11,6 +11,11 @@ STATUS = (
 )
 
 
+# The Post model has a title, slug, author, updated_on, category, content, created_on, status and
+# is_pinned field. 
+# 
+# The title field is a CharField. It has a max_length attribute set to 100. It is unique and has a
+# validator that only allows alphabet, spaces and - characters
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True, validators=[RegexValidator(r'^[a-zA-Z\s-]+$', 'Only alphabet, spaces and - characters are allowed')])
     slug = models.SlugField(max_length=200, unique=True)
@@ -31,6 +36,7 @@ class Post(models.Model):
         return self.title
 
 
+# Comment model that has a post, author, name, email, body, created_on, active, and status
 class Comment(models.Model):
     PENDING = 0
     APPROVED = 1
