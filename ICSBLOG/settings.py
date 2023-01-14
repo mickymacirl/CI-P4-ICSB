@@ -53,21 +53,16 @@ INSTALLED_APPS = [
     'crispy_forms',
 ]
 
-# This is a setting for the crispy forms package. It tells the package to use the bootstrap4 template
+# This is a setting for the crispy forms package.
+# It tells the package to use the bootstrap4 template
 # pack.
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-#PAGINATION_SETTINGS = {
-#    'PAGE_RANGE_DISPLAYED': 5,
-#    'MARGIN_PAGES_DISPLAYED': 2,
-#}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
-#    'pagination.middleware.PaginationMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -77,15 +72,12 @@ ROOT_URLCONF = 'ICSBLOG.urls'
 
 SITE_ID = 1
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 
-#django-allauth registraion settings
+# django-allauth registraion settings
 # ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 # ACCOUNT_EMAIL_REQUIRED = True
 # ACCOUNT_EMAIL_VERIFICATION = "mandatory"
@@ -94,8 +86,8 @@ AUTHENTICATION_BACKENDS = (
 # 1 day
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400
 
-#or any other page
-ACCOUNT_LOGOUT_REDIRECT_URL ='/all_posts/'
+# or any other page
+ACCOUNT_LOGOUT_REDIRECT_URL = '/all_posts/'
 
 # redirects to profile page if not configured.
 LOGIN_REDIRECT_URL = '/all_posts/'
@@ -171,18 +163,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# CLOUDINARY_STORAGE = {
-#    'CLOUD_NAME': '',
-#    'API_KEY': '',
-#    'API_SECRET': '',
-#}
-
 STATIC_URL = '/static/'
-# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
