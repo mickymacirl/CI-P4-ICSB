@@ -31,7 +31,7 @@
                         {{ comment.name }} |
                         <span class="post-detail">
                             {{ comment.created_on }} | Approved {{ comment.created_on|timesince }} ago by <span
-                                class="font-weight-bold" style="color: #00a7b5;">{{ post.author }}
+                                class="font-weight-bold" style="color: #00a7b5;">{{ comment.author.username }}
                             </span>
                             <hr>
                             
