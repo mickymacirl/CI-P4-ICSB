@@ -16,8 +16,8 @@ from .forms import CommentForm
 # In this case, we're using the template index.html
 
 
-class PostList(ListView):
-    template_name = 'index.html'
+# class PostList(ListView):
+#    template_name = 'index.html'
 
 # class AllPostView(PaginationMixin, ListView):
 #     model = Post

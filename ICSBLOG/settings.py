@@ -57,10 +57,10 @@ INSTALLED_APPS = [
 # pack.
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-PAGINATION_SETTINGS = {
-    'PAGE_RANGE_DISPLAYED': 5,
-    'MARGIN_PAGES_DISPLAYED': 2,
-}
+#PAGINATION_SETTINGS = {
+#    'PAGE_RANGE_DISPLAYED': 5,
+#    'MARGIN_PAGES_DISPLAYED': 2,
+#}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
