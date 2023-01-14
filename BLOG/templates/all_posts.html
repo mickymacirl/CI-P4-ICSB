@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container">
-    <h2><i class="fa-solid fa-newspaper pe-2"></i>All Posts</h2>
+    <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png" alt="Icon">All Posts</h2>
 </div>
 
 <div class="container post-preview">
@@ -23,7 +23,7 @@
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</span></p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary text-white">Read More &rarr;</a>
+                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary head_text btnform text-white">Read More &rarr;</a>
                 </div>
             </div>
             {% endfor %}

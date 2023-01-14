@@ -1,1 +1,18 @@
-test
+.form-control:focus {
+
+    color: #000;
+    background-color: #fff;
+    border:2px solid #00a7b5;
+    outline:1;
+    box-shadow: none;
+
+}
+
+.btnform{
+  background: #00a7b5;
+  border: #101820;
+}
+.btnform:hover {
+  background: #101820;
+  border: #00a7b5;
+}
