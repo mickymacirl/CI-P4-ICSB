@@ -41,7 +41,10 @@ ALLOWED_HOSTS = ["icsblogp4.herokuapp.com", "localhost"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'allauth.socialaccount',
     'django.contrib.contenttypes',
+    'allauth',
+    'allauth.account',
     'django.contrib.sessions',
     'django.contrib.messages',
 #    'cloudinary_storage',
@@ -75,10 +78,37 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ICSBLOG.urls'
 
+SITE_ID = 1
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+#django-allauth registraion settings
+# ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
+# ACCOUNT_EMAIL_REQUIRED = True
+# ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+# ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 5
+
+# 1 day
+ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400
+
+#or any other page
+ACCOUNT_LOGOUT_REDIRECT_URL ='/all_posts/'
+
+# redirects to profile page if not configured.
+LOGIN_REDIRECT_URL = '/all_posts/'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.normpath(os.path.join(BASE_DIR, 'templates')),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
