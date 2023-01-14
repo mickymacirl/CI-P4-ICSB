@@ -2,7 +2,8 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png" alt="Icon"> Post Detail</h2>
+    <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
+            alt="Icon"> Post Detail</h2>
 </div>
 <div class="container">
     <div class="row">
@@ -35,9 +36,9 @@
                                 class="font-weight-bold" style="color: #00a7b5;">{{ comment.author.username }}
                             </span>
                             <hr>
-                            
-                            </p>
-                            {{ comment.body | linebreaks }}
+
+                    </p>
+                    {{ comment.body | linebreaks }}
                 </div>
                 <hr>
                 {% endfor %}
@@ -60,9 +61,9 @@
                 </form>
                 {% endif %}
             </div>
-            
+
         </div>
-<!--        -->
+        <!--        -->
     </div>
 
 </div>

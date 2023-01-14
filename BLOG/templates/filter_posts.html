@@ -1,28 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Filter Posts</h1>
-  <form method="GET" action="{% url 'filter_post' %}">
-    <label for="status">Status:</label>
-    <select name="status" id="status">
-      <option value="">All</option>
-      <option value="0">Draft</option>
-      <option value="1">Published</option>
-      <option value="2">Disabled</option>
-    </select>
-    <br>
-    <label for="category">Category:</label>
-    <input type="text" name="category" id="category">
-    <br>
-    <input type="submit" value="Filter">
-  </form>
-  <hr>
-  {% for post in posts %}
-    <h2>{{ post.title }}</h2>
-    <p>Status: {{ post.get_status_display }}</p>
-    <p>Category: {{ post.category }}</p>
-    <p>{{ post.content|slice:":200" }}... <a href="{% url 'post_detail' post.slug %}">Read more</a></p>
-  {% empty %}
-    <p>No posts found.</p>
-  {% endfor %}
+<h1>Filter Posts</h1>
+<form method="GET" action="{% url 'filter_post' %}">
+  <label for="status">Status:</label>
+  <select name="status" id="status">
+    <option value="">All</option>
+    <option value="0">Draft</option>
+    <option value="1">Published</option>
+    <option value="2">Disabled</option>
+  </select>
+  <br>
+  <label for="category">Category:</label>
+  <input type="text" name="category" id="category">
+  <br>
+  <input type="submit" value="Filter">
+</form>
+<hr>
+{% for post in posts %}
+<h2>{{ post.title }}</h2>
+<p>Status: {{ post.get_status_display }}</p>
+<p>Category: {{ post.category }}</p>
+<p>{{ post.content|slice:":200" }}... <a href="{% url 'post_detail' post.slug %}">Read more</a></p>
+{% empty %}
+<p>No posts found.</p>
+{% endfor %}
 {% endblock %}
