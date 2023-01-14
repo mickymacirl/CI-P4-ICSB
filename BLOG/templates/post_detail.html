@@ -1,19 +1,19 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container">
-    <h2><i class="fa-regular fa-newspaper pe-2"></i>Post Detail</h2>
+    <h2><i class="fa-solid fa-newspaper pe-2"></i>Post Detail</h2>
 </div>
 <div class="container">
     <div class="row">
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body post-preview">
                 <a href="{% url 'post_detail' post.slug  %}">
-                    <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                    <h1 class="post-title"><i class="fa-solid fa-newspaper pe-2"></i>{{ post.title }}</h2>
                 </a>
                 <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                     {{ post.category }} |
                     {{ post.get_status_display }} {{ post.created_on|timesince }} ago | {{ post.comments.count }} <i
-                        class="fa-regular fa-comment"></i> | {% if post.is_pinned %}
+                        class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                     <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}
                     </span></p>
                 <hr>
@@ -27,7 +27,7 @@
                 <hr>
                 {% for comment in comments %}
                 <div class="post-detail" style="padding: 10px;">
-                    <p class="post_list"><i class="fa-regular fa-comment"></i>
+                    <p class="post_list"><i class="fa-solid fa-comment"></i>
                         {{ comment.name }} |
                         <span class="post-detail">
                             {{ comment.created_on }} | Approved {{ comment.created_on|timesince }} ago by <span

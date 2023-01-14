@@ -17,7 +17,7 @@
 </header>
 <div class="container">
     <div class="container">
-        <h2><i class="fa-regular fa-newspaper pe-2"></i>Latest Posts</h2>
+        <h2><i class="fa-solid fa-newspaper pe-2"></i>Latest Posts</h2>
     </div>
     <div class="container post-preview">
         <div class="row">
@@ -26,15 +26,14 @@
                 <div class="card mb-4">
                     <div class="post-preview card-body">
                         <a href="{% url 'post_detail' post.slug  %}">
-                            <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                            <h1 class="post-title"><i class="fa-solid fa-newspaper pe-2"></i>{{ post.title }}</h2>
                         </a>
                         <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                             {{ post.category }} | 
-                            Status: {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | {% if post.is_pinned %}
+                            Status: {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                             <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
                         <hr>
                         <p class="post-detail">{{post.content}}</p>
-                        <hr>
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary text-white">Read More
                             &rarr;</a>
                         

@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container">
-    <h2><i class="fa-regular fa-newspaper pe-2"></i>All Posts</h2>
+    <h2><i class="fa-solid fa-newspaper pe-2"></i>All Posts</h2>
 </div>
 
 <div class="container post-preview">
@@ -14,30 +14,18 @@
             <div class="card mb-4">
                 <div class="post-preview card-body">
                     <a href="{% url 'post_detail' post.slug %}">
-                        <h2 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                        <h2 class="post-title"><i class="fa-solid fa-newspaper pe-2"></i>{{ post.title }}</h2>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                         {{ post.category }} | Status:
-                        {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-regular fa-comment"></i> | {% if post.is_pinned %}
+                        {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</span></p>
+                    <hr>
                     <p class="post-detail">{{ post.content|slice:":50" }}</p>
                     <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary text-white">Read More &rarr;</a>
                 </div>
             </div>
             {% endfor %}
-            <div class="post_detail">
-                <span class="post-meta">
-                    {% if all_posts.has_previous %}
-                        <a href="?page={{ all_posts.previous_page_number }}">previous</a>
-                    {% endif %}
-            
-                    <span class="current">{{ all_posts.number }}</span>
-            
-                    {% if all_posts.has_next %}
-                        <a href="?page={{ all_posts.next_page_number }}">next</a>
-                    {% endif %}
-                </span>
-            </div>    
         </div>
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
