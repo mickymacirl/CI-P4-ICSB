@@ -34,7 +34,7 @@
                             Status: {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                             <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
                         <hr>
-                        <p class="post-detail">{{post.content}}</p>
+                        <p class="post-detail">{{ post.content|slice:":200" }}</p>
                         <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary text-white">Read More
                             &rarr;</a>
                         
