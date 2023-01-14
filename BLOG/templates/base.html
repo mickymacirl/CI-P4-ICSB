@@ -31,7 +31,16 @@
           class="fa fa-bars"></i></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto justify-content-end">
-          <li class="nav-item">Welcome <a class="nav-link" href=""> {{ User }} </a></li>
+          <li class="nav-item">
+            {% if user.is_authenticated %}
+              <a class="nav-link" href="">{% user_display user %}</a>
+            {% endif %}
+            </li>
+          <li class="nav-item">
+            {% if not user.is_authenticated %}
+              <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+            {% endif %}
+            </li>
           <li class="nav-item"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
           <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact us</a></li>
