@@ -41,19 +41,16 @@ ALLOWED_HOSTS = ["icsblogp4.herokuapp.com", "localhost"]
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    'allauth.socialaccount',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'allauth',
     'allauth.account',
+    'allauth.socialaccount',
     'django.contrib.sessions',
     'django.contrib.messages',
-#    'cloudinary_storage',
-#    'pure_pagination',
     'django.contrib.staticfiles',
-#    'cloudinary',
     'BLOG',
     'crispy_forms',
-#    'pagination',
 ]
 
 # This is a setting for the crispy forms package. It tells the package to use the bootstrap4 template
