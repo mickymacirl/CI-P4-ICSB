@@ -30,6 +30,7 @@ class AllPostView(ListView):
     model = Post
     template_name = 'all_posts.html'
     context_object_name = 'all_posts'
+    paginate_by = 5
 
 
 def about(request):
@@ -55,11 +56,13 @@ def contact(request):
 # The first line of the class defines the model that will be used to retrieve
 # objects for the view.
 class PostList(generic.ListView):
-    queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
+    # queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
+    paginate_by = 5
 
 
-def post_list(request):
+# def post_list(request):
     """
     It takes a request, gets the first five posts from the database, and
     returns a rendered template with the list of posts
@@ -68,8 +71,8 @@ def post_list(request):
     method, the GET and POST parameters, the cookies, etc
     :return: The post_list is being returned.
     """
-    post_list = Post.objects.all()[:5]
-    return render(request, 'index.html', {'post_list': post_list})
+#    post_list = Post.objects.all()[:5]
+#    return render(request, 'index.html', {'post_list': post_list})
 
 
 def post_detail(request, slug):
