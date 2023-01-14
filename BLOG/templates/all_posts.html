@@ -17,7 +17,7 @@
                         <h2 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
-                        {{ post.category }} | Status:
+                        {{ post.category }} | <i class="fas fa-newspaper"></i>
                         {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> |
                         {% if post.is_pinned %}
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</span></p>

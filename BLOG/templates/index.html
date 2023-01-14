@@ -33,7 +33,7 @@
                         </a>
                         <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                             {{ post.category }} | 
-                            Status: {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
+                            <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                             <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
                         <hr>
                         <p class="post-detail">{{ post.content|slice:":200" }}</p>
