@@ -32,7 +32,7 @@ from .forms import CommentForm
 #     context_object_name = 'all_posts'
 #     paginate_by = 5  # Number of items per page
 
-
+# All Posts
 class AllPostView(ListView):
     model = Post
     template_name = 'all_posts.html'
@@ -62,6 +62,8 @@ def contact(request):
 # most recently published post.
 # The first line of the class defines the model that will be used to retrieve
 # objects for the view.
+
+# Home Page
 class PostList(generic.ListView):
     # queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
     queryset = Post.objects.filter(status=1).order_by('-created_on')
