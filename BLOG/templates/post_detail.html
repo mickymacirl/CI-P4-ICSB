@@ -46,24 +46,29 @@
             </div>
         </div>
         <div class="col-md-8 card mb-4  mt-3 ">
-            {% load crispy_forms_tags %}
-            <div class="card-body post-preview comment">
-                {% if new_comment %}
-                <div class="alert alert-success" role="alert">
-                    Thank you for Commenting! Please wait for approval?
+            {% if user.is_authenticated %}
+                {% load crispy_forms_tags %}
+                <div class="card-body post-preview comment">
+                    {% if new_comment %}
+                        <div class="alert alert-success" role="alert">
+                            Thank you for Commenting! Please wait for approval?
+                        </div>
+                    {% else %}
+                        <h3>Leave a comment</h3>
+                        <form method="post" style="margin-top: 1.0em;">
+                            {{ comment_form | crispy }}
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-primary head_text btnform">Submit</button>
+                        </form>
+                    {% endif %}
                 </div>
-                {% else %}
-                <h3>Leave a comment</h3>
-                <form method="post" style="margin-top: 1.0em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-primary head_text btnform">Submit</button>
-                </form>
-                {% endif %}
-            </div>
-
+            {% else %}
+                <div class="card-body post-preview comment">
+                    <p>You must be logged in to post a comment. <a href="{% url 'account_login' %}">Login</a></p>
+                </div>
+            {% endif %}
         </div>
-        <!--        -->
+        </div>
     </div>
 
 </div>

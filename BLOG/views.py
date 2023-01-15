@@ -115,3 +115,4 @@ handler403 = 'path.to.custom_403'
 
 def handle_500(request):
     return render(request, '500.html')
+    
