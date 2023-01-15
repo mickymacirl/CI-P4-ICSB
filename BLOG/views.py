@@ -22,7 +22,7 @@ from .forms import CommentForm
 # In this case, we're using the template index.html
 
 
-#class PostList(generic.ListView):
+# class PostList(generic.ListView):
 #    queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
 #    template_name = 'index.html'
 
@@ -63,13 +63,13 @@ def contact(request):
 # The first line of the class defines the model that will be used to retrieve
 # objects for the view.
 
-# Home Page
+# Home Page View
 class PostList(generic.ListView):
-    # queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
+   # queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'post_list.html'
+#    template_name = 'post_list.html'
     template_name = 'index.html'
-    paginate_by = 5
+    paginate_by = 6
 
 
 # def post_list(request):

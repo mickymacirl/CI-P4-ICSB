@@ -2,13 +2,12 @@
 
 {% block content %}
 
+
 <div class="container">
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
-            alt="Icon">All Posts</h2>
+            alt="Icon">Post List</h2>
 </div>
-
-post_list
-
+this is post_lists
 <div class="container post-preview">
     <div class="row">
         <!-- Blog Entries Column -->
@@ -16,8 +15,7 @@ post_list
             {% for post in all_posts %}
             <div class="card mb-4">
                 <div class="post-preview card-body">
-                    <!-- <a href="{% url 'post_list' post.slug %}"> -->
-                        <a href="{% url 'post_detail' %}"></a>
+                    <a href="">
                         <h2 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
@@ -27,7 +25,7 @@ post_list
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</span></p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' %}"
+                    <a href=""
                         class="btn btn-primary head_text btnform text-white">Read More &rarr;</a>
                 </div>
             </div>
@@ -51,5 +49,5 @@ post_list
     </div>
 </div>
 </div>
-    
+
 {% endblock %}

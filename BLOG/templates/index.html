@@ -29,6 +29,7 @@ post_list_index
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
             <div class="card mb-4">
+                
                 <div class="post-preview card-body">
                     <a href="{% url 'post_list' %}">
                         <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
