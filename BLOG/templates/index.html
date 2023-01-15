@@ -30,7 +30,7 @@
             {% for post in post_list %}
             <div class="card mb-4">
                 <div class="post-preview card-body">
-                    <a href="{% url 'post_detail' post.slug  %}">
+                    <a href="{% url 'post_list' %}">
                         <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
@@ -40,7 +40,7 @@
                         <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}"
+                    <a href="{% url 'post_list' %}"
                         class="btn btn-primary head_text btnform text-white">Read More
                         &rarr;</a>
 

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>List of Posts</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Created On</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+            <tr>
+                <td>{{ post.title }}</td>
+                <td>{{ post.author }}</td>
+                <td>{{ post.created_on }}</td>
+                <td>
+                    <a href="{% url 'adminpost_detail' post.slug %}">View</a> |
+                    <a href="{% url 'adminpost_update' post.pk %}">Edit</a> |
+                    <a href="{% url 'adminpost_delete' post.pk %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{% url 'adminpost_create' %}">Create a new post</a>
+{% endblock content %}

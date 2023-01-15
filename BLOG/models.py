@@ -30,7 +30,7 @@ class Post(models.Model):
 
     class Meta:
         ordering = ['-is_pinned', '-id']
-        ordering = ['-created_on']
+    #    ordering = ['-created_on']
 
     def __str__(self):
         return self.title
