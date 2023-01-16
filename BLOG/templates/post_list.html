@@ -11,7 +11,7 @@ this is post_lists
 
 <h2 class="h2postlist"> postlist </h2>
 <div class="container post-preview">
-    <div class="row">{% block sidebar %} {% include 'sidebaradmin.html' %} {% endblock sidebar %}
+    <div class="row">
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
             {% for post in posts %}
@@ -49,6 +49,7 @@ this is post_lists
         {% endif %}
     </div>
 </div>
+{% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
 </div>
 
 {% endblock %}

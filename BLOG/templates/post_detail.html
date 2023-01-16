@@ -10,8 +10,8 @@
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body post-preview">
                 <a href="{% url 'post_detail' post.slug %}">
-                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li>
-                    <li><a href="{% url 'post_delete' post.slug %}">Delete this post</a></li>
+<!--                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li> 
+                    <li><a href="{% url 'post_delete' post.slug %}">Delete this post</a></li>-->
                     TEST: {{ post.slug }}
                     <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                 </a>
@@ -51,21 +51,30 @@
         </div>
         <div class="col-md-8 card mb-4  mt-3 ">
             {% if user.is_authenticated %}
-                {% load crispy_forms_tags %}
-                <div class="card-body post-preview comment">
-                    {% if new_comment %}
-                        <div class="alert alert-success" role="alert">
-                            Thank you for Commenting! Please wait for approval?
-                        </div>
-                    {% else %}
-                        <h3>Leave a comment</h3>
-                        <form method="post" style="margin-top: 1.0em;">
-                            {{ comment_form | crispy }}
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-primary head_text btnform">Submit</button>
-                        </form>
-                    {% endif %}
-                </div>
+                {% if user.is_superuser %}
+                    <li>Welcome SuperUser</li>
+                    <li><a href="/posts/create">Create a post</a></li>
+                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li>
+                    <li><a href="{% url 'post_delete' post.slug %}">Delete this post</a></li>
+                {% elif user.is_staff %}
+                    <li>Welcome Staff</li>
+                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li>
+                {% elif user.is_staff and user.is_superuser %}
+                    <div class="card-body post-preview comment">
+                        {% if new_comment %}
+                            <div class="alert alert-success" role="alert">
+                                Thank you for Commenting! Please wait for approval?
+                            </div>
+                        {% else %}
+                            <h3>Leave a comment</h3>
+                            <form method="post" style="margin-top: 1.0em;">
+                                {{ comment_form | crispy }}
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-primary head_text btnform">Submit</button>
+                            </form>
+                        {% endif %}
+                    </div>
+                {% endif %}
             {% else %}
                 <div class="card-body post-preview comment">
                     <p>You must be logged in to post a comment. <a href="{% url 'account_login' %}">Login</a></p>

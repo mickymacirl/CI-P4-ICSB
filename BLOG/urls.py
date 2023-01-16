@@ -15,14 +15,15 @@ urlpatterns = [
     path('posts/', PostListView.as_view(), name='post_list'),
     
     # path('<pk>/update/', PostListView.as_view(), name='post_update'),
+    path('posts/create/', PostCreateView.as_view(), name='post_create'),
     path('post/<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
     path('post/<slug:slug>/delete/', PostDeleteView.as_view(), name='post_delete'),
-    #path('post/<int:pk>/', PostDetailView.as_view(), name='post_view'),
+    # path('post/<int:pk>/', PostDetailView.as_view(), name='post_view'),
     path('post/new/', PostCreateView.as_view(), name='post_view'),
    # path('post/<int:pk>/edit/', PostUpdateView.as_view(), name='post_view'),
 
     # post create url
-    path('posts/create/', PostCreateView.as_view(), name='post_create'),
+    # path('posts/create/', PostCreateView.as_view(), name='post_create'),
     # post update url
     # path('posts/<int:pk>/edit/', PostUpdateView.as_view(), name='post_update'),
     
