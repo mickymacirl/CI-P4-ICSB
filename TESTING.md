@@ -25,6 +25,7 @@ An email is recieved with a link to sign up, upon clicking the link, registratio
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
 - Home -> index.html
+- 
 
 All navigation links directed to the corect pages as expected.
 
@@ -36,7 +37,7 @@ Testing was performed on the footer links by clicking the font awesome icons and
 
 ## Negative Testing
 
-Tests were performed on the create booking to ensure that:
+Tests were performed on the create post to ensure that:
 
 ## Unit Testing
 
