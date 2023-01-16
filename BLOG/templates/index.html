@@ -22,27 +22,25 @@
 <div class="container">
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
             alt="Icon"> Last 5 Posts</h2>
-post_list_index
+    post_list_index
 </div>
 <div class="container post-preview">
     <div class="row">
         <div class="col-md-8 mt-3 left">
             {% for post in post_list %}
             <div class="card mb-4">
-                
                 <div class="post-preview card-body">
                     <a href="{% url 'post_list' %}">
-                        <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
+                        <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h1>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                         {{ post.category }} |
                         <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i
                             class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
-                        <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
+                        <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_list' %}"
-                        class="btn btn-primary head_text btnform text-white">Read More
+                    <a href="{% url 'post_list' %}" class="btn btn-primary head_text btnform text-white">Read More
                         &rarr;</a>
 
                 </div>
@@ -52,5 +50,5 @@ post_list_index
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
 </div>
-</div>
+
 {%endblock%}
