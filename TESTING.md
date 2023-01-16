@@ -114,3 +114,14 @@ The blog was tested on the following screen sizes using Chrome Dev tools, Media 
     Nest Hub Max
 
 ## Bugs
+
+1. ~~Error being displayed that post detail cannot pass the slug for the post which is preventing posts from loading.~~
+
+While testing create post, I created a post which didn't have a slug set. This prevented the {% url 'post_detail' post.slug %} view from opening.
+
+Fixed by adding the following to the post model, that if the slug field is empty, then add spaces to the title with dashes and save to the slug field.
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = self.title.replace(' ', '-')
+        super().save(*args, **kwargs)
