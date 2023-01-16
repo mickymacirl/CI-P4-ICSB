@@ -24,7 +24,7 @@ this is all_posts
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="" class="btn btn-primary head_text btnform text-white">Read More &rarr;</a>
+                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary head_text btnform text-white">Read More &rarr;</a>
                 </div>
             </div>
             {% endfor %}
