@@ -2,12 +2,9 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
-            alt="Icon"> Post Detail</h2>
-</div>
-<div class="container">
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
+      <div class="col-md-8 card mb-4  mt-3 left  top">
+        <div class="card-body post-preview">
             {% if user.is_authenticated %}
             {% if user.is_superuser %}
             <div style="display:inline-block;">
@@ -41,68 +38,65 @@
                 <i class="fas fa-user pe-2"></i><a href="{% url 'admin:index' %}">Edit user</a>
                 <i class="fas fa-comment pe-2"></i><a href="{% url 'admin:index' %}">Create comment on this post</a>
             </div>
-            <div class="card-body post-preview comment">
-                <h3>Leave a comment</h3>
-                <form method="post" style="margin-top: 1.0em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-primary head_text btnform">Submit</button>
-                </form>
-                {% endif %}
+                     {% endif %}
             </div>
 
             {% else %}
             <div class="card-body post-preview comment">
-                <p>You must be logged in to post a comment. <a href="{% url 'account_login' %}">Login</a></p>
+                <p class="text-center">You must be logged in to post a comment. </p>
+                <p class="text-center "><a href="{% url 'account_login' %}">Login</a> or <a href="{% url 'account_login' %}">Register</a> here.</p>
             </div>
             {% endif %}
         </div>
 
-        <div class="card-body post-preview">
-            <a href="{% url 'post_detail' post.slug %}">
-                <!--                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li> 
-                    <li><a href="{% url 'post_delete' post.slug %}">Delete this post</a></li>-->
-                TEST: {{ post.slug }}
-                <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
-            </a>
-            <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
-                {{ post.category }} | <i class="fas fa-newspaper"></i>
-                {{ post.get_status_display }} {{ post.created_on|timesince }} ago | {{ post.comments.count }} <i
-                    class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
-                <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}
-                </span></p>
-
-            <hr>
-            <p class="post_detail">{{post.content}}</p>
+          <a href="{% url 'post_detail' post.slug  %}">
+            <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+        </a>
+        <p class="post-meta">Posted by: {{ post.author }}</span> | Created: {{ post.created_on }}<br>Category:
+          {{ post.category }}</p>
+      <p class="post-detail">{{post.content}}</p>
         </div>
-    </div>
-
-    <div class="col-md-8 card mb-4  mt-3 ">
+      </div>
+      {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  
+      <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body post-preview">
-            <!-- comments -->
-            <h2 class="post-detail">{{ comments.count }} comments</h2>
-            <hr>
-            {% for comment in comments %}
-            <div class="post-detail" style="padding: 10px;">
-                <p class="post_list"><i class="fa-solid fa-comment"></i>
-                    {{ comment.name }} |
-                    <span class="post-detail">
-                        {{ comment.created_on }} | Approved {{ comment.created_on|timesince }} ago by <span
-                            class="font-weight-bold" style="color: #00a7b5;">{{ comment.author.username }}
-                        </span>
-                        <hr>
-
-                </p>
-                {{ comment.body | linebreaks }}
-            </div>
-            <hr>
-            {% endfor %}
-
+          <!-- comments -->
+          <h2 class="post-meta">{{ comments.count }} comments</h2>
+  
+          {% for comment in comments %}
+          <div class="post-detail" style="padding: 10px;">
+            <p class="font-weight-bold"><i class="fa-regular fa-comment"></i>
+              {{ comment.name }} | 
+              <span class="post-detail">
+                {{ comment.created_on }} |
+              </span>
+              <span>
+                Approved by: <span class="font-weight-bold" style="color: #00a7b5;">{{ post.author }}</span>
+              </span>
+            </p>
+            {{ comment.body | linebreaks }}
+          </div>
+          {% endfor %}
         </div>
+      </div>
+      <div class="col-md-8 card mb-4  mt-3 ">
+        {% load crispy_forms_tags %}
+                <div class="card-body post-preview comment">
+          {% if user.is_authenticated and new_comment %}
+          <div class="alert alert-success" role="alert">
+            Thank you for Commenting! Please wait for approval?
+          </div>
+          {% elif user.is_authenticated %}
+          <h3>Leave a comment</h3>
+          <form method="post" style="margin-top: 1.3em;">
+            {{ comment_form | crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-primary head_text">Submit</button>
+          </form>
+          {% endif %}
+        </div>
+      </div>
     </div>
-
-</div>
-</div>
-
-</div>
-{% endblock content %}
+  </div>
+  {% endblock content %}
