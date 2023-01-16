@@ -12,7 +12,6 @@
 <div class="container post-preview">
   <div class="row">
     <div class="col-md-8 mt-3 left">
-
       <div class="card mb-4">
         <div class="col-md-6 mx-auto">
           <p class="card-title text-center">
@@ -20,28 +19,25 @@
               src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
               alt="Icon Login">
             <h2 style="text-align: center;">{% trans "Sign In" %}</h2>
-          </p>
-          <form class="login" method="POST" action="{% url 'account_login' %}">
-            {% csrf_token %}
-            {{ form.as_p }}
-            {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-            <button class="btn btn-primary head_text btnform" type="submit">{% trans "Sign In" %}</button>
-          </form>
-          <p class="card-body" style="text-align: center;">{% blocktrans %}If you have not created an account yet, then
-            please
-            <a href="{{ signup_url }}">register</a> first.{% endblocktrans %} </p>
-          <br>
-          <br>
+            <form class="login" method="POST" action="{% url 'account_login' %}">
+              {% csrf_token %}
+              {{ form.as_p }}
+              {% if redirect_field_value %}
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              {% endif %}
+              <button class="btn btn-primary head_text btnform" type="submit">{% trans "Sign In" %}</button>
+            </form>
+            <p class="card-body" style="text-align: center;">{% blocktrans %}If you have not created an account yet,
+              then
+              please
+              <a href="{{ signup_url }}">register</a> first.{% endblocktrans %} </p>
+            <br>
+            <br>
         </div>
       </div>
     </div>
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
   </div>
-
-</div>
-</div>
 </div>
 
 {% endblock %}
