@@ -32,8 +32,15 @@ class Post(models.Model):
         ordering = ['-is_pinned', '-id']
     #    ordering = ['-created_on']
 
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = self.title.replace(' ', '-')
+        super().save(*args, **kwargs)
+
     def __str__(self):
         return self.title
+
+    
 
 
 # Comment model that has a post, author, name, email, body, created_on, active, and status

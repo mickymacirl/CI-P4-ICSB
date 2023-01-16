@@ -28,5 +28,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('login/', allauth_views.LoginView.as_view(), name='login'),
-    path('<slug:slug>/', views.post_detail, name='post_view'),
+    path('<slug:slug>/', views.post_detail, name='post_detail'),
 ]

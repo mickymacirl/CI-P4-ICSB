@@ -71,6 +71,9 @@ class PostList(generic.ListView):
     template_name = 'index.html'
     paginate_by = 6
 
+    for i in queryset:
+        print("SLUG: ",  i.slug)
+
 
 # def post_list(request):
     """
@@ -96,6 +99,7 @@ def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True)
     new_comment = None
+
     # Comment posted
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
