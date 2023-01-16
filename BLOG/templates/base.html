@@ -33,7 +33,7 @@
         <ul class="navbar-nav ml-auto justify-content-end">
           <li class="nav-item">
             {% if user.is_authenticated %}
-            <a class="nav-link" href="{% url 'home' %}">{% user_display user %} </a>
+            <a class="nav-link" href="/posts/">{% user_display user %} </a>
             {% endif %}
           </li>
           <li class="nav-item">
@@ -66,7 +66,7 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
           <div class="site-heading">
-            <h1>Irish Cyber Security Blog</h1><span class="subheading">- Application - Network - Cloud - IoT -</span>
+            <h1>Irish Cyber Security Blog</h1><h2><span class="subheading">- Application - Network - Cloud - IoT -</span></h2>
           </div>
         </div>
       </div>

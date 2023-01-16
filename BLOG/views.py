@@ -155,7 +155,7 @@ class PostListViewAdmin(LoginRequiredMixin, ListView):
 #    fields = ('title', 'slug', 'author', 'updated_on', 'category', 'content', 'created_on', 'status', 'is_pinned')
 #    success_url = reverse_lazy('adminpost_list')
 
-#class PostDeleteViewAdmin(LoginRequiredMixin, DeleteView):
+# class PostDeleteViewAdmin(LoginRequiredMixin, DeleteView):
 #    model = Post
 #    template_name = 'post_confirm_delete.html'
 #    success_url = reverse_lazy('adminpost_list')
@@ -182,6 +182,7 @@ class PostUpdateView(UpdateView, LoginRequiredMixin):
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post_update'
     success_url = reverse_lazy('post_list')
+
 
 class PostDeleteView(DeleteView, LoginRequiredMixin):
     model = Post

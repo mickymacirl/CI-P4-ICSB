@@ -10,6 +10,8 @@
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body post-preview">
                 <a href="{% url 'post_detail' post.slug %}">
+                    <li><a href="{% url 'post_update' post.slug %}">Edit this post</a></li>
+                    <li><a href="{% url 'post_delete' post.slug %}">Delete this post</a></li>
                     TEST: {{ post.slug }}
                     <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                 </a>
@@ -19,6 +21,7 @@
                         class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
                     <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}
                     </span></p>
+
                 <hr>
                 <p class="post_detail">{{post.content}}</p>
             </div>

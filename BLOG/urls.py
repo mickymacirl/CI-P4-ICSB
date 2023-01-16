@@ -13,16 +13,20 @@ urlpatterns = [
     # path('adminpost_detail/<slug:slug>/', views.PostDetailViewAdmin.as_view(), name='adminpost_detail'),
     # path('adminpost_detail/slug:slug/', views.PostDetailViewAdmin.as_view(), name='adminpost_detail'),
     path('posts/', PostListView.as_view(), name='post_list'),
-    path('post/<int:pk>/', PostDetailView.as_view(), name='post_view'),
+    
+    # path('<pk>/update/', PostListView.as_view(), name='post_update'),
+    path('post/<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
+    path('post/<slug:slug>/delete/', PostDeleteView.as_view(), name='post_delete'),
+    #path('post/<int:pk>/', PostDetailView.as_view(), name='post_view'),
     path('post/new/', PostCreateView.as_view(), name='post_view'),
-    path('post/<int:pk>/edit/', PostUpdateView.as_view(), name='post_view'),
+   # path('post/<int:pk>/edit/', PostUpdateView.as_view(), name='post_view'),
 
     # post create url
     path('posts/create/', PostCreateView.as_view(), name='post_create'),
     # post update url
-    path('posts/<int:pk>/edit/', PostUpdateView.as_view(), name='post_update'),
+    # path('posts/<int:pk>/edit/', PostUpdateView.as_view(), name='post_update'),
     
-    path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post_delete'),
+    # path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post_delete'),
 
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
@@ -30,6 +34,8 @@ urlpatterns = [
     path('all_posts/', AllPostView.as_view(), name='all_posts'),
     # path('all_posts/', PostListView.as_view(), name='post_list'),
     # path('', views.PostList.as_view(), name='home'),
+    # path('edit/<site_id>', views.EditSite, name='edit'),
+    # path('edit/<post_id>', views.EditSite, name='edit'),
     
     path('accounts/', include('allauth.urls')),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),

@@ -12,7 +12,7 @@ STATUS = (
 
 
 # The Post model has a title, slug, author, updated_on, category, content, created_on, status and
-# is_pinned field. 
+# is_pinned field.
 # 
 # The title field is a CharField. It has a max_length attribute set to 100. It is unique and has a
 # validator that only allows alphabet, spaces and - characters
@@ -42,8 +42,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
-    
 
 
 # Comment model that has a post, author, name, email, body, created_on, active, and status

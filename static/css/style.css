@@ -22,10 +22,6 @@
     texts: 0.8rem;
 }
 
-h2 {
-    font-size: 4vw;
-}
-
 nav-link:hover {
     color: white;
     background-color: blue;

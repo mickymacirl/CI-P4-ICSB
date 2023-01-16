@@ -14,7 +14,7 @@ post_edit_form.html
     <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i
         class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
     <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
-    <h2>Edit Post</h2>
+    <h2>Delete Post</h2>
     <form method="post">
         {% csrf_token %}
         {{ form|crispy }}
