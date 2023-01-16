@@ -33,6 +33,9 @@ class Post(models.Model):
     #    ordering = ['-created_on']
 
     def save(self, *args, **kwargs):
+        """
+        If the slug field is empty, then add spaces to the title with dashes and save to the slug field.
+        """
         if not self.slug:
             self.slug = self.title.replace(' ', '-')
         super().save(*args, **kwargs)
