@@ -18,3 +18,17 @@
     border: #101820;
 }
 
+.text-small {
+    texts: 0.8rem;
+}
+
+h2 {
+    font-size: 4vw;
+}
+
+nav-link:hover {
+    color: white;
+    background-color: blue;
+    text-decoration: underline;
+    transform: scale(1.1);
+}

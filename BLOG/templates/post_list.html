@@ -8,15 +8,17 @@
             alt="Icon">Post List</h2>
 </div>
 this is post_lists
+
+<h2 class="h2postlist"> postlist </h2>
 <div class="container post-preview">
-    <div class="row">
+    <div class="row">{% block sidebar %} {% include 'sidebaradmin.html' %} {% endblock sidebar %}
         <!-- Blog Entries Column -->
         <div class="col-md-8 mt-3 left">
             {% for post in posts %}
             <div class="card mb-4">
                 <div class="post-preview card-body">
-                    <a href="">
-                        <h2 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
+                    <a href="{% url 'post_detail' post.slug %}">
+                        <h2 class="h2postlist"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                     </a>
                     <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
                         {{ post.category }} | <i class="fas fa-newspaper"></i>
@@ -25,7 +27,7 @@ this is post_lists
                         <i class="fa-solid fa-primary-color: red fa-map-pin fa-beat"></i>{% endif %}</span></p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href=""
+                    <a href="{% url 'post_detail' post.slug %}"
                         class="btn btn-primary head_text btnform text-white">Read More &rarr;</a>
                 </div>
             </div>
@@ -45,7 +47,6 @@ this is post_lists
             </nav>
         </div>
         {% endif %}
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
 </div>
 </div>

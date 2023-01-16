@@ -134,8 +134,8 @@ def handle_500(request):
 
 class PostListViewAdmin(LoginRequiredMixin, ListView):
     model = Post
-    template_name = 'adminpost_list.html'
-    context_object_name = 'adminposts'
+    template_name = 'post_list.html'
+    context_object_name = 'posts'
     ordering = ['-created_on']
 
 # class PostDetailViewAdmin(LoginRequiredMixin, DetailView):
@@ -173,12 +173,14 @@ class PostCreateView(CreateView, LoginRequiredMixin):
     model = Post
     template_name = 'post_create_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
+    context_object_name = 'post_create'
     success_url = reverse_lazy('post_list')
     
 class PostUpdateView(UpdateView, LoginRequiredMixin):
     model = Post
-    template_name = 'post_edit.html'
+    template_name = 'post_edit_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
+    context_object_name = 'post_update'
     success_url = reverse_lazy('post_list')
 
 class PostDeleteView(DeleteView, LoginRequiredMixin):
