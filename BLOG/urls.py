@@ -1,6 +1,6 @@
 from . import views
 from django.urls import path
-from .views import AllPostView, PostList, post_detail
+from .views import AllPostView
 from django.views.generic import TemplateView
 from .views import PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView
 from django.contrib.auth import views as auth_views
