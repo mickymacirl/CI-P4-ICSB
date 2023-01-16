@@ -39,7 +39,7 @@
                         <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</p>
                     <hr>
                     <p class="post-detail">{{ post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_list' %}" class="btn btn-primary head_text btnform text-white">Read More
+                    <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary head_text btnform text-white">Read More
                         &rarr;</a>
 
                 </div>
