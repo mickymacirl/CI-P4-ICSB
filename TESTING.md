@@ -555,10 +555,10 @@ Pages were tested on most modern browsers, including Microsoft Edge, Chrome, Fir
 
 Test Steps:
 
-    Open the corresponding browser and open the ICSBlog website.
-    Open the browser development tools by hitting the corresponding dev tools shortcut.
-    Resize to the desired width.
-    Click and drag the browser window to lower or larger window size.
+1. Open the corresponding browser and open the ICSBlog website.
+2. Open the browser development tools by hitting the corresponding dev tools shortcut.
+3. Resize to the desired width.
+4. Click and drag the browser window to lower or larger window size.
 
 Expected:
 
