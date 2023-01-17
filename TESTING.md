@@ -24,9 +24,153 @@ An email is recieved with a link to sign up, upon clicking the link, registratio
 
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
-- Home -> index.html
-- 
+Navigation Links
 
+Functional Testing
+
+Description:
+
+Ensure a user can navigate to the Home page
+
+Steps:
+
+Click on the Home link in the navigation bar
+
+Expected:
+
+The user is directed to the Home page
+
+Actual:
+
+The user is directed to the Home page
+
+Description:
+
+Ensure a user can navigate to the About page
+
+Steps:
+
+Click on the About link in the navigation bar
+
+Expected:
+
+The user is directed to the About page
+
+Actual:
+
+The user is directed to the About page
+
+Description:
+
+Ensure a user can navigate to the Contact us page
+
+Steps:
+
+Click on the Contact us link in the navigation bar
+
+Expected:
+
+The user is directed to the Contact us page
+
+Actual:
+
+The user is directed to the Contact us page
+
+Description:
+
+Ensure a user can navigate to the Blog Posts page
+
+Steps:
+
+Click on the Blog Posts link in the navigation bar
+
+Expected:
+
+The user is directed to the Blog Posts page
+
+Actual:
+
+The user is directed to the Blog Posts page
+
+Description:
+
+Ensure a user can navigate to the Login page
+
+Steps:
+
+Click on the Login link in the navigation bar
+
+Expected:
+
+The user is directed to the Login page
+
+Actual:
+
+The user is directed to the Login page
+
+Description:
+
+Ensure a user can navigate to the Register page
+
+Steps:
+
+Click on the Register link in the navigation bar
+
+Expected:
+
+The user is directed to the Register page
+
+Actual:
+
+The user is directed to the Register page
+
+Description:
+
+Ensure a user can logout
+
+Steps:
+
+Click on the Logout link in the navigation bar
+
+Expected:
+
+The user is logged out
+
+Actual:
+
+The user is logged out
+
+Description:
+
+Ensure user can navigate to the admin page
+
+Steps:
+
+Click on the Admin link in the navigation bar
+
+Expected:
+
+The user is directed to the Admin page
+
+Actual:
+
+The user is directed to the Admin page
+
+Description:
+
+Ensure user can navigate to the new post page
+
+Steps:
+
+Click on the New Post link in the navigation bar
+
+Expected:
+
+The user is directed to the New Post page
+
+Actual:
+
+The user is directed to the New Post page
 All navigation links directed to the corect pages as expected.
 
 <hr>
@@ -36,8 +180,6 @@ All navigation links directed to the corect pages as expected.
 Testing was performed on the footer links by clicking the font awesome icons and ensuring that the facebook icon opened facebook in a new tab and the twitter icon opened twitter in a new tab. These behaved as expected.
 
 ## Negative Testing
-
-Tests were performed on the create post to ensure that:
 
 ## Unit Testing
 
