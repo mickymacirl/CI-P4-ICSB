@@ -2,12 +2,17 @@ from . import views
 from django.urls import path
 from .views import AllPostView
 from django.views.generic import TemplateView
-from .views import PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView
+from .views import (
+    PostListView,
+    PostDetailView,
+    PostCreateView,
+    PostUpdateView,
+    PostDeleteView
+    )
 from django.contrib.auth import views as auth_views
 from allauth.account import views as allauth_views
 from django.urls import include
 
-# A list of url patterns.
 # A list of url patterns.
 urlpatterns = [
     path('posts/', PostListView.as_view(), name='post_list'),

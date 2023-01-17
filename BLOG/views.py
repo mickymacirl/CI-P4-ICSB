@@ -2,15 +2,10 @@ from django.shortcuts import render
 from django.views import generic
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
-
-## CRUD
+# CRUD
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-
-# from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-# from pure_pagination import PaginationMixin
-
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -21,16 +16,6 @@ from .forms import CommentForm
 # Django which template to use for a view.
 # In this case, we're using the template index.html
 
-
-# class PostList(generic.ListView):
-#    queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
-#    template_name = 'index.html'
-
-# class AllPostView(PaginationMixin, ListView):
-#     model = Post
-#     template_name = 'all_posts.html'
-#     context_object_name = 'all_posts'
-#     paginate_by = 5  # Number of items per page
 
 # All Posts
 class AllPostView(ListView):
@@ -65,27 +50,12 @@ def contact(request):
 
 # Home Page View
 class PostList(generic.ListView):
-   # queryset = Post.objects.filter(status=1).order_by('-created_on')[:6]
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-#    template_name = 'post_list.html'
     template_name = 'index.html'
     paginate_by = 6
 
     for i in queryset:
         print("SLUG: ",  i.slug)
-
-
-# def post_list(request):
-    """
-    It takes a request, gets the first five posts from the database, and
-    returns a rendered template with the list of posts
-    :param request: The request is what's sent from the browser to the server.
-    It contains all the     information about the request, such as the HTTP
-    method, the GET and POST parameters, the cookies, etc
-    :return: The post_list is being returned.
-    """
-#    post_list = Post.objects.all()[:5]
-#    return render(request, 'index.html', {'post_list': post_list})
 
 
 def post_detail(request, slug):
@@ -133,35 +103,6 @@ def handle_500(request):
     return render(request, '500.html')
 
 # Create, Read, Update, Delete
-
-
-class PostListViewAdmin(LoginRequiredMixin, ListView):
-    model = Post
-    template_name = 'post_list.html'
-    context_object_name = 'posts'
-    ordering = ['-created_on']
-
-# class PostDetailViewAdmin(LoginRequiredMixin, DetailView):
-#    model = Post
-#    template_name = 'adminpost_detail.html'
-#    context_object_name = 'post'
-
-# class PostCreateViewAdmin(LoginRequiredMixin, CreateView):
-#    model = Post
-#    template_name = 'post_form.html'
-#    fields = ('title', 'slug', 'author', 'updated_on', 'category', 'content', 'created_on', 'status', 'is_pinned')
-#    success_url = reverse_lazy('adminpost_list')
-
-# class PostUpdateViewAdmin(LoginRequiredMixin, UpdateView):
-#    model = Post
-#    template_name = 'post_form.html'
-#    fields = ('title', 'slug', 'author', 'updated_on', 'category', 'content', 'created_on', 'status', 'is_pinned')
-#    success_url = reverse_lazy('adminpost_list')
-
-# class PostDeleteViewAdmin(LoginRequiredMixin, DeleteView):
-#    model = Post
-#    template_name = 'post_confirm_delete.html'
-#    success_url = reverse_lazy('adminpost_list')
 
 
 class PostListView(ListView, LoginRequiredMixin):
