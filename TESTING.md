@@ -24,8 +24,6 @@ An email is recieved with a link to sign up, upon clicking the link, registratio
 
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
-Navigation Links
-
 Functional Testing
 
 Description:
@@ -156,21 +154,6 @@ Actual:
 
 The user is directed to the Admin page
 
-Description:
-
-Ensure user can navigate to the new post page
-
-Steps:
-
-Click on the New Post link in the navigation bar
-
-Expected:
-
-The user is directed to the New Post page
-
-Actual:
-
-The user is directed to the New Post page
 All navigation links directed to the corect pages as expected.
 
 <hr>

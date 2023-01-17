@@ -18,10 +18,6 @@
     border: #101820;
 }
 
-.text-small {
-    texts: 0.8rem;
-}
-
 nav-link:hover {
     color: white;
     background-color: blue;

@@ -124,13 +124,16 @@ def post_detail(request, slug):
 def custom_403(request, exception):
     return render(request, '403.html')
 
+
 # in urls.py
 handler403 = 'path.to.custom_403'
+
 
 def handle_500(request):
     return render(request, '500.html')
 
 # Create, Read, Update, Delete
+
 
 class PostListViewAdmin(LoginRequiredMixin, ListView):
     model = Post
@@ -160,14 +163,17 @@ class PostListViewAdmin(LoginRequiredMixin, ListView):
 #    template_name = 'post_confirm_delete.html'
 #    success_url = reverse_lazy('adminpost_list')
 
+
 class PostListView(ListView, LoginRequiredMixin):
     model = Post
     template_name = 'post_list.html'
     context_object_name = 'posts'
 
+
 class PostDetailView(DetailView, LoginRequiredMixin):
     model = Post
     template_name = 'post_view.html'
+
 
 class PostCreateView(CreateView, LoginRequiredMixin):
     model = Post
@@ -175,7 +181,8 @@ class PostCreateView(CreateView, LoginRequiredMixin):
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post_create'
     success_url = reverse_lazy('post_list')
-    
+
+
 class PostUpdateView(UpdateView, LoginRequiredMixin):
     model = Post
     template_name = 'post_edit_form.html'
