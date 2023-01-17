@@ -655,6 +655,7 @@ Logo fonts are:
 
 ## Testing
 
+Testing Readme found here: *[Testing Readme](/TESTING.md)*.
 
 ## Deployment
 
