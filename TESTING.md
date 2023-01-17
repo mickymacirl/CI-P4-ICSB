@@ -504,18 +504,18 @@ Testing was performed on the footer links by clicking the font awesome icons and
 
 ## Negative Testing
 
-A user cannot create a post with a title that is already in use
-A user cannot create a post using special characters in the title
-A user cannot create a post without filling in the required fields (e.g. title, content)
-A user cannot delete a post that does not belong to them
-A user cannot delete a post without being prompted for confirmation
-A user cannot edit a post using special characters in the title
-A user cannot create a comment that contains offensive language or hate speech.
-A user cannot create a comment without filling in the required fields (e.g. comment text)
-A user cannot delete a comment that does not belong to them
-A user cannot delete a comment without being prompted for confirmation.
-A user cannot edit a comment that does not belong to them
-A user cannot edit a comment without being prompted for confirmation
+* A user cannot create a post with a title that is already in use
+* A user cannot create a post using special characters in the title
+* A user cannot create a post without filling in the required fields (e.g. title, content)
+* A user cannot delete a post that does not belong to them
+* A user cannot delete a post without being prompted for confirmation
+* A user cannot edit a post using special characters in the title
+* A user cannot create a comment that contains offensive language or hate speech.
+* A user cannot create a comment without filling in the required fields (e.g. comment text)
+* A user cannot delete a comment that does not belong to them
+* A user cannot delete a comment without being prompted for confirmation.
+* A user cannot edit a comment that does not belong to them
+* A user cannot edit a comment without being prompted for confirmation
 
 ## Unit Testing
 
