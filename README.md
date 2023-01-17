@@ -1,5 +1,7 @@
 # Irish Cyber Security Blog
 
+![Irish Cyber Security Blog Banner](/docs/readme/rm-banner-small.png)
+
 Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
 
@@ -650,6 +652,10 @@ Logo fonts are:
 ![Audiowide](./docs/readme/rm_font_Audiowide.jpg)
 
 ## Imagery
+
+Logo created from *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
+
+Used Abode Photoshop to edit the main hero image with the logo in the circles from *[Circle Tech](https://pixabay.com/photos/circle-tech-technology-abstract-5090539/)*. and the main banner image with logo text and icon.
 
 ## Technologies
 
