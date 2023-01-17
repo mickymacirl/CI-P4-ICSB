@@ -603,3 +603,7 @@ Fixed by adding the following to the post model, that if the slug field is empty
         if not self.slug:
             self.slug = self.title.replace(' ', '-')
         super().save(*args, **kwargs)
+
+2. ~~When testing html validation, it was found that the title for the post was accepting special characters, which, in turn, was showing html validation errors.~~
+
+This was fixed by using the RegexValidator provided by Django to validate the input for the title field, with the error message, "Only alphabet, spaces and - characters are allowed." displayed.
