@@ -58,6 +58,26 @@ Actual:
 
 User is logged out
 
+<hr>
+
+Description:
+
+Ensure a user can log in with the correct credentials
+
+Steps:
+
+    Navigate to Irish Cyber Security Blog
+    Enter login details for the backupadmin account (username: backupadmin, password )
+    Click login
+
+Expected:
+
+User is successfully logged in and redirected to the posts page
+
+Actual:
+
+User is successfully logged in and redirected to the posts page
+
 ## Navigation Links
 
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
@@ -209,6 +229,115 @@ The user is directed to the Admin page
 All navigation links directed to the corect pages as expected.
 
 <hr>
+
+## Post Management
+
+Description:
+
+Ensure a SuperUser can create a new post
+
+Steps:
+
+1. Log in as the backupadmin account
+2. Navigate to a post
+3. Click on the "Create a post" link
+4. Fill in the form with the necessary information (title, content, etc)
+5. Click "Save"
+
+Expected:
+
+The new post is successfully created and can be viewed on the blog after the approval process.
+
+Actual:
+
+The new post is successfully created and can be viewed on the blog
+
+<hr>
+
+Description:
+
+Ensure a SuperUser can edit an existing post
+
+Steps:
+
+1. Log in as the backupadmin account
+2. Navigate to a post
+3. Click on the "Edit this post" link for an existing post
+4. Make changes to the post (title, content, etc)
+5. Click "Save"
+
+Expected:
+
+The post is successfully edited and the changes can be viewed on the blog
+
+Actual:
+
+The post is successfully edited and the changes can be viewed on the blog
+
+<hr>
+
+Description:
+
+Ensure a SuperUser can delete an existing post
+
+Steps:
+
+1. Log in as the backupadmin account
+2. Navigate to a post
+3. Click on the "Delete this post" link for an existing post
+4. Confirm the deletion when prompted
+
+Expected:
+
+The post is successfully deleted from the blog
+
+Actual:
+The post is successfully deleted from the blog
+
+## User Management
+
+Description:
+
+Ensure a SuperUser can edit a user
+
+Steps:
+
+1. Log in as the backupadmin account
+2. Click on the "Edit user" link
+3. Navigate to Users in Django Admin
+4. Select a user to edit
+5. Make changes to the user's information (username, email, etc)
+6. Click "Save"
+
+Expected:
+
+The user's information is successfully edited
+
+Actual:
+
+The user's information is successfully edited
+
+## Comment Management
+
+Description:
+
+Ensure a SuperUser can create a comment on a post
+
+Steps:
+
+1. Log in as the backupadmin account
+2. Navigate to a post
+3. Scroll to bottom of page
+4. Enter a comment in the text field, with name and email address.
+5. Click "Submit"
+
+Expected:
+
+The comment is successfully posted on the post, after the post approval of published.
+
+Actual:
+
+The comment is successfully posted on the post
 
 ## Footer
 
