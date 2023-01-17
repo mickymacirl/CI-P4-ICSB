@@ -67,7 +67,7 @@ Ensure a user can log in with the correct credentials
 
 Steps:
 
-1. Navigate to Irish Cyber Security Blog
+1. Navigate to [Irish Cyber Security Blog](https://icsblogp4.herokuapp.com/) and click Login
 2. Enter login details for the backupadmin account (username: backupadmin, password )
 3. Click sign in
 
@@ -347,6 +347,72 @@ Actual:
 
 The user's information is successfully edited
 
+## Is Pinned
+
+Description:
+
+Ensure that a post can be pinned to the top of the /all_posts/ page.
+
+Steps:
+
+1. Log in as a user with superuser or staff access
+2. Navigate to the edit page for a post
+3. Check the "IS_Pinned" checkbox
+4. Click "Save"
+5. Navigate to the blog page
+
+Expected:
+
+1. The pinned post appears at the top of the /all_posts/ page
+2. The pin icon is visable on the information section of the post
+
+Actual:
+
+1. The pinned post appears at the top of the blog page /all_posts/ page.
+2. The pin icon is visable on the information section of the page
+
+<hr>
+
+Description:
+
+Ensure that a pinned post can be unpinned
+
+Steps:
+
+1. Log in as a user with superuser or staff access
+2. Navigate to the edit page for a pinned post
+3. Uncheck the "Pin to top" checkbox
+4. Click "Save"
+5. Navigate to the blog page
+
+Expected:
+
+1. The post is no longer pinned and appears in its original position on the /all_posts/ page
+2. The pin icon is no longer visable on the information section of the post
+
+Actual:
+
+1. The post is no longer pinned and appears in its original position on the /all_posts/ page
+2. The pin icon is no longer visable on the information section of the post
+
+<hr>
+
+Description:
+
+Ensure that a non-superuser or staff user cannot pin a post
+
+Steps:
+
+1. Log in as a non-superuser or staff user
+2. Navigate to the edit page for a post
+
+Expected:
+
+Page is 403.
+
+Actual:
+Page was 403.
+
 ## Comment Management
 
 Description:
@@ -412,6 +478,25 @@ The comment is successfully posted on the post, after the post approval of publi
 Actual:
 
 The comment is successfully posted on the post
+
+<hr>
+
+Description:
+
+Ensure a unregistered and not logged in user cannot create a post
+
+Steps:
+
+1. Navigate to [Irish Cyber Security Blog](https://icsblogp4.herokuapp.com/)
+2. Navigate to a post
+
+Expected:
+
+Ensure a message says, "You must be logged in to post a comment. Login or Register here."
+
+Actual:
+
+The message said, "You must be logged in to post a comment. Login or Register here."
 
 ## Footer
 
