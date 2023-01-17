@@ -20,11 +20,47 @@ Actual:
 
 An email is recieved with a link to sign up, upon clicking the link, registration is successful
 
+Description:
+
+Ensure a user can log in to the blog.
+
+Steps:
+
+1. Navigate to [Irish Cyber Security Blog](https://icsblogp4.herokuapp.com/) and click Login
+2. Enter login details created during registration
+3. Click signin
+
+Expected:
+
+User is successfully logged in and redirected to the posts page.
+
+Actual:
+
+User is successfully logged in and redirected to the posts page.
+
+<hr>
+
+Description:
+
+Ensure a user can log out of the blog.
+
+Steps:
+
+1. Log in to the blog
+2. Click the logout button
+3. Click confirm on the confirm sign out page
+
+Expected:
+
+User is logged out
+
+Actual:
+
+User is logged out
+
 ## Navigation Links
 
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
-
-Functional Testing
 
 <hr>
 
