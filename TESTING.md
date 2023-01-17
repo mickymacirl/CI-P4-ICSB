@@ -537,15 +537,15 @@ WAVE Web Accessibility Evaluation Tool was used to test each page, with one aler
 
 ### Desktop Testing
 
-Desktop Lighthouse testing is showing a perfect score of 100 across the board.
+Desktop Lighthouse testing is showing a perfect score of 96, with SEO of 100 seo.
 
-![Desktop Lighthouse Result](/assets/readme/desktoplhtrm.jpg)
+![Desktop Lighthouse Result](/docs/testing/testing_lh_desktop.jpg)
 
 ### Mobile Testing
 
-Mobile Lighthouse Testing is showing a score of 95, with SEO having a score of 92.
+Mobile Lighthouse Testing is showing a score of 72 due to image sizes, with SEO of 100.
 
-![Mobile Lighthouse Result](/assets/readme/mobilelhtrm.jpg)
+![Mobile Lighthouse Result](/docs/testing/testing_lh_mobile.jpg)
 
 ## Responsiveness
 
