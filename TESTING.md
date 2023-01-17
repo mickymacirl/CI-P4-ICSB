@@ -19,6 +19,7 @@ An email is recieved with a link to sign up, upon clicking the link, registratio
 Actual:
 
 An email is recieved with a link to sign up, upon clicking the link, registration is successful
+<hr>
 
 Description:
 
@@ -66,9 +67,9 @@ Ensure a user can log in with the correct credentials
 
 Steps:
 
-    Navigate to Irish Cyber Security Blog
-    Enter login details for the backupadmin account (username: backupadmin, password )
-    Click login
+1. Navigate to Irish Cyber Security Blog
+2. Enter login details for the backupadmin account (username: backupadmin, password )
+3. Click sign in
 
 Expected:
 
