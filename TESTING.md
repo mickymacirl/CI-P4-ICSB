@@ -8,7 +8,7 @@ Ensure a user can register to the blog.
 
 Steps:
 
-1. Navigate to [iscblog](https://icsblogp4.herokuapp.com/) and click Register
+1. Navigate to [Irish Cyber Security Blog](https://icsblogp4.herokuapp.com/) and click Register
 2. Enter email, username and password
 3. Click Register
 
@@ -26,6 +26,8 @@ Testing was performed to ensure all navigation links on the respective pages, na
 
 Functional Testing
 
+<hr>
+
 Description:
 
 Ensure a user can navigate to the Home page
@@ -41,6 +43,8 @@ The user is directed to the Home page
 Actual:
 
 The user is directed to the Home page
+
+<hr>
 
 Description:
 
@@ -58,13 +62,15 @@ Actual:
 
 The user is directed to the About page
 
+<hr>
+
 Description:
 
-Ensure a user can navigate to the Contact us page
+Ensure a user can navigate to the Contact Us page
 
 Steps:
 
-Click on the Contact us link in the navigation bar
+Click on the Contact Us link in the navigation bar
 
 Expected:
 
@@ -73,6 +79,8 @@ The user is directed to the Contact us page
 Actual:
 
 The user is directed to the Contact us page
+
+<hr>
 
 Description:
 
@@ -90,13 +98,15 @@ Actual:
 
 The user is directed to the Blog Posts page
 
+<hr>
+
 Description:
 
-Ensure a user can navigate to the Login page
+Ensure a user can navigate to the Login page, if not logged in.
 
 Steps:
 
-Click on the Login link in the navigation bar
+Click on the Login link in the navigation bar, if not logged in.
 
 Expected:
 
@@ -106,9 +116,11 @@ Actual:
 
 The user is directed to the Login page
 
+<hr>
+
 Description:
 
-Ensure a user can navigate to the Register page
+Ensure a user can navigate to the Register page, if not logged in.
 
 Steps:
 
@@ -122,9 +134,11 @@ Actual:
 
 The user is directed to the Register page
 
+<hr>
+
 Description:
 
-Ensure a user can logout
+Ensure a user can logout, if logged in.
 
 Steps:
 
@@ -138,9 +152,11 @@ Actual:
 
 The user is logged out
 
+<hr>
+
 Description:
 
-Ensure user can navigate to the admin page
+Ensure user can navigate to the admin page, if they are staff or superuser.
 
 Steps:
 
