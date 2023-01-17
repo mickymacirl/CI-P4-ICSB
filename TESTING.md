@@ -295,6 +295,35 @@ The post is successfully deleted from the blog
 Actual:
 The post is successfully deleted from the blog
 
+<hr>
+
+Description:
+
+Ensure a staff user can create, edit and delete posts on the Irish Cyber Security Blog.
+
+Steps:
+
+1. Log in as a staff user on Irish Cyber Security Blog
+2. Navigate to a post
+3. Click on "Create a post"
+4. Fill in the form with the appropriate information for the new post, including title, content, and categories
+5. Click "Create"
+6. Verify that the new post is displayed on the blog
+7. Click on the "Edit this post" link for the post
+8. Make any necessary changes and click "Save"
+9. Verify that the changes have been applied to the post
+10. Click on the "Delete this post" link for the post
+11. Confirm deletion of the post
+12. Verify that the post is no longer displayed on the blog
+
+Expected:
+
+The staff user is able to create, edit and delete posts on the Irish Cyber Security Blog
+
+Actual:
+
+The staff user is able to create, edit and delete posts on the Irish Cyber Security Blog
+
 ## User Management
 
 Description:
@@ -340,11 +369,68 @@ Actual:
 
 The comment is successfully posted on the post
 
+<hr>
+
+Description:
+
+Ensure a staff user can create a comment on a post
+
+Steps:
+
+1. Log in as the LiamWolf account
+2. Navigate to a post
+3. Scroll to bottom of page
+4. Enter a comment in the text field, with name and email address.
+5. Click "Submit"
+
+Expected:
+
+The comment is successfully posted on the post, after the post approval of published.
+
+Actual:
+
+The comment is successfully posted on the post
+
+<hr>
+
+Description:
+
+Ensure a normal can create a comment on a post
+
+Steps:
+
+1. Log in as the standarduser account
+2. Navigate to a post
+3. Scroll to bottom of page
+4. Enter a comment in the text field, with name and email address.
+5. Click "Submit"
+
+Expected:
+
+The comment is successfully posted on the post, after the post approval of published.
+
+Actual:
+
+The comment is successfully posted on the post
+
 ## Footer
 
 Testing was performed on the footer links by clicking the font awesome icons and ensuring that the facebook icon opened facebook in a new tab and the twitter icon opened twitter in a new tab. These behaved as expected.
 
 ## Negative Testing
+
+A user cannot create a post with a title that is already in use
+A user cannot create a post using special characters in the title
+A user cannot create a post without filling in the required fields (e.g. title, content)
+A user cannot delete a post that does not belong to them
+A user cannot delete a post without being prompted for confirmation
+A user cannot edit a post using special characters in the title
+A user cannot create a comment that contains offensive language or hate speech.
+A user cannot create a comment without filling in the required fields (e.g. comment text)
+A user cannot delete a comment that does not belong to them
+A user cannot delete a comment without being prompted for confirmation.
+A user cannot edit a comment that does not belong to them
+A user cannot edit a comment without being prompted for confirmation
 
 ## Unit Testing
 

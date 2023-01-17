@@ -35,7 +35,6 @@
                     <i class="fas fa-plus pe-2"></i><a href="/posts/create">Create a post</a> |
                     <i class="fas fa-edit pe-2"></i> <a href="{% url 'post_update' post.slug %}">Edit this post</a> |
                     <i class="fas fa-trash pe-2"></i><a href="{% url 'post_delete' post.slug %}">Delete this post</a>
-                    <i class="fas fa-user pe-2"></i><a href="{% url 'admin:index' %}">Edit user</a>
                     <i class="fas fa-comment pe-2"></i><a href="{% url 'admin:index' %}">Create comment on this post</a>
                 </div>
                 {% endif %}
