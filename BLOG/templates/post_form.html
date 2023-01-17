@@ -4,8 +4,6 @@
 
 {% block content %}
 
-post_form.html
-
 <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
     {{ post.category }} |
     <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i
@@ -17,39 +15,5 @@ post_form.html
         {{ form|crispy }}
         <input type="submit" value="Save">
     </form> 
-
-    
-
-<!-- <form method="post">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" class="form-control" id="title" name="title">
-    </div>
-    <div class="form-group">
-      <label for="content">Content</label>
-      <textarea class="form-control" id="content" name="content"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="category">Category</label>
-      <select class="form-control" id="category" name="category">
-        <option value=""></option>
-        <option value="category1">Application</option>
-        <option value="category2">Network</option>
-        <option value="category1">Cloud</option>
-        <option value="category2">IoT</option>
-        
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="status">Status</label>
-      <select class="form-control" id="status" name="status">
-        <option value="diabled">Disabled</option>
-        <option value="draft">Draft</option>
-        <option value="published">Published</option>
-      </select>
-    </div>
-    <button type="submit" class="btn btn-primary">Create Post</button>
-  </form> -->
 
 {% endblock %}

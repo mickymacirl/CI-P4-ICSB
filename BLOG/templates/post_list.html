@@ -7,9 +7,6 @@
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
             alt="Icon">Post List</h2>
 </div>
-this is post_lists
-
-<h2 class="h2postlist"> postlist </h2>
 <div class="container post-preview">
     <div class="row">
         <!-- Blog Entries Column -->
@@ -41,7 +38,6 @@ this is post_lists
                 {% endif %}
                 {% if page_obj.has_next %}
                 <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &rarr;</a></li>
-
                 {% endif %}
             </ul>
             </nav>
