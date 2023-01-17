@@ -429,11 +429,11 @@ Steps:
 
 Expected:
 
-The comment is successfully posted on the post, after the post approval of published.
+A message at the bottom of the scren says, "Thank you for Commenting! Please wait for approval?" The comment is successfully posted on the post, after the post approval of published.
 
 Actual:
 
-The comment is successfully posted on the post
+The comment is successfully posted on the post with the message at the bottom of the screen
 
 <hr>
 
@@ -451,11 +451,11 @@ Steps:
 
 Expected:
 
-The comment is successfully posted on the post, after the post approval of published.
+A message at the bottom of the scren says, "Thank you for Commenting! Please wait for approval?" The comment is successfully posted on the post, after the post approval of published
 
 Actual:
 
-The comment is successfully posted on the post
+The comment is successfully posted on the post with the message at the bottom of the screen
 
 <hr>
 
@@ -473,11 +473,11 @@ Steps:
 
 Expected:
 
-The comment is successfully posted on the post, after the post approval of published.
+A message at the bottom of the scren says, "Thank you for Commenting! Please wait for approval?" The comment is successfully posted on the post, after the post approval of published.
 
 Actual:
 
-The comment is successfully posted on the post
+The comment is successfully posted on the post with the message at the bottom of the screen
 
 <hr>
 
@@ -492,11 +492,11 @@ Steps:
 
 Expected:
 
-Ensure a message says, "You must be logged in to post a comment. Login or Register here."
+A message says, "You must be logged in to post a comment. Login or Register here." at the top of the screen.
 
 Actual:
 
-The message said, "You must be logged in to post a comment. Login or Register here."
+The comment is successfully posted at the top of the screen.
 
 ## Footer
 
