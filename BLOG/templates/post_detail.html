@@ -13,12 +13,12 @@
                         {% if user.is_authenticated %}
                         {% if user.is_superuser %}
                         <div style="display:inline-block;">
-                            <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
+                            <h1 class="post-title">Site Administration</h2>
+                            <span style="color: #00a7b5;">Account: {{ user.username }}</span>
                                 <br>Access Level:
-                                <span style="color: red">SuperUser</span></p>
+                                <span style="color: red">SuperUser</span>
                         </div>
                         <hr>
-
                         <div style="display:inline-block;">
                             <i class="fas fa-plus pe-2"></i><a href="/posts/create">Create a post</a> |
                             <i class="fas fa-edit pe-2"></i> <a href="{% url 'post_update' post.slug %}">Edit this
@@ -31,6 +31,7 @@
                             <i class="fas fa-comment pe-2"></i><a href="{% url 'admin:index' %}"><a href="#comment">Create comment on
                                 this post</a>
                             <div class="post-preview">
+                                <hr>
                                 <h1 class="post-title">{{ post.title }}</h1>
                                 <p class="post-preview">{{ post.content }}</p>
                                 <p class="post-meta">Author: {{ post.author }} | Created on: {{ post.created_on }} |
@@ -44,7 +45,8 @@
                                     {% elif post.status == 2 %}
                                     <span style="color: red">Disabled</span>
                                     {% endif %}
-                                    Comments: 
+                                    <p>Comments: {{ post.comments.count }} </p>
+                                    <hr> 
                             </div>
 
 
@@ -85,41 +87,27 @@
                         
 
                         {% else %}
-                        <div class="card-body post-preview comment">
+                        <div class="card-body comment">
                             <p class="text-center">You must be logged in to post a comment. </p>
                             <p class="text-center "><a href="{% url 'account_login' %}">Login</a> or <a
                                     href="{% url 'account_login' %}">Register</a> here.</p>
                         </div>
+                        <hr>
                         {% endif %}
                     </div>
                     everyone sees this
                     <a href="{% url 'post_detail' post.slug  %}">
-                        <h1 class="post-title"><i class="fa-regular fa-newspaper pe-2"></i>{{ post.title }}</h2>
+                        <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                     </a>
-                    <p class="post-meta">Posted by: {{ post.author }}</span> | Created:
-                        {{ post.created_on }}<br>Category:
-                        {{ post.category }}</p>
+                    <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
+                        {{ post.category }} |
+                        <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i
+                            class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
+                        <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</p>
+                    <hr>
                     <p class="post-detail">{{post.content}}</p>
                 </div>
             </div>
-
-            <a href="{% url 'post_detail' post.slug %}">
-                <h1 class="post-title"><i class="fas fa-blog pe-2"></i>title</h1>
-            </a>
-            <p class="post-meta">Posted by: | Created: <br>Category: |
-                <i class="fas fa-newspaper"></i> status | {{ count }} <i class="fa-solid fa-comment"></i> | pin
-                <i class="fa-solid fa-map-pin fa-beat"></i></p>
-            <hr>
-            <a href="{% url 'post_detail' post.slug %}">
-                <h1 class="post-title"><i class="fas fa-blog pe-2"></i>title</h1>
-            </a>
-            <p class="post-meta">Posted by: | Created: <br>Category: |
-                <i class="fas fa-newspaper"></i> status | {{ count }} <i class="fa-solid fa-comment"></i> | pin
-                <i class="fa-solid fa-map-pin fa-beat"></i></p>
-            <hr>w
-            <p class="post-detail">post</p>
-
-        </div>
 
     </div>
     <div class="col-md-8 card mb-4  mt-3 ">
@@ -143,6 +131,21 @@
             {% endfor %}
         </div>
     </div>
+    {% for comment in comments %}
+    <div class="comment">
+        <p>{{ comment.name }} - {{ comment.email }}</p>
+        <p>{{ comment.body }}</p>
+        <p>Status:
+            {% if comment.status == 'review' %}
+                <span style="color: orange">Review1</span>
+            {% elif comment.status == 'accepted' %}
+                <span style="color: green">Accepted2</span>
+            {% elif comment.status == 'spam' %}
+                <span style="color: red">Spam3</span>
+            {% endif %}
+        </p>
+    </div>
+    {% endfor %}
     <div class="col-md-8 card mb-4  mt-3 ">
         {% load crispy_forms_tags %}
         <div class="card-body post-preview comment">
@@ -163,7 +166,6 @@
     </div>
     
     </div>
-
     <div class="col-md-4 float-right margin-top ">
         <div class="card my-4">
                 <h2 class="card-header post-title"><i class="fas fa-info-circle pe-2"></i>About Us</h2>
@@ -177,6 +179,7 @@
     </div>
 </div>
 <!-- Side Bar-->
+
 
 </div>
 
