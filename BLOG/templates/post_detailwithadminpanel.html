@@ -14,18 +14,17 @@
                         {% if user.is_superuser %}
                         <div style="display:inline-block;">
                             <h1 class="post-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>Site Administration</h2>
-                                <hr>
                             <span style="color: #00a7b5;">Account: {{ user.username }}</span>
                                 <br>Access Level:
                                 <span style="color: red">SuperUser</span>
                         </div>
-                        <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
-            alt="Icon"></img>
                         <hr>
                         <div style="display:inline-block;">
                             <i class="fas fa-plus pe-1"></i><a href="/posts/create">Create a post</a> |
                             <i class="fas fa-edit pe-1"></i> <a href="{% url 'post_update' post.slug %}">Edit this
                                 post</a> |
+                            <i class="fas fa-trash pe-1"></i><a href="{% url 'post_delete' post.slug %}">Delete this
+                                post</a>
                             <i class="fas fa-trash pe-1"></i><a href="{% url 'post_delete' post.slug %}">Delete this
                                 post</a>
                             <i class="fas fa-user pe-1"></i><a href="{% url 'admin:index' %}">Approve Comment</a>
@@ -55,7 +54,7 @@
                             <div style="display:inline-block;">
                                 <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
                                     <br>Access Level:
-                                    <span class="text-detail" style="color: orange"><br>Staff</span></p>
+                                    <span class="text-detail" style="color: red"><br>Staff</span></p>
                             </div>
                             <hr>
                             <div style="display:inline-block;">
@@ -80,8 +79,7 @@
                                             {% elif post.status == 2 %}
                                             <span style="color: red">Disabled</span>
                                             {% endif %}
-                                            Comments:
-
+                                            Comments: 
                                     </div>
         
                             </div>
@@ -112,7 +110,7 @@
             </div>
 
     </div>
-
+    
     <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body post-preview">
             <!-- comments -->
@@ -165,11 +163,10 @@
             </form>
             {% endif %}
         </div>
-        
-        <p class="text-center"><i class="fas fa-sticky-note pe-2"></i>Comment Rules</p>
-            <p class="post-preview text-center">
-            After you register you can comment but comments are approved by admin. Please contact us using the Contact Us link should you have any queries. </p>    </p>
+        <p class="text-center"><i class="fa-solid fa-notes"></i>
+            After you register you can comment but comments are approved by admin. Please contact us using the Contact Us link should you have any queries. </p>    
     </div>
+    
     </div>
     <div class="col-md-4 float-right margin-top ">
         <div class="card my-4">

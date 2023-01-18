@@ -1,25 +1,33 @@
-
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 
 {% block content %}
 
-{% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
 
 <div class="row">
   <!-- Blog Entries Column -->
-  <p class="post-meta">Posted by: {{ post.author }} | Created: {{ post.created_on }}<br>Category:
-    {{ post.category }} |
-    <i class="fas fa-newspaper"></i> {{ post.get_status_display }} | {{ post.comments.count }} <i
-        class="fa-solid fa-comment"></i> | {% if post.is_pinned %}
-    <i class="fa-solid fa-map-pin fa-beat"></i>{% endif %}</span></p>
-    <h2>Delete Post</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form|crispy }}
-        <input type="submit" value="Save">
-    </form> 
-  </div>
+<div>
+  <div class="container post-preview">
+    <div class="row">
+      <div class="col-md-8 mt-3 left">
+        <div class="card mb-4">
+          <div class="post-preview card-body">
+            <p>
+              <h2 style="text-align: center;">Delete Post</h2>
+            </p>
+            <p>
+              <h2 class="preview-title" style="text-align: center; color:#FF0000">Are you sure you want to delete?</h2>
+            </p>
+            <form method="post" style="text-align: center;">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <input type="submit" value="Save" class="btn btn-primary head_text btnform text-white" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">
+            </form>
+          </div>
+        </div>
+      </div>
+      {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
 
-
-{% endblock %}
+    </div>
+</div>
+    {% endblock %}
