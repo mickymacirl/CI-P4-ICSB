@@ -31,14 +31,14 @@
                             <i class="fas fa-user pe-1"></i><a href="{% url 'admin:index' %}">Approve Comment</a>
                             <i class="fas fa-comment pe-1"></i><a href="{% url 'admin:index' %}"><a href="#comment">Create comment on
                                 this post</a>
-                            <div class="post-preview">
+                            <div class="post-preview ">
                                 <hr>
-                                <h1 class="post-title">{{ post.title }}</h1>
+                                <h1 class="post-title"> {{ post.title }}</h1>
                                 <p class="post-preview">{{ post.content }}</p>
                                 <p class="post-meta">Author: {{ post.author }} | Created on: {{ post.created_on }} |
                                     Slug: {{ post.slug }}</p>
 
-                                <p>Status:
+                                <p class="p-3 mb-2 bg-secondary text-white">Status:
                                     {% if post.status == 0 %}
                                     <span style="color: orange">Draft</span>
                                     {% elif post.status == 1 %}
