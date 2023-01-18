@@ -115,10 +115,11 @@
     {% if user.is_authenticated %}
         {% if user.is_superuser %}
 
-
-
             <div class="col-md-8 card mb-4  mt-3 ">
                     <div class="card-body post-preview">
+                        <p class="post-meta">Posted by:  | Created: <br> |
+                            
+                        <p class="post-title">Comments Administration</p>
                         <table>
                             <tr class="post-title">
                                 <th>Username</th>
@@ -128,8 +129,8 @@
                                 <th></th>
                             </tr>
                             {% for comment in comments%}
-                                <tr class="post-meta">
-                                    <td>{{ comment.name }}</td>
+                                <tr class="post-details">
+                                    <td class="post-meta">{{ comment.name }}</td>
                                     <td>{{ comment.post }}</td>
                                     <td><a href="{% url 'comment_valid' comment.id %}">{{ comment.status }}</a> </td>
                                     <td>{{ comment.active }} Active</td>
