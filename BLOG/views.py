@@ -131,9 +131,9 @@ class PostUpdateView(UpdateView, LoginRequiredMixin):
     model = Post
     template_name = 'post_edit_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
-    context_object_name = 'post_update'
-    # set one success_url = reverse_lazy('post_list')
-    success_url = get_success_url
+    context_object_name = 'post'
+    success_url = reverse_lazy('post_list')
+    # success_url = get_success_url
 
 
 class PostDeleteView(DeleteView, LoginRequiredMixin):

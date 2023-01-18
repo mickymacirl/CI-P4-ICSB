@@ -80,3 +80,6 @@ class Comment(models.Model):
 
     def __str__(self):
         return 'Comment {} by {}'.format(self.body, self.name)
+    # approve url
+    # def get_approve_url(self):
+    #    return reverse('comments:approve', args=[str(self.id)])
