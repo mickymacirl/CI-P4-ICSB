@@ -2,6 +2,7 @@ from . import views
 from django.urls import path
 from .views import AllPostView
 from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
 from .views import (
     PostListView,
     PostDetailView,
@@ -19,7 +20,8 @@ urlpatterns = [
     # comment
     path('comments/<slug:pk>/', CommentApprovalView.as_view(), name='comment_valid'),
     path('posts/', PostListView.as_view(), name='post_list'),
-    path('posts/create/', PostCreateView.as_view(), name='post_create'),
+    # path('posts/create/', PostCreateView.as_view(), name='post_create'),
+    path('posts/create/', login_required(PostCreateView.as_view()), name='post_create'),
     # set one path('post/<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
     path('post/<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),
     path('post/<slug:slug>/delete/', PostDeleteView.as_view(), name='post_delete'),
