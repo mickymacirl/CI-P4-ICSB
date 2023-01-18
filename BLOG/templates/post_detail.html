@@ -34,20 +34,21 @@
                             <div class="post-preview ">
                                 <hr>
                                 <h1 class="post-title"> {{ post.title }}</h1>
-                                <p class="post-preview">{{ post.content }}</p>
+                                <p class="post-preview border">{{ post.content }}</p>
                                 <p class="post-meta">Author: {{ post.author }} | Created on: {{ post.created_on }} |
                                     Slug: {{ post.slug }}</p>
 
-                                <p class="p-3 mb-2 bg-secondary text-white">Status:
+                                <p>
                                     {% if post.status == 0 %}
-                                    <span style="color: orange">Draft</span>
+                                    <span class ="p-3 mb-2 bg-warning text-white ">Draft | <i class="fa-solid fa-pen-ruler pe-1"></i></span>
                                     {% elif post.status == 1 %}
-                                    <span style="color: green">Published</span>
+                                    <span class ="p-3 mb-2 bg-success text-white"></i>Published | <i class="fa-solid fa-check pe-1"></i></span>
                                     {% elif post.status == 2 %}
-                                    <span style="color: red">Disabled</span>
+                                    <span class ="p-3 mb-2 bg-danger text-white">Disabled | <i class="fa-solid fa-xmark pe-1"></i></span>
                                     {% endif %}
-                                    <p>Comments: {{ post.comments.count }} </p>
-                                    <hr> 
+                                    <p>Comments: {{ post.comments.count }}
+                                </p>
+                                <hr> 
                             </div>
 
 
