@@ -104,6 +104,9 @@ def handle_500(request):
 
 # Create, Read, Update, Delete
 
+def get_success_url(self):
+    return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
+
 
 class PostListView(ListView, LoginRequiredMixin):
     model = Post
@@ -129,7 +132,8 @@ class PostUpdateView(UpdateView, LoginRequiredMixin):
     template_name = 'post_edit_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post_update'
-    success_url = reverse_lazy('post_list')
+    # set one success_url = reverse_lazy('post_list')
+    success_url = get_success_url
 
 
 class PostDeleteView(DeleteView, LoginRequiredMixin):
