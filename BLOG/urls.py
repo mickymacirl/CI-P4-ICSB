@@ -7,7 +7,8 @@ from .views import (
     PostDetailView,
     PostCreateView,
     PostUpdateView,
-    PostDeleteView
+    PostDeleteView,
+    CommentApprovalView
     )
 from django.contrib.auth import views as auth_views
 from allauth.account import views as allauth_views
@@ -15,6 +16,8 @@ from django.urls import include
 
 # A list of url patterns.
 urlpatterns = [
+    # comment
+    path('comments/<slug:pk>/', CommentApprovalView.as_view(), name='comment_valid'),
     path('posts/', PostListView.as_view(), name='post_list'),
     path('posts/create/', PostCreateView.as_view(), name='post_create'),
     # set one path('post/<slug:slug>/update', PostUpdateView.as_view(), name='post_update'),

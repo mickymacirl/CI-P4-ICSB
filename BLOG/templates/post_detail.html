@@ -112,6 +112,34 @@
             </div>
 
     </div>
+    {% if user.is_authenticated %}
+        {% if user.is_superuser %}
+
+
+
+            <div class="col-md-8 card mb-4  mt-3 ">
+                    <div class="card-body post-preview">
+                        <table>
+                            <tr>
+                                <th>Username</th>
+                                <th>Postname</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                            {% for comment in comments%}
+                                <tr>
+                                    <td>{{ comment.name }}</td>
+                                    <td>{{ comment.post }}</td>
+                                    <td><a href="{% url 'comment_valid' comment.id %}">{{ comment.status }}</a> </td>
+                                </tr>
+                            {% endfor %}
+                        </table>
+
+                    </div>
+            </div>
+
+        {% endif %}
+    {% endif %}
 
     <div class="col-md-8 card mb-4  mt-3 ">
         <div class="card-body post-preview">

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="container">
+  <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
+      alt="Icon">Comment Approval</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4">
+      <div class="card mb-4">
+                <!-- Next-->
+                <div class="post-preview card-body">
+                    <div class="card-body post-preview">
+                        {% if user.is_authenticated %}
+                        {% if user.is_superuser %}
+                        <div style="display:inline-block;">
+                            <h1 class="post-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>Site Administration</h2>
+                            <span style="color: #00a7b5;">Account: {{ user.username }}</span>
+                                <br>Access Level:
+                                <span style="color: red">SuperUser</span>
+                        </div>
+                        <hr>
+                        <div style="display:inline-block;">
+                            <i class="fas fa-plus pe-1"></i><a href="/posts/create">Create a post</a> |
+                            
+                            <i class="fas fa-comment pe-1"></i><a href="{% url 'admin:index' %}"><a href="#comment">Create comment on
+                                this post</a>
+                            {% elif user.is_staff %}
+                            <div style="display:inline-block;">
+                                <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
+                                    <br>Access Level:
+                                    <span class="text-detail" style="color: red"><br>Staff</span></p>
+                            </div>
+                            <hr>
+                            <div style="display:inline-block;">
+                                <i class="fas fa-plus pe-2"></i><a href="/posts/create">Create a post</a> |
+                            </div>
+                            {% endif %}
+                        
+
+                        {% else %}
+                        <div class="card-body comment">
+                            <p class="text-center">You must be logged in to post a comment. </p>
+                            <p class="text-center "><a href="{% url 'account_login' %}">Login</a> or <a
+                                    href="{% url 'account_login' %}">Register</a> here.</p>
+                        </div>
+                        <hr>
+                        {% endif %}
+                    </div>
+                    <hr>
+              <div class="card-body post-preview">
+
+            <h2>Approve Comment</h2>
+            <form method="post">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <input type="submit" value="Save">
+            </form>
+          </div>
+          {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+        </div>
+      
+    </div>
+
+</div>
+
+    {% endblock %}
