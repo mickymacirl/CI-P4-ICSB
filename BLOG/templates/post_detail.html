@@ -120,21 +120,24 @@
             <div class="col-md-8 card mb-4  mt-3 ">
                     <div class="card-body post-preview">
                         <table>
-                            <tr>
+                            <tr class="post-title">
                                 <th>Username</th>
                                 <th>Postname</th>
                                 <th>Status</th>
+                                <th>Active</th>
                                 <th></th>
                             </tr>
                             {% for comment in comments%}
-                                <tr>
+                                <tr class="post-meta">
                                     <td>{{ comment.name }}</td>
                                     <td>{{ comment.post }}</td>
                                     <td><a href="{% url 'comment_valid' comment.id %}">{{ comment.status }}</a> </td>
+                                    <td>{{ comment.active }} Active</td>
+                                    <td>{{ post.comments.count }}</td>
+                                    <td>{{ post.comments.count }}</td>
                                 </tr>
                             {% endfor %}
                         </table>
-
                     </div>
             </div>
 
