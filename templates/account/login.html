@@ -8,7 +8,7 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<!-- Login -->
+<!-- Start of Login -->
 <div class="container post-preview">
   <div class="row">
     <div class="col-md-8 mt-3 left">
@@ -23,9 +23,7 @@
               {% csrf_token %}
               {{ form.as_p }}
               {% if redirect_field_value %}
-              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-              {% endif %}
-              <p class="text-center">
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />{% endif %}<p class="text-center">
                 <button class="btn btn-primary head_text btnform mx-auto" type="submit" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">{% trans "Sign In" %}</button>
               </p>
             </form>

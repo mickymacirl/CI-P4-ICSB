@@ -8,11 +8,10 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<!-- Signup -->
+<!-- Start of Signup -->
 <div class="container post-preview">
   <div class="row">
     <div class="col-md-8 mt-3 left">
-
       <div class="card mb-4">
         <div class="col-md-6 mx-auto">
           <p class="card-title text-center">
@@ -27,12 +26,11 @@
             {% csrf_token %}
             {{ form.as_p }}
             {% if redirect_field_value %}
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-            <button class="btn btn-primary head_text btnform" type="submit">{% trans "Register" %}</button>
+            <input type="hidden" name="{{ redirect_field_name }}"
+              value="{{ redirect_field_value }}" />{% endif %}<p class="text-center"><button class="btn btn-primary head_text btnform"
+              type="submit"
+              onclick="if (! confirm('Are you sure you want to Continue?')) { return false; }">{% trans "Register" %}</button></p>
           </form>
-          <br>
-          <br>
         </div>
       </div>
     </div>
@@ -42,5 +40,4 @@
     <!-- End of Side Bar -->
   </div>
 </div>
-
 {% endblock %}
