@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
-
 {% block content %}
 <!-- Start of Post Edit -->
 <div class="container">
@@ -104,7 +103,6 @@
                         <div class="row">
                             <!-- Blog Entries Column -->
                             <h2>Edit Post</h2>
-
                             <form method="post">
                                 {% csrf_token %}
                                 {{ form|crispy }}
