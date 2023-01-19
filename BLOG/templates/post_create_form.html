@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
+<!-- Start of Post Create -->
 <div class="container">
   <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
       alt="Icon">Create Post</h2>
@@ -10,11 +10,11 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 card mb-4">
-                <!-- Next-->
                 <div class="post-preview card-body">
                     <div class="card-body post-preview">
                         {% if user.is_authenticated %}
                         {% if user.is_superuser %}
+                        <!-- Start of Superuser -->
                         <div style="display:inline-block;">
                             <h1 class="post-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>Site Administration</h2>
                             <span style="color: #00a7b5;">Account: {{ user.username }}</span>
@@ -46,9 +46,9 @@
                         <hr>
                         {% endif %}
                     </div>
+                    <!-- End of Superuser -->
                     <hr>
               <div class="card-body post-preview">
-
             <h2>Create Post</h2>
             <form method="post">
               {% csrf_token %}
@@ -56,14 +56,13 @@
               <input type="submit" value="Save" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">
             </form>
           </div>
-          
         </div>
-      
     </div>
 </div>
+<!-- Start of Side Bar -->
 {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+<!-- End of Side Bar -->
 </div>
 </div>
-
-
-    {% endblock %}
+<!-- End of Post Create -->
+{% endblock %}

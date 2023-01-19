@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-
+<!-- Start of Post List -->
 <div class="container">
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
             alt="Icon">Post List</h2>
@@ -43,10 +42,11 @@
             </nav>
         </div>
         {% endif %}
-    </div>{% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-
-
+    </div>
+    <!-- Start of Side Bar -->
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    <!-- Start of Side Bar -->
 </div>
-
 </div>
+<!-- End of Post List -->
 {% endblock %}

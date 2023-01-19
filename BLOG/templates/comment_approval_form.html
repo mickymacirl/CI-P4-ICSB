@@ -8,9 +8,7 @@
       alt="Icon">Comment Approval</h2>
 </div>
 <div class="container">
-  <div class="row">
     <div class="col-md-8 card mb-4">
-
       <!-- Next-->
       <div class="post-preview card-body">
         <div class="card-body post-preview">
@@ -26,8 +24,6 @@
           <div style="display:inline-block;">
             <i class="fas fa-plus pe-1"></i><a href="/posts/create">Create a post</a> |
 
-            <i class="fas fa-comment pe-1"></i><a href="{% url 'admin:index' %}"><a href="#comment">Create comment on
-                this post</a>
               {% elif user.is_staff %}
               <div style="display:inline-block;">
                 <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
@@ -39,8 +35,6 @@
                 <i class="fas fa-plus pe-2"></i><a href="/posts/create">Create a post</a> |
               </div>
               {% endif %}
-
-
               {% else %}
               <div class="card-body comment">
                 <p class="text-center">You must be logged in to post a comment. </p>
@@ -61,9 +55,8 @@
           </div>
         </div>
       </div>
-    </div><!-- Start of Side bar -->
-    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-    <!-- End of Side Bar -->
+    </div>
   </div>
+</div>
   <!-- End of Comment Approval -->
   {% endblock %}

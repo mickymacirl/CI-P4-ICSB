@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-
+<!-- Start of Post Edit -->
 <div class="container">
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
             alt="Icon">Edit Post</h2>
@@ -100,8 +100,6 @@
                         {% endif %}
                     </div>
                     {% endif %}
-
-
                     <div class="col-md-8 mt-3 left">
                         <div class="row">
                             <!-- Blog Entries Column -->
@@ -114,11 +112,12 @@
                                     onclick="if (! confirm('Are you sure you want to Continue?')) { return false; }">
                             </form>
                             <br>
-                        </div>                      
+                        </div>
                     </div>
                 </div>
             </div> {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
-        </div>        
-    </div>   
-</div>  
-        {% endblock %}
+        </div>
+    </div>
+</div>
+<!-- End of Post Edit -->
+{% endblock %}
