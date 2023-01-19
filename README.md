@@ -739,6 +739,10 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 * Used *[Stack Edit.io](https://stackedit.io/)* for markdown testing and format.
 
+### Image Storage
+
+* Used *[Cloudinary](https://www.cloudinary.com)* for static image storage.
+
 ### Footer
 
 * Used elements of the *[Bootrap 4 footer template](https://www.mockplus.com/blog/post/bootstrap-4-footer-template)* for footer.
