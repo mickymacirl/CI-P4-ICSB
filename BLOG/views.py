@@ -11,9 +11,10 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from .models import Post, Comment
 from .forms import CommentForm
 
+
 class AllPostView(ListView):
     """
-    This class is a list view of all the posts in the database, and it will 
+    This class is a list view of all the posts in the database, and it will
     paginate the results by 5 posts per page."
     URL for this view.:
     url(r'^all/$', AllPostView.as_view(), name='all_posts'),
@@ -104,8 +105,8 @@ def post_detail(request, slug):
 
 def custom_403(request, exception):
     """
-    Takes the request and exception as arguments, and returns a rendered 
-    template  
+    Takes the request and exception as arguments, and returns a rendered
+    template
     :param request: The request object
     :param exception: The exception raised by the view
     :return: A 403 error page.
@@ -121,7 +122,7 @@ handler403 = 'path.to.custom_403'
 
 def handle_500(request):
     """
-    Takes a request object as an argument, and returns a response object that 
+    Takes a request object as an argument, and returns a response object that
     renders the 500.html template
     :param request: The request object used to generate this response
     :return: The 500.html page is being returned.
@@ -132,7 +133,7 @@ def handle_500(request):
 def get_success_url(self):
     """
     Returns the URL of the detail page for the object that was just created
-    :return: The reverse_lazy function is being used to return the url of the 
+    :return: The reverse_lazy function is being used to return the url of the
     post_detail view.
     """
     return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
@@ -141,8 +142,8 @@ def get_success_url(self):
 class PostListView(ListView, LoginRequiredMixin):
     """
     List view of Post objects, and it's called PostListView.
-    The first line of the class tells Django to use the ListView generic view. 
-    The next line tells# Django to use the post_list.html template. 
+    The first line of the class tells Django to use the ListView generic view.
+    The next line tells# Django to use the post_list.html template.
     The last line tells Django to use the context name posts
     for the list of posts
     """

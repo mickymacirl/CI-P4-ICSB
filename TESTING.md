@@ -19,6 +19,7 @@ The user is directed back to login screen to login after entering suitable usern
 Actual:
 
 The user is directed back to login screen to login after entering suitable username and password, registration was successful
+
 <hr>
 
 Description:
