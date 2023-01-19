@@ -6,13 +6,13 @@ from django.views.generic import ListView
 CRUD
 """
 from django.urls import reverse_lazy
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Post, Comment
 from .forms import CommentForm
 
 
-class AllPostView(ListView):
+class AllPostView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     """
     This class is a list view of all the posts in the database, and it will
     paginate the results by 5 posts per page."
@@ -24,22 +24,44 @@ class AllPostView(ListView):
     context_object_name = 'all_posts'
     paginate_by = 5
 
+    """
     def get_queryset(self):
-        """
-        If the user is a superuser or staff, show all posts. If the user is 
-        logged in, show only published posts. If the user is not logged in, 
+    
+        If the user is a superuser or staff, show all posts. If the user is
+        logged in, show only published posts. If the user is not logged in,
         show nothing
-        :return: The get_queryset method is being overridden to return a 
-        queryset of all posts if the user is a superuser or staff, a queryset 
+        :return: The get_queryset method is being overridden to return a
+        queryset of all posts if the user is a superuser or staff, a queryset
         of all posts with status 1 if the user is authenticated, and an
         empty queryset if the user is not authenticated.
-        """
         if self.request.user.is_superuser or self.request.user.is_staff:
             return Post.objects.all()
         elif self.request.user.is_authenticated:
             return Post.objects.filter(status='1')
         else:
             return Post.objects.none()
+            
+    def test_func(self):
+        if self.request.user.is_staff:
+            return True
+        elif self.request.user.is_authenticated:
+            return Post.objects.filter(status ='1').exists()
+        else:
+            return False
+        """
+    def test_func(self):
+        """
+        If the user is staff, they can see the post. If the user is 
+        authenticated, they can see the post if it's published. If the user is 
+        not authenticated, they can't see the post
+        :return: a boolean value.
+        """
+        if self.request.user.is_staff:
+            return True
+        elif self.request.user.is_authenticated:
+            return Post.objects.filter(status='1') == "Published"
+        else:
+            return False
 
 
 def about(request):
@@ -156,7 +178,7 @@ def get_success_url(self):
     return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
-class PostListView(ListView, LoginRequiredMixin):
+class PostListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     """
     List view of Post objects, and it's called PostListView.
     The first line of the class tells Django to use the ListView generic view.
@@ -168,43 +190,60 @@ class PostListView(ListView, LoginRequiredMixin):
     template_name = 'post_list.html'
     context_object_name = 'posts'
 
+    def test_func(self):
+        return self.request.user.is_staff
+
 
 class PostDetailView(DetailView, LoginRequiredMixin):
     model = Post
     template_name = 'post_view.html'
 
 
-class PostCreateView(CreateView, LoginRequiredMixin):
+class PostCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     model = Post
     template_name = 'post_create_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post_create'
     success_url = reverse_lazy('post_list')
 
+    def test_func(self):
+        return self.request.user.is_staff
 
-class PostUpdateView(UpdateView, LoginRequiredMixin):
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
     template_name = 'post_edit_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post'
     success_url = reverse_lazy('post_list')
+    """
+    Only Admin can access this page   
+    def test_func():
+        return self.request.user.is_superuser and self.request.user.is_staff
+    """
+    def test_func(self):
+        return self.request.user.is_staff
 
-
-class PostDeleteView(DeleteView, LoginRequiredMixin):
+class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = Post
     template_name = 'post_confirm_delete.html'
     success_url = '/posts/'
 
+    def test_func(self):
+        return self.request.user.is_staff
 
-class CommentApprovalView(UpdateView, LoginRequiredMixin):
+
+class CommentApprovalView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Comment
     # add 
     commentsAll = Comment.objects.all()
     commentsActive = Comment.objects.filter(active=True)
     commentsStatus1 = Comment.objects.filter(status='approved')
     commentStatus2s = Comment.objects.exclude(status='rejected')
-    
+    # change
     template_name = 'comment_approval_form.html'
     fields = ['status', 'active']
     context_object_name = 'comment/'
     success_url = reverse_lazy('home')
+
+    def test_func(self):
+        return self.request.user.is_superuser
