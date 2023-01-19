@@ -217,8 +217,6 @@ Implementation of Core Features
 
 * [X] Deploy to Heroku - Deploy base project to heroku.
 
-Implement Core Image
-
 ### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
 
 The goal of this user story is to properly set up static files and folders within the project so that the images, CSS and JavaScript will be displayed and function correctly on the website. This user story is essential for ensuring users' cohesive and visually appealing website experience.
@@ -228,8 +226,6 @@ Implementation of Static Files
 * [X] Static folders and settings setup - Create static folders and setup the correct settings.
 
 * [X] Subfolders created for images, CSS, and JavaScript - Create and setup folders for the likes of images, CSS, and JavaScript
-
-Static Files Image
 
 ### User Story - As a developer, I need to create the main website header with logo and web page links
 
@@ -681,9 +677,6 @@ The following commands were used to push code to the remote repository:
 
 3. *git push* was used to push all local changes to the remote repository on **GitHub**.
 
-### Deploying New Changes
-
-Once **GitHub Pages** is set up, normal **GithHub** flow updates the live page.
 
 ### Forking the Repository
 

@@ -14,10 +14,26 @@ STATUS = (
 Post class is a model that has a title, slug, author, updated_on, category,
 content, created_on, # status, and is_pinned
 """
+msg = 'Only alphabet, spaces and - characters are allowed'
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=100, unique=True, validators=[RegexValidator(r'^[a-zA-Z\s-]+$', 'Only alphabet, spaces and - characters are allowed')])
+    title = models.CharField(max_length=100,
+                             unique=True,
+                             validators=[RegexValidator(
+                                r'^[a-zA-Z\s-]+$', msg)]
+                             )
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(User,
+                               on_delete=models.CASCADE,
+                               related_name='blog_posts'
+                               )
+    updated_on = models.DateTimeField(auto_now=True)
+    category = models.CharField(max_length=200, unique=False)
+    content = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    status = models.IntegerField(choices=STATUS, default=2)
+    is_pinned = models.BooleanField(default=False)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_posts')
