@@ -24,6 +24,23 @@ class AllPostView(ListView):
     context_object_name = 'all_posts'
     paginate_by = 5
 
+    def get_queryset(self):
+        """
+        If the user is a superuser or staff, show all posts. If the user is 
+        logged in, show only published posts. If the user is not logged in, 
+        show nothing
+        :return: The get_queryset method is being overridden to return a 
+        queryset of all posts if the user is a superuser or staff, a queryset 
+        of all posts with status 1 if the user is authenticated, and an
+        empty queryset if the user is not authenticated.
+        """
+        if self.request.user.is_superuser or self.request.user.is_staff:
+            return Post.objects.all()
+        elif self.request.user.is_authenticated:
+            return Post.objects.filter(status='1')
+        else:
+            return Post.objects.none()
+
 
 def about(request):
     """
@@ -181,6 +198,12 @@ class PostDeleteView(DeleteView, LoginRequiredMixin):
 
 class CommentApprovalView(UpdateView, LoginRequiredMixin):
     model = Comment
+    # add 
+    commentsAll = Comment.objects.all()
+    commentsActive = Comment.objects.filter(active=True)
+    commentsStatus1 = Comment.objects.filter(status='approved')
+    commentStatus2s = Comment.objects.exclude(status='rejected')
+    
     template_name = 'comment_approval_form.html'
     fields = ['status', 'active']
     context_object_name = 'comment/'
