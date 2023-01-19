@@ -14,11 +14,11 @@ Steps:
 
 Expected:
 
-An email is recieved with a link to sign up, upon clicking the link, registration is successful
+The user is directed back to login screen to login after entering suitable username and password, registration is successful
 
 Actual:
 
-An email is recieved with a link to sign up, upon clicking the link, registration is successful
+The user is directed back to login screen to login after entering suitable username and password, registration was successful
 <hr>
 
 Description:

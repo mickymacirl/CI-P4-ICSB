@@ -87,10 +87,10 @@ ACCOUNT_EMAIL_VERIFICATION = "none"
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT = 86400
 
 # or any other page
-ACCOUNT_LOGOUT_REDIRECT_URL = '/all_posts/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/posts/'
 
 # redirects to profile page if not configured.
-LOGIN_REDIRECT_URL = '/all_posts/'
+LOGIN_REDIRECT_URL = '/posts/'
 
 TEMPLATES = [
     {
