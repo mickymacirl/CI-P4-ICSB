@@ -8,7 +8,7 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-
+<!-- Login -->
 <div class="container post-preview">
   <div class="row">
     <div class="col-md-8 mt-3 left">
@@ -25,8 +25,9 @@
               {% if redirect_field_value %}
               <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
               {% endif %}
-                <p class="text-center">
-              <button class="btn btn-primary head_text btnform mx-auto" type="submit">{% trans "Sign In" %}</button></p>
+              <p class="text-center">
+                <button class="btn btn-primary head_text btnform mx-auto" type="submit">{% trans "Sign In" %}</button>
+              </p>
             </form>
             <p class="card-body" style="text-align: center;">{% blocktrans %}If you have not created an account yet,
               then
@@ -37,7 +38,10 @@
         </div>
       </div>
     </div>
+    <!-- End of Login -->
+    <!-- Side Bar -->
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    <!-- End of Side Bar-->
   </div>
 </div>
 

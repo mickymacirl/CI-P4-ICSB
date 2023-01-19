@@ -8,6 +8,7 @@
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
 
 {% block content %}
+<!-- Sign Out -->
 <div class="container post-preview">
   <div class="row">
     <div class="col-md-8 mt-3 left">
@@ -17,22 +18,25 @@
             <img
               src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
               alt="Icon Logout"></p>
-            <h2 class="text-center">{% trans "Sign Out" %}</h2>
-            <p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
-            <form method="post" action="{% url 'account_logout' %}">
-              {% csrf_token %}
-              {% if redirect_field_value %}
-              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-              {% endif %}
-              <p class="text-center">
+          <h2 class="text-center">{% trans "Sign Out" %}</h2>
+          <p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
+          <form method="post" action="{% url 'account_logout' %}">
+            {% csrf_token %}
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+            {% endif %}
+            <p class="text-center">
               <button class="btn btn-primary head_text btnform" type="submit">{% trans "Sign Out" %}</button>
-            </form>
-            <br>
-            <br>
+          </form>
+          <br>
+          <br>
         </div>
       </div>
+      <!-- End of Sign Out -->
     </div>
+    <!-- Side Bar -->
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    <!-- End of Side Bar -->
   </div>
 </div>
 

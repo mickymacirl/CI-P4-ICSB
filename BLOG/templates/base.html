@@ -11,16 +11,17 @@
   <meta name="description" content="Irish Cyber Security Blog">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="https://res.cloudinary.com/ds197sglr/raw/upload/v1673400120/clean_f6pxlg.css">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
 <body>
+  <!-- Start of Nav Bar -->
   <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
       <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
@@ -59,6 +60,9 @@
       </div>
     </div>
   </nav>
+  <!-- End of Nav Bar -->
+
+  <!-- Index Header -->
   <header class="masthead"
     style="background-image:url('https://res.cloudinary.com/ds197sglr/image/upload/v1673832323/circle-g350c28cb3_1920_custom_tdf4vf_dv6tmi.webp');">
     <div class="overlay"></div>
@@ -66,17 +70,22 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
           <div class="site-heading">
-            <h1>Irish Cyber Security Blog</h1><h2><span class="subheading">- Application - Network - Cloud - IoT -</span></h2>
+            <h1>Irish Cyber Security Blog</h1>
+            <h2><span class="subheading">- Application - Network - Cloud - IoT -</span></h2>
           </div>
         </div>
       </div>
     </div>
   </header>
+  <!-- End of Index Header -->
 
   {% block content %}
+  content
   <!-- Content Goes here -->
+  2
   {% endblock content %}
 
+  <!-- Start of Footer -->
   <footer class="bg-primary text-center text-lg-start text-white page-footer">
     <!-- Grid container -->
     <div class="container p-4">
@@ -84,7 +93,6 @@
       <div class="row my-4">
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-
           <div
             class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
             style="width: 160px; height: 160px;">
@@ -92,9 +100,7 @@
               src="https://res.cloudinary.com/ds197sglr/image/upload/v1673869114/base_logo_transparent_background11_gvbhhd.png"
               height="170" alt="Irish Cyber Security Blog" loading="lazy">
           </div>
-
           <p class="text-center">Irish Cyber Security Blog - News and Comment</p>
-
           <ul class="list-unstyled d-flex flex-row justify-content-center">
             <li>
               <a class="text-white px-2" href="https://www.facebook.com" target="_blank">
@@ -112,29 +118,22 @@
               </a>
             </li>
           </ul>
-
         </div>
-        <!--Grid column-->
-
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h2 class="text-uppercase mb-4">Posts</h5>
-
-          <ul class="list-unstyled">
-            <li class="mb-2">
-              <a href="/all_posts/" class="text-white"><i class="fas fa-blog pe-2"></i>Posts List</a>
-            </li>
-            <li class="mb-2">
-              <a href="{% url 'home' %}" class="text-white"><i class="fas fa-blog pe-2"></i>Recent Posts</a>
-            </li>
-          </ul>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/all_posts/" class="text-white"><i class="fas fa-blog pe-2"></i>Posts List</a>
+              </li>
+              <li class="mb-2">
+                <a href="{% url 'home' %}" class="text-white"><i class="fas fa-blog pe-2"></i>Recent Posts</a>
+              </li>
+            </ul>
         </div>
-        <!--Grid column-->
-
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h2 class="text-uppercase mb-4">Irish Cyber Security Blog</h2>
-
           <ul class="list-unstyled">
             <li class="mb-2">
               <a href="/all_posts/" class="text-white"><i class="fas fa-blog pe-2"></i>All Posts</a>
@@ -149,11 +148,8 @@
           </ul>
         </div>
         <!--Grid column-->
-
-        <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h2 class="text-uppercase mb-4">Contact</h2>
-
           <ul class="list-unstyled">
             <li>
               <p><i class="fas fa-map-marker-alt pe-1"></i>Island Key, Teeling Way, North Strand, County Dublin, Ireland
@@ -167,11 +163,8 @@
             </li>
           </ul>
         </div>
-        <!--Grid column-->
       </div>
-      <!--Grid row-->
     </div>
-    <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -180,11 +173,14 @@
     </div>
     <!-- Copyright -->
   </footer>
+  <!-- End of of Footer -->
 
+  <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/acbd4edc31.js" crossorigin="anonymous"></script>
   <script src="https://res.cloudinary.com/ds197sglr/raw/upload/v1673450757/blog_zszdui.js"></script>
+  <!-- End of JS -->
 </body>
 
 </html>

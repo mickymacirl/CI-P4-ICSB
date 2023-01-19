@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<!-- Start of All Posts -->
 <div class="container">
     <h2><img src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
             alt="Icon">All Posts</h2>
@@ -44,7 +45,10 @@
         </div>
         {% endif %}
     </div>
+    <!-- Start of Side bar -->
     {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+    <!-- End of Side Bar -->
 </div>
 </div>
+<!-- End of All Posts -->
 {% endblock %}
