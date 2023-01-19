@@ -541,7 +541,7 @@ and includes multiple ways for users to navigate, such as the customized menus f
 
 ## Validator Testing
 
-All pages were run through the *[CI Pep8 Validator](https://pep8ci.herokuapp.com/)*. to ensure that all code was Pep8 compliant.
+All pages were run through the *[CI Pep8 Validator](https://pep8ci.herokuapp.com/)* to ensure that all code was Pep8 compliant.
 
 Errors were displayed as a result of blank spacing and overly long lines.
 
@@ -553,7 +553,7 @@ Django's auto-generated code for AUTH PASSWORD VALIDATORS was too long.
 
 ## HTML
 
-On all pages, the w3 HTML Validator was used. Initially, there were a few errors due to stray script tags,
+On all pages, the *[w3 HTML Validator](https://validator.w3.org/)* was used. Initially, there were a few errors due to stray script tags,
 incorrect use of headings inside spans, and some indentation elements such as div tags.
 
 All of these issues were resolved, and all pages passed validation.
