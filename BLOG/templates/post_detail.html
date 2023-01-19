@@ -90,9 +90,13 @@
 
                         {% else %}
                         <div class="card-body comment">
+                            <p class="text-center">    <img
+                            src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
+                            alt="Icon Login"></p>
+                          <h2 style="text-align: center;">Sign in or Register</h2>
                             <p class="text-center">You must be logged in to post a comment. </p>
                             <p class="text-center "><a href="{% url 'account_login' %}">Login</a> or <a
-                                    href="{% url 'account_login' %}">Register</a> here.</p>
+                                    href="{% url 'account_signup' %}">Register</a> here.</p>
                         </div>
                         <hr>
                         {% endif %}
