@@ -764,6 +764,18 @@ https://stackoverflow.com/questions/67351312/django-check-if-superuser-in-class-
 
 https://django-allauth.readthedocs.io/en/latest/installation.html
 
+https://django-braces.readthedocs.io/en/latest/access.html#loginrequiredmixin
+
+https://djangocentral.com/building-a-blog-application-with-django/
+
+https://ccbv.co.uk/projects/Django/1.9/django.contrib.auth.mixins/UserPassesTestMixin/
+
+https://learndjango.com/tutorials/django-best-practices-user-permissions
+
+https://djangocentral.com/building-a-blog-application-with-django/
+
+https://djangocentral.com/creating-comments-system-with-django/
+
 ### Design Blog
 
 * Used *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
