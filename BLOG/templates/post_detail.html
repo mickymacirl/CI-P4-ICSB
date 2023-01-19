@@ -77,6 +77,7 @@
                                     <i class="fas fa-trash pe-1"></i><a href="{% url 'post_delete' post.slug %}">Delete
                                         this
                                         post</a>
+                                    <i class="fas fa-trash pe-1"></i><a href="/all_posts/">View All Posts</a>
                                     <div class="post-preview ">
                                         <hr>
                                         <a href="{% url 'post_detail' post.slug  %}">
@@ -120,7 +121,6 @@
                                 <!-- End of Admin -->
 
                                 <!-- Start View All Users -->
-                                everyone sees this
                                 <a href="{% url 'post_detail' post.slug  %}">
                                     <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
                                 </a>
@@ -142,6 +142,7 @@
                     <div>
                         <hr>
                     <p class="post-title"><h1>Comments Administration</h1></p>
+                    <p class="text-center"> **Set Comment to Approved in <a href="{% url 'admin:index' %}">Admin</a> to show in table below**</p>
                     <table class="table table-sm table-dark table">
                         <tr class="">
                             <th>Commenter</th>
@@ -159,7 +160,7 @@
                                 {% if comment.status == "review" %}
                                 <span style="color: orange">Review</span>
                                 {% elif comment.status == "accepted" %}
-                                <span style="color: green"><a href="{% url 'comment_valid' comment.id %}">Approved</a></span>
+                                <span style="color: green"><a class="text-decoration-underline" href="{% url 'comment_valid' comment.id %}">Approved</a></span>
                                 {% elif comment.status == "spam" %}
                                 <span style="color: red">Spam</span>
                                 {% endif %}

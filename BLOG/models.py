@@ -10,6 +10,11 @@ STATUS = (
     (2, "Disabled"),
 )
 
+"""
+Post class is a model that has a title, slug, author, updated_on, category,
+content, created_on, # status, and is_pinned
+"""
+
 
 class Post(models.Model):
     title = models.CharField(max_length=100, unique=True, validators=[RegexValidator(r'^[a-zA-Z\s-]+$', 'Only alphabet, spaces and - characters are allowed')])
