@@ -43,11 +43,25 @@
                         &rarr;</a>
                 </div>
             </div>{% endfor %}
-            <!-- End of 5 Posts in Index -->
+            {% if is_paginated %}
+            <nav aria-label="Page Navigation"></nav>
+            <ul class="pagination justify-content-center is_paginated">
+                <li><a href="?page=1" class="page-link">ALL</a></li>
+                {% if page_obj.has_previous %}
+                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&larr; PREV </a></li>
+                {% endif %}
+                {% if page_obj.has_next %}
+                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &rarr;</a></li>
+                {% endif %}
+            </ul>
+            </nav>
         </div>
+        {% endif %}
+        <!-- End of 5 Posts in Index -->
         <!-- Start of Side Bar -->
         {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
         <!-- Start of Side Bar -->
     </div>
+</div>
 </div>
 {%endblock%}
