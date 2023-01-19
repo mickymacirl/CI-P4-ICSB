@@ -12,6 +12,7 @@
                     <div class="card-body post-preview">
                         {% if user.is_authenticated %}
                         {% if user.is_superuser %}
+                        <!-- Start of Superuser -->
                         <div style="display:inline-block;">
                             <h1 class="post-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>Site
                                 Administration</h1>
@@ -29,10 +30,6 @@
                                 post</a> |
                             <i class="fas fa-trash pe-1"></i><a href="{% url 'post_delete' post.slug %}">Delete this
                                 post</a>
-                            <i class="fas fa-user pe-1"></i><a href="{% url 'admin:index' %}">Approve Comment</a>
-                            <i class="fas fa-comment pe-1"></i><a href="{% url 'admin:index' %}"><a
-                                    href="#comment">Create comment on
-                                    this post</a>
                                 <div class="post-preview ">
                                     <hr>
                                     <a href="{% url 'post_detail' post.slug  %}">
@@ -56,45 +53,54 @@
                                         </p>
                                         <hr>
                                 </div>
+                                <!-- End of Superuser -->
                                 {% elif user.is_staff %}
+                                <!-- Staff User -->
                                 <div style="display:inline-block;">
-                                    <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
+                                    <h1 class="post-title"><i class="fa-solid fa-screwdriver-wrench pe-2"></i>Site
+                                        Administration</h1>
+                                        <hr>
+                                        <span style="color: #00a7b5;">Account: {{ user.username }}</span>
                                         <br>Access Level:
-                                        <span class="text-detail" style="color: orange"><br>Staff</span></p>
+                                        <span style="color: red">Staff</span>
                                 </div>
+                                <img src="https://res.cloudinary.com/ds197sglr/image/upload/v1674071796/animation_Contrast_tp7p339r_2_d2wsdu.gif"
+                                    width="150px" alt="Animated Icon ICSBlog"></img>
+                                <hr>
                                 <hr>
                                 <div style="display:inline-block;">
-                                    <i class="fas fa-plus pe-2"></i><a href="/posts/create">Create a post</a> |
-                                    <i class="fas fa-edit pe-2"></i> <a href="{% url 'post_update' post.slug %}">Edit
-                                        this
+                                    <i class="fas fa-plus pe-1"></i><a href="/posts/create">Create a post</a> |
+                                    <i class="fas fa-edit pe-1"></i> <a href="{% url 'post_update' post.slug %}">Edit this
                                         post</a> |
-                                    <i class="fas fa-trash pe-2"></i><a href="{% url 'post_delete' post.slug %}">Delete
-                                        this
+                                    <i class="fas fa-trash pe-1"></i><a href="{% url 'post_delete' post.slug %}">Delete this
                                         post</a>
-                                    <i class="fas fa-comment pe-2"></i><a href="comment">Create comment on
-                                        this post</a>
-                                    <div class="post-preview">
-                                        <h1 class="post-title">{{ post.title }}</h1>
-                                        <p class="post-preview">{{ post.content }}</p>
-                                        <p class="post-meta">Author: {{ post.author }} | Created on:
-                                            {{ post.created_on }} |
-                                            Slug: {{ post.slug }}</p>
-
-                                        <p>Status:
-                                            {% if post.status == 0 %}
-                                            <span style="color: orange">Draft</span>
-                                            {% elif post.status == 1 %}
-                                            <span style="color: green">Published</span>
-                                            {% elif post.status == 2 %}
-                                            <span style="color: red">Disabled</span>
-                                            {% endif %}
-                                            Comments:
-
-                                    </div>
-
-                                </div>
+                                        <div class="post-preview ">
+                                            <hr>
+                                            <a href="{% url 'post_detail' post.slug  %}">
+                                                <h1 class="post-title"><i class="fas fa-blog pe-2"></i>{{ post.title }}</h2>
+                                            </a>
+                                            <p class="post-preview border">{{ post.content }}</p>
+                                            <p class="post-meta">Author: {{ post.author }} | Created on: {{ post.created_on }} |
+                                                Slug: {{ post.slug }}</p>
+                                            <p>
+                                                {% if post.status == 0 %}
+                                                <span class="p-3 mb-2 bg-warning text-white ">Draft | <i
+                                                        class="fa-solid fa-pen-ruler pe-1"></i></span>
+                                                {% elif post.status == 1 %}
+                                                <span class="p-3 mb-2 bg-success text-white"></i>Published | <i
+                                                        class="fa-solid fa-check pe-1"></i></span>
+                                                {% elif post.status == 2 %}
+                                                <span class="p-3 mb-2 bg-danger text-white">Disabled | <i
+                                                        class="fa-solid fa-xmark pe-1"></i></span>
+                                                {% endif %}
+                                                <p>Comments: {{ post.comments.count }}
+                                                </p>
+                                                <hr>
+                                        </div>
+                                        <!-- End of Staff User -->
                                 {% endif %}
                                 {% else %}
+                                <!-- If Not Logged In -->
                                 <div class="card-body comment">
                                     <p class="text-center"> <img
                                             src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
@@ -206,7 +212,7 @@
                     <form method="post" style="margin-top: 1.3em;">
                         {{ comment_form | crispy }}
                         {% csrf_token %}
-                        <button type="submit" class="btn btn-primary head_text">Submit</button>
+                        <button type="submit" class="btn btn-primary head_text" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">Submit</button>
                     </form>
                     {% endif %}
                 </div>
@@ -219,5 +225,7 @@
             </div>
         </div>
     </div>
+    </div>
+</div>
     <!-- End of Post Detail -->
     {% endblock content %}

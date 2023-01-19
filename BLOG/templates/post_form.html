@@ -13,7 +13,7 @@
     <form method="post">
         {% csrf_token %}
         {{ form|crispy }}
-        <input type="submit" value="Save">
+        <input type="submit" value="Save" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">
     </form> 
 
 {% endblock %}

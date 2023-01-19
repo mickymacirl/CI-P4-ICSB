@@ -10,7 +10,6 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 card mb-4">
-      <div class="card mb-4">
                 <!-- Next-->
                 <div class="post-preview card-body">
                     <div class="card-body post-preview">
@@ -25,9 +24,6 @@
                         <hr>
                         <div style="display:inline-block;">
                             <i class="fas fa-plus pe-1"></i><a href="/posts/create">Create a post</a> |
-                            
-                            <i class="fas fa-comment pe-1"></i><a href="{% url 'admin:index' %}"><a href="#comment">Create comment on
-                                this post</a>
                             {% elif user.is_staff %}
                             <div style="display:inline-block;">
                                 <p><span style="color: #00a7b5;">Account: {{ user.username }}</span>
@@ -57,14 +53,17 @@
             <form method="post">
               {% csrf_token %}
               {{ form|crispy }}
-              <input type="submit" value="Save">
+              <input type="submit" value="Save" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">
             </form>
           </div>
-          {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+          
         </div>
       
     </div>
-
 </div>
+{% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+</div>
+</div>
+
 
     {% endblock %}
