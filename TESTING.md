@@ -528,11 +528,16 @@ Results:
 
 ## Accessibility
 
-WAVE Web Accessibility Evaluation Tool was used to test each page, with one alert related to Titles.
+The blog was designed to provide optimal viewing experience across different screen sizes and resolutions.
 
-![WAVE Result Index](/assets/readme/waveresultindexrm.jpg)
+During the development process, the WAVE Evaluation Website tool was used to ensure the highest level of accessibility in accordance with the Web Content Accessibility Guidelines (WCAG).
 
-![WAVE Result Game](/assets/readme/waveresultgamerm.jpg)
+Despite this, testing revealed some issues with contrast errors on the menu in the header and the text in the footer. These errors were caused by the color of the text,
+which is larger at high resolutions to make it easier to read, but can cause issues on smaller screens. To address this, a hamburger
+menu was implemented as an alternative for users on smaller screens. Despite the error, the website was designed with the user in mind
+and includes multiple ways for users to navigate, such as the customized menus for different access levels and navbar links, for added convenience.
+
+![HTML Validator](/docs/testing/testing-wave.jpg)
 
 ## Validator Testing
 
@@ -559,18 +564,6 @@ Because of validator will only accept HTML rendered code, paste the raw HTML cod
 
 ![HTML Validator](/docs/testing/testing-html.jpg)
 
-## WAVE
-
-The blog was designed to provide optimal viewing experience across different screen sizes and resolutions.
-
-During the development process, the WAVE Evaluation Website tool was used to ensure the highest level of accessibility in accordance with the Web Content Accessibility Guidelines (WCAG).
-
-Despite this, testing revealed some issues with contrast errors on the menu in the header and the text in the footer. These errors were caused by the color of the text,
-which is larger at high resolutions to make it easier to read, but can cause issues on smaller screens. To address this, a hamburger
-menu was implemented as an alternative for users on smaller screens. Despite the error, the website was designed with the user in mind
-and includes multiple ways for users to navigate, such as the customized menus for different access levels and navbar links, for added convenience.
-
-![HTML Validator](/docs/testing/testing-wave.jpg)
 
 ## Lighthouse Testing
 
