@@ -546,6 +546,19 @@ Django's auto-generated code for AUTH PASSWORD VALIDATORS was too long.
 
 ![CI Pep8 Result](/docs/testing/test-pep8.jpg)
 
+## HTML
+
+On all pages, the w3 HTML Validator was used. Initially, there were a few errors due to stray script tags,
+incorrect use of headings inside spans, and some indentation elements such as div tags.
+
+All of these issues were resolved, and all pages passed validation.
+Because of the django structure - directing language code used in the HTML files, which cannot be easily copy and pasted into the validator, pages with login required or a secured view could be validated by direct URI.
+
+To test the file validation, open the page to be checked, right-click, and select View Page Source from the menu that appears.
+Because of validator will only accept HTML rendered code, paste the raw HTML code into it.
+
+![HTML Validator](/docs/testing/testing-html.jpg)
+
 ## Lighthouse Testing
 
 ### Desktop Testing

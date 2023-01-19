@@ -754,6 +754,16 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 * Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Agile Project Management
 
+https://www.tutorialspoint.com/How-to-wrap-long-lines-in-Python
+
+https://stackoverflow.com/questions/48792321/django-generic-detail-view-must-be-called-with-either-an-object-pk-or-slug-whe
+
+https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views
+
+https://stackoverflow.com/questions/67351312/django-check-if-superuser-in-class-based-view
+
+https://django-allauth.readthedocs.io/en/latest/installation.html
+
 ### Design Blog
 
 * Used *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
