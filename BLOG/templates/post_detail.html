@@ -158,7 +158,7 @@
                                 {% if comment.status == "review" %}
                                 <span style="color: orange">Review</span>
                                 {% elif comment.status == "accepted" %}
-                                <span style="color: green">Accepted</span>
+                                <span style="color: green"><a href="{% url 'comment_valid' comment.id %}">Approved</a></span>
                                 {% elif comment.status == "spam" %}
                                 <span style="color: red">Spam</span>
                                 {% endif %}
@@ -213,9 +213,8 @@
                 <!-- End of Comments Admin -->
                 {% endif %}
                 {% endif %}
-                <!--            <div class="col-md-8 card mb-4  mt-3 ">
-                <div class="card-body post-preview">
-                    
+                <div class="col-md-8 card mb-4  mt-3 ">
+                <div class="card-body post-preview">                 
                     <h2 id="#comment" class="post-meta">{{ comments.count }} comments</h2>
                     {% for comment in comments %}
                     <div class="post-detail" style="padding: 10px;">
@@ -234,6 +233,7 @@
                     {% endfor %}
                 </div>
             </div>
+        <!--
             {% for comment in comments %}
             <div class="comment">
                 <p>{{ comment.name }} - {{ comment.email }}</p>
@@ -247,7 +247,7 @@
                     <span style="color: red">Spam3</span>
                     {% endif %}
                 </p>
-            </div>
+            </div> 
             {% endfor %} -->
                 <!-- Message to user after comment -->
                 <div class="col-md-8 card mb-4  mt-3 ">
