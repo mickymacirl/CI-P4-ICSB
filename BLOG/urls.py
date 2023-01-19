@@ -19,7 +19,7 @@ from django.urls import include
 List of URL Patterns
 """
 urlpatterns = [
-    path('comments/<slug:pk>/', CommentApprovalView.as_view(),  
+    path('comments/<slug:pk>/', CommentApprovalView.as_view(),
          name='comment_valid'),
     path('posts/', PostListView.as_view(), name='post_list'),
     path('posts/create/', login_required(PostCreateView.as_view()),

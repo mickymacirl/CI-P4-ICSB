@@ -534,6 +534,18 @@ WAVE Web Accessibility Evaluation Tool was used to test each page, with one aler
 
 ![WAVE Result Game](/assets/readme/waveresultgamerm.jpg)
 
+## Validator Testing
+
+All pages were run through the *[CI Pep8 Validator](https://pep8ci.herokuapp.com/)*. to ensure that all code was Pep8 compliant.
+
+Errors were displayed as a result of blank spacing and overly long lines.
+
+All of these errors were corrected, with the exception of the settings.py file, and the code was validated.
+
+Django's auto-generated code for AUTH PASSWORD VALIDATORS was too long.
+
+![CI Pep8 Result](/docs/testing/test-pep8.jpg)
+
 ## Lighthouse Testing
 
 ### Desktop Testing
