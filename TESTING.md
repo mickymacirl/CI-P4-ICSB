@@ -142,19 +142,19 @@ The user is directed to the Contact us page
 
 Description:
 
-Ensure a user can navigate to the Blog Posts page
+Ensure a user can navigate to the All Posts page
 
 Steps:
 
-Click on the Blog Posts link in the navigation bar
+Click on the All Posts link in the navigation bar
 
 Expected:
 
-The user is directed to the Blog Posts page
+The user is directed to the All Posts page
 
 Actual:
 
-The user is directed to the Blog Posts page
+The user is directed to the All Posts page
 
 <hr>
 
@@ -214,7 +214,7 @@ The user is logged out
 
 Description:
 
-Ensure user can navigate to the admin page, if they are staff or superuser.
+Ensure user can navigate to the admin page a superuser.
 
 Steps:
 

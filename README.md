@@ -613,6 +613,16 @@ Admin Page
 
 ## Security
 
+## LoginRequiredMixin and UserPassesTestMixin
+
+I chose the LoginRequiredMixin and UserPassesTestMixin to secure the views for creating, editing, and deleting posts and comments.
+
+The LoginRequiredMixin ensures that only logged in users can access these views, whereas the UserPassesTestMixin allows me to define specific test functions to determine which users can access these views.
+
+In the case of post views, for example, I set the test function to check if the user is a staff member (superuser has it always), so that staff users can create, edit, and delete posts.
+
+Similarly, I set the test function for the comment views to check if the user is a superuser, so that only superusers can approve or reject comments.
+
 ### csrf_token
 
 {% csrf_token %} template tag is used to include a CSRF token in a Django template to protect against cross-site request forgery attacks by ensuring that form submissions are coming from an authenticated user and not from a malicious attacker. By including the CSRF token in forms that are sent via POST, PUT and DELETE methods, the server can verify the authenticity of the request and prevent unauthorized actions.
