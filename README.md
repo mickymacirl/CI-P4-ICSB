@@ -283,7 +283,7 @@ Implementation of Navigation Bar
 
 * [X] Logout - Only logged-in users can see - The Logout page is only visible to users who are logged in.
 
-[Footer](/docs/readme/rm-menu.jpg)
+[Menu](/docs/readme/rm-menu.jpg)
 
 ### User Story - As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
 
@@ -293,7 +293,7 @@ Implementation of Home Page
 
 * [X] The home page is created with the theme of the website layout - Create home page to view main blog.
 
-Home Page Image
+[Home](/docs/readme/rm-home.jpg)
 
 ### User Story - As a developer, I must create the basic base.html page and project structure so the layout is uniform
 
