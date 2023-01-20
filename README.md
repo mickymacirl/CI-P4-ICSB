@@ -690,6 +690,42 @@ Used Abode Photoshop to edit the main hero image with the logo in the circles fr
 
 ## Technologies
 
+### HTML
+
+* The main structure of the blog was developed using HTML as the main language.
+
+### CSS
+
+* The blog was styled using bootstrap and custom css.
+
+### Python
+
+* Python was used with the Django framework.
+
+### Visual Studio Code
+
+* The blog was developed using Visual Studio Code IDE
+
+### GitHub
+
+* Source code is on GitHub
+
+### Git
+
+* Used to commit and push code during the development of the blog
+
+### Font Awesome
+
+* Used for icons.
+
+### Balsamiq
+
+* The wireframes were created using Balsamiq
+
+### TinyPNG
+
+* TinyPNG is was used to reduce image sizes to improve lighthouse scores.
+
 ## Python Libraries
 
 ### Python Modules
