@@ -540,11 +540,11 @@ Testing was performed on the footer links by clicking the font awesome icons and
 
 ## Unit Testing
 
-Unit tests were created to test some basic functionality such as test posts used and comments. These can be found in the tests.py.
+Unit tests were created to test some basic functionality such as posting and comments. These can be found in the tests.py.
 
 Results:
 
-![unit tests]()
+![Unit Test](/docs/testing/testing-testcases.jpg)
 
 ## Accessibility
 
