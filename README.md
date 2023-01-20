@@ -2,8 +2,7 @@
 
 ![Irish Cyber Security Blog Banner](/docs/readme/rm_logo.jpg)
 
-Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
-It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
+Irish Cyber Security Blog is a **blog** to *store information* about **Irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats* and solutions. In addition, it allows users to **read, comment on** and discuss posts posted by the blog administrators.
 
 The Irish Cyber Security Blog can be found *[here](https://icsblogp4.herokuapp.com/)*.
 
