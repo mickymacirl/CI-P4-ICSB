@@ -623,6 +623,8 @@ Both the Post and Comment models are based on Django Central's simple blog tutor
 However, the models were modified to better suit the needs of this project.
 This includes shortening the post title and adding is_pinned to allow for a pinned post. RegexValidator was added to post title that checks if the input contains only alphabet, spaces, and - characters, and if not, raises a message passed as msg to prevent a bug during testing, which is recorded in the Bugs section. I created a save method for the Post model class as part of this bug. If the slug field is empty, the method replaces spaces in the title field with dashes and assigns the result to the slug field. The category field was also added, allowing administrators to categorize posts.
 
+The comment model has additional fields such as author, status and more choices for the status field, these additional fields and choices are to provide more functionality and control over the comments.
+
 As required by the project's assessment criteria, one custom model (the is pinned_model) was added that was not covered by a tutorial.
 
 ### Create, Read, Update and Delete
