@@ -169,47 +169,7 @@
                         </tr>
                         {% endfor %}
                     </table>
-                    <table>
-                        <tr>
-                            <th>Status</th>
-                        </tr>
-                        {% for comment.status in STATUS %}
-                            <tr>
-                                <td>{{ comment.status.1 }}</td>
-                            </tr>
-                        {% endfor %}
-                    </table>
-                    <td>
-                        <select>
-                          {% for choice in comment.status.field.choices %}
-                            <option value="{{ choice.0 }}" {% if choice.0 == comment.status %}selected{% endif %}>{{ choice.1 }}</option>
-                          {% endfor %}
-                        </select>
-                      </td>
-                      
-                    
                 </div>
-                    <!-- Start of Comments Admin -->
-                    <!-- working <div>
-                        <p class="post-title"><h1>Comments Administration</h1></p>
-                        <table class="table table-sm table-dark table">
-                            <tr class="">
-                                <th>Commenter</th>
-                                <th>Created On</th>
-                                <th>Postname</th>
-                                <th>Status</th>
-                                <th>Active</th>
-                            </tr>{% for comment in comments%}
-                            <tr class="table-hover table-success">
-                                <td class="">{{ comment.name }}</td>
-                                <td>{{ comment.created_on }}</td>
-                                <td>{{ comment.post }}</td>
-                                <td><a href="{% url 'comment_valid' comment.id %}">{{ comment.status }}</a></td>
-                                <td>{{ comment.active }}</td>
-                            </tr>{% endfor %}
-                        </table>
-                    </div>
-                -->
                     <p class="text-center">Total of {{ post.comments.count }} comments</p>
                 </div>
                 <!-- End of Comments Admin -->
@@ -235,22 +195,6 @@
                     {% endfor %}
                 </div>
             </div>
-        <!--
-            {% for comment in comments %}
-            <div class="comment">
-                <p>{{ comment.name }} - {{ comment.email }}</p>
-                <p>{{ comment.body }}</p>
-                <p>Status:
-                    {% if comment.status == 'review' %}
-                    <span style="color: orange">Review1</span>
-                    {% elif comment.status == 'accepted' %}
-                    <span style="color: green">Accepted2</span>
-                    {% elif comment.status == 'spam' %}
-                    <span style="color: red">Spam3</span>
-                    {% endif %}
-                </p>
-            </div> 
-            {% endfor %} -->
                 <!-- Message to user after comment -->
                 <div class="col-md-8 card mb-4  mt-3 ">
                     {% load crispy_forms_tags %}
