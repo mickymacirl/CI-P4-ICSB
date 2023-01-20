@@ -821,31 +821,38 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 * Used *[Kanbanize Agile Project Management](https://kanbanize.com/agile/project-management/principles)* for information on Agile and Agile Project Management
 
-https://www.tutorialspoint.com/How-to-wrap-long-lines-in-Python
+### Tutorials
 
-https://stackoverflow.com/questions/48792321/django-generic-detail-view-must-be-called-with-either-an-object-pk-or-slug-whe
+* Used *[Djangi Central](https://djangocentral.com/building-a-blog-application-with-django/)* models for basic database and structure.
 
-https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views
+* Used *[Tutorials Point](https://www.tutorialspoint.com/How-to-wrap-long-lines-in-Python)* to wrap too long lines in python.
 
-https://stackoverflow.com/questions/67351312/django-check-if-superuser-in-class-based-view
+* Used *[Learn Django](https://learndjango.com/tutorials/django-best-practices-user-permissions)* for User Permissions.
 
-https://django-allauth.readthedocs.io/en/latest/installation.html
+### Security How Tos
 
-https://django-braces.readthedocs.io/en/latest/access.html#loginrequiredmixin
+* Used *[Django Braces](https://django-braces.readthedocs.io/en/latest/access.html#loginrequiredmixin)* for login troubleshooting.
 
-https://djangocentral.com/building-a-blog-application-with-django/
+* Used *[Stack Overflow Login](https://stackoverflow.com/questions/71547646/django-userpassestestmixin-with-parameter)* for login troubleshooting.
 
-https://ccbv.co.uk/projects/Django/1.9/django.contrib.auth.mixins/UserPassesTestMixin/
+* Used *[CCBV.co.uk](https://ccbv.co.uk/projects/Django/1.9/django.contrib.auth.mixins/UserPassesTestMixin/)* for login troubleshooting.
 
-https://learndjango.com/tutorials/django-best-practices-user-permissions
+### Models
 
-https://djangocentral.com/building-a-blog-application-with-django/
+* Used *[Stack Overflow Models](https://docs.djangoproject.com/en/4.1/ref/models/instances/)* for model information.
 
-https://djangocentral.com/creating-comments-system-with-django/
+### graph_models
 
-https://docs.djangoproject.com/en/4.1/ref/models/instances/
+* Used *[Read The Docs](https://django-extensions.readthedocs.io/en/latest/graph_models.html)* for graph_models usage.
 
-https://django-extensions.readthedocs.io/en/latest/graph_models.html
+### Bugs Help
+
+* Used *[Stack Overflow Slug](https://stackoverflow.com/questions/48792321/django-generic-detail-view-must-be-called-with-either-an-object-pk-or-slug-whe)* for issues with slug:slug.
+
+* Used *[Stack Overflow Permissions](https://stackoverflow.com/questions/6069070/how-to-use-permission-required-decorators-on-django-class-based-views)* for issues with permissions.
+
+* Used *[Stack Overflow ClassView](https://stackoverflow.com/questions/67351312/django-check-if-superuser-in-class-based-view)* for issues with class-based views.
+
 
 ### Design Blog
 
@@ -862,3 +869,9 @@ https://django-extensions.readthedocs.io/en/latest/graph_models.html
 * Used *[Circle Tech](https://pixabay.com/photos/circle-tech-technology-abstract-5090539/)* for background image.
 
 ## Acknowledgements
+
+### CI Tutor Support
+
+* I had to reach out to CI Tutor Support twice for assistant with the slug bug, and a bug I had with context_object_name not working for post_detail view.
+
+* Mentor support from *[Daisy McGirr](https://github.com/Daisy-McG)*.
