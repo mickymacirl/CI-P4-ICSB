@@ -675,3 +675,5 @@ Fixed by wrapping the lines.
                                on_delete=models.CASCADE,
                                related_name='blog_posts'
                                )
+
+* Bug with static files and have ran out of time to fix this issues, I uploaded the style.css file to cloudinary to serve the button and form colors.
