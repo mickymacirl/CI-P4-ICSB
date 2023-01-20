@@ -7,7 +7,7 @@ It allows users to **read**, **comment on** and **bookmark** posts posted by the
 
 The Irish Cyber Security Blog can be found *[here](https://icsblogp4.herokuapp.com/)*.
 
-Responsive Placeholder Image
+![Main](/docs/readme/rm-main.jpg)
 
 ## User Experience Design (UX)
 
