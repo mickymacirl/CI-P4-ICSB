@@ -483,7 +483,13 @@ Completed, superuser can approve comments in Django Admin.
 
 Once approved in Django Admin, superuser can see and set status of comments.
 
+Comments Approved
 
+![Comments Approved](/docs/readme/rm-comment1.jpg)
+
+Comments Admin
+
+![Comments Admin](/docs/readme/rm-comment2.jpg)
 
 ### User Story - As an admin, I need to be able to administer users
 
