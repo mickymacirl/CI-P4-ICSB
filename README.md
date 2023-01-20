@@ -431,6 +431,14 @@ Implementation of Posts
 
 ![Post Admin](/docs/readme/rm-postadmin.jpg)
 
+![Post Admin Create](/docs/readme/rm-create.jpg)
+
+![Post Admin Edit](/docs/readme/rm-edit.jpg)
+
+![Post Admin Delete](/docs/readme/rm-delete.jpg)
+
+![Post Admin View](/docs/readme/rm-view.jpg)
+
 ### User Story - As an admin, I need to be able to administer comments
 
 As an admin, I can manage comments on the Irish Cyber Security Blog, including editing, approving, and deleting comments and filtering them by different criteria, such as their status, creation date, and associated post. I can also set the status of a comment to review, accepted, or spam and activate or deactivate a comment. This user story will allow an admin to ensure that all comments on the blog are appropriate and align with the community guidelines.
