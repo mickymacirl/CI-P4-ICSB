@@ -217,6 +217,8 @@ Implementation of Core Features
 
 * [X] Deploy to Heroku - Deploy base project to heroku.
 
+Completed.
+
 ### User Story - As a developer, I must set up static files and folders so that the project images, CSS and JavaScript work on the website
 
 The goal of this user story is to properly set up static files and folders within the project so that the images, CSS and JavaScript will be displayed and function correctly on the website. This user story is essential for ensuring users' cohesive and visually appealing website experience.
@@ -226,6 +228,8 @@ Implementation of Static Files
 * [X] Static folders and settings setup - Create static folders and setup the correct settings.
 
 * [X] Subfolders created for images, CSS, and JavaScript - Create and setup folders for the likes of images, CSS, and JavaScript
+
+Completed but with errors, see bugs.
 
 ### User Story - As a developer, I need to create the main website header with logo and web page links
 
@@ -239,7 +243,7 @@ Implementation of Header
 
 * [X] Logo setup - Create logo and configure logo in header of the website.
 
-Header Image
+![Header](/docs/readme/rm-header.jpg)
 
 ### User Story - As a developer, I must create a footer with social media links and contact information
 
@@ -701,6 +705,14 @@ Used Abode Photoshop to edit the main hero image with the logo in the circles fr
 ### Python
 
 * Python was used with the Django framework.
+
+### Adobe Photoshop
+
+* Used *[Adobe Photoshop](https://www.adobe.com/products/photoshop.html)* for the hero and logo images.
+
+### Adobe Dreamweaver
+
+* The blog tested and designed using *[Adobe Dreamweaver](https://www.adobe.com/products/dreamweaver.html)*.
 
 ### Visual Studio Code
 
