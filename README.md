@@ -690,6 +690,38 @@ Used Abode Photoshop to edit the main hero image with the logo in the circles fr
 
 ## Technologies
 
+## Python Libraries
+
+### Python Modules
+
+* Django Class based views (DetailVew, ListView, UpdateView, DeleteView, CreateView, TemplateView) - Used for the classes to create, read, update and delete
+* LoginRequiredMixin and UserPassesTestMixin used to enforce login required on views and test user is allowed to carry out an action
+* Reverse_lazy is used to define the URL patterns for the views.
+* RegexValidator to ensure that a field's value matches a given regular expression.
+
+### External Python Modules
+
+* asgiref==3.6.0
+* cloudinary==1.30.0
+* dj-database-url==1.2.0
+* dj3-cloudinary-storage==0.0.6
+* Django==3.2.16
+* django-allauth==0.52.0
+* django-crispy-forms==1.14.0
+* gunicorn==20.1.0
+* oauthlib==3.2.2
+* psycopg2==2.9.5
+* PyJWT==2.6.0
+* python3-openid==3.2.0
+* pytz==2022.7
+* requests-oauthlib==1.3.1
+* sqlparse==0.4.3
+
+### Others
+
+* Colorama was imported for use in coloring fonts and game bars in python functions.
+* Pyfiglet was used for adding ascii art to logo.
+
 ## Testing
 
 Testing Readme found here: *[Testing Readme](/TESTING.md)*.
