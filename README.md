@@ -319,7 +319,7 @@ Implementation of 404 Error Page
 
 * [X] Error information is expanded upon - Ensure message is explained and navigation to other pages.
 
-404 Error Page Image
+Completed.
 
 ### User Story - As a developer, I need to create a 500 error page to alert website users when the application generates an internal server error
 
@@ -343,7 +343,7 @@ Implementation of 403 Error Page
 
 * [X] Error information is expanded upon - Ensure message is explained and an option to request access to the page or feature.
 
-403 Error Page Image
+Completed.
 
 ### User Story - As a Cybersecurity professional, I want to be able to contact the Irish Cyber Security Blog so that I can express my option on a post
 
