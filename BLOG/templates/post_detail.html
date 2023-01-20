@@ -205,9 +205,9 @@
                         </div>{% elif user.is_authenticated %}
                         <!-- Show leave a comment if user is logged in -->
                         <h3>Leave a comment</h3>
-                        <form method="post" style="margin-top: 1.3em;">
+                        <form method="post" style="margin-top: 1.3em;" class="form-control">
                             {{ comment_form | crispy }}{% csrf_token %}<button type="submit"
-                                class="btn btn-primary head_text"
+                                class="btn btn-primary head_text btnform text-white"
                                 onclick="if (! confirm('Are you sure you want to Continue?')) { return false; }">Submit</button>
                         </form>{% endif %}
                     </div>

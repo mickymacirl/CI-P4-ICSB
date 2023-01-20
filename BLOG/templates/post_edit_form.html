@@ -106,7 +106,7 @@
                             <form method="post">
                                 {% csrf_token %}
                                 {{ form|crispy }}
-                                <input type="submit" value="Save"
+                                <input class="btn btn-primary head_text btnform text-white" type="submit" value="Save"
                                     onclick="if (! confirm('Are you sure you want to Continue?')) { return false; }">
                             </form>
                             <br>
