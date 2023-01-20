@@ -462,7 +462,7 @@ The comment is successfully posted on the post with the message at the bottom of
 
 Description:
 
-Ensure a normal can create a comment on a post
+Ensure a standard user can create a comment on a post
 
 Steps:
 
@@ -659,3 +659,19 @@ Fixed by adding the following to the post model, that if the slug field is empty
 * ~~When testing html validation, it was found that the title for the post was accepting special characters, which, in turn, was showing html validation errors.~~
 
 This was fixed by using the RegexValidator provided by Django to validate the input for the title field, with the error message, "Only alphabet, spaces and - characters are allowed." displayed.
+
+* ~~The title field of the Posts Model is causing an line too long error.~~
+
+Fixed by wrapping the lines.
+
+class Post(models.Model):
+    title = models.CharField(max_length=100,
+                             unique=True,
+                             validators=[RegexValidator(
+                                r'^[a-zA-Z\s-]+$', msg)]
+                             )
+    slug = models.SlugField(max_length=200, unique=True)
+    author = models.ForeignKey(User,
+                               on_delete=models.CASCADE,
+                               related_name='blog_posts'
+                               )

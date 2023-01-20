@@ -786,6 +786,8 @@ https://djangocentral.com/building-a-blog-application-with-django/
 
 https://djangocentral.com/creating-comments-system-with-django/
 
+https://docs.djangoproject.com/en/4.1/ref/models/instances/
+
 ### Design Blog
 
 * Used *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
