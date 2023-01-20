@@ -664,14 +664,14 @@ This was fixed by using the RegexValidator provided by Django to validate the in
 
 Fixed by wrapping the lines.
 
-class Post(models.Model):
-    title = models.CharField(max_length=100,
-                             unique=True,
-                             validators=[RegexValidator(
-                                r'^[a-zA-Z\s-]+$', msg)]
-                             )
-    slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User,
+    class Post(models.Model):
+        title = models.CharField(max_length=100,
+                                 unique=True,
+                                 validators=[RegexValidator(
+                                    r'^[a-zA-Z\s-]+$', msg)]
+                                 )
+        slug = models.SlugField(max_length=200, unique=True)
+        author = models.ForeignKey(User,
                                on_delete=models.CASCADE,
                                related_name='blog_posts'
                                )
