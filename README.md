@@ -667,7 +667,7 @@ As required by the project's assessment criteria, one custom model (the is pinne
 The CRUD principle was used for the approval process of this blog, staff can create, read, update and delete posts and superusers can approve comments for administration in the blog admin section.
 
 * Create: An authenticated user can submit a comment for review.
-* Read: A user can browse and read blog posts create by admin.
+* Read: A user can browse and read blog posts created by admin.
 * Update: A staff user can edit and update posts.
 * Delete: A staff user can delete published posts.
 
@@ -795,11 +795,6 @@ Used Abode Photoshop to edit the main hero image with the logo in the circles fr
 * pytz==2022.7
 * requests-oauthlib==1.3.1
 * sqlparse==0.4.3
-
-### Others
-
-* Colorama was imported for use in coloring fonts and game bars in python functions.
-* Pyfiglet was used for adding ascii art to logo.
 
 ## Testing
 
