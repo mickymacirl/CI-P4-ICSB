@@ -293,7 +293,7 @@ Implementation of Home Page
 
 * [X] The home page is created with the theme of the website layout - Create home page to view main blog.
 
-[Home](/docs/readme/rm-home.jpg)
+[Home](./docs/readme/rm-home.jpg)
 
 ### User Story - As a developer, I must create the basic base.html page and project structure so the layout is uniform
 
