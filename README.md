@@ -573,6 +573,10 @@ Implementation of Bookmark Post
 
 Not completed.
 
+### Final Project Board
+
+![Final Project](/docs/readme/rm-finalproject.jpg)
+
 ### Future Features
 
 The following are some potential future blog features:
@@ -672,7 +676,7 @@ The CRUD principle was used for the approval process of this blog, staff can cre
 
 ## LoginRequiredMixin and UserPassesTestMixin
 
-I chose the LoginRequiredMixin and UserPassesTestMixin to secure the views for creating, editing, and deleting posts and comments.
+I choose the LoginRequiredMixin and UserPassesTestMixin to secure the views for creating, editing, and deleting posts and comments.
 
 The LoginRequiredMixin ensures that only logged in users can access these views, whereas the UserPassesTestMixin allows me to define specific test functions to determine which users can access these views.
 
@@ -820,7 +824,6 @@ The following commands were used to push code to the remote repository:
 
 3. *git push* was used to push all local changes to the remote repository on **GitHub**.
 
-
 ### Forking the Repository
 
 Forking creates a copy of the repository to view and/or make changes without affecting the original.
@@ -929,7 +932,6 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 * Used *[Stack Overflow ClassView](https://stackoverflow.com/questions/67351312/django-check-if-superuser-in-class-based-view)* for issues with class-based views.
 
-
 ### Design Blog
 
 * Used *[Smashing Logos](https://smashinglogo.com)* to design logo, icons and favicon.
@@ -948,6 +950,6 @@ Pip3 freeze > requirements.txt was used to add imports for django, dj-database-u
 
 ### CI Tutor Support
 
-* I had to reach out to CI Tutor Support twice for assistant with the slug bug, and a bug I had with context_object_name not working for post_detail view.
+* I had to reach out to CI Tutor Support twice for assistance with the slug bug, and a bug I had with context_object_name not working for post_detail view.
 
 * Mentor support from *[Daisy McGirr](https://github.com/Daisy-McG)*.
