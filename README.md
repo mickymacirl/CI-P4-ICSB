@@ -664,7 +664,7 @@ As required by the project's assessment criteria, one custom model (the is pinne
 
 ### Create, Read, Update and Delete
 
-The CRUD principle was used for the approval process of this blog, staff can create, read, update and delete posts and superusers can approve comments for administration in the blog admin section.
+The CRUD principle was used for the approval process of this blog, staff can create, read, update and delete posts and superusers can approve comments for administration in the blog admin comment section.
 
 * Create: An authenticated user can submit a comment for review.
 * Read: A user can browse and read blog posts created by admin.
