@@ -429,7 +429,7 @@ Implementation of Posts
 
    > The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
 
-Post Image
+![Post Admin](/docs/readme/rm-postadmin.jpg)
 
 ### User Story - As an admin, I need to be able to administer comments
 
@@ -461,7 +461,11 @@ Implementation of Comments
 
    > The admin can mark a comment as active, making it visible on the website.
 
-![Post1](/docs/readme/rm-postadmin.jpg)
+Completed, superuser can approve comments in Django Admin.
+
+Once approved in Django Admin, superuser can see and set status of comments.
+
+
 
 ### User Story - As an admin, I need to be able to administer users
 
@@ -493,7 +497,7 @@ Implementation of Users
 
    > The admin can set permissions for themselves as an administrator, such as the ability to edit user details or delete content from the website.
 
-Users Image
+Completed, superuser can administer user in Django Admin.
 
 ### User Story - As an admin, I need to be able to administer categories
 
@@ -513,7 +517,7 @@ Implementation of Categories
 
    > The admin can create a new category which adds it to the list of available categories.
 
-Categories Image
+Partial, staff can edit posts, and categories is a text field, so technically by editing every post they can administrator categories.
 
 ### User Story - As a Cybersecurity professional, I want to be able to comment on posts on Irish Cyber Security Blog so that I can share my thoughts and insights with others in the community
 
