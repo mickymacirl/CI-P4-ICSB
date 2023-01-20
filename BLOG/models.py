@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 from django.core.validators import RegexValidator
 
 
-# A tuple of tuples.
+"""
+Tuple of tuples
+"""
 STATUS = (
     (0, "Draft"),
     (1, "Published"),
@@ -61,9 +63,11 @@ class Post(models.Model):
         return self.title
 
 
-# Comment model that has a post, author, name, email, body,
-# created_on, active, and status
 class Comment(models.Model):
+    """
+    Comment model that has a post, author, name, email, body,
+    created_on, active, and status
+    """
     PENDING = 0
     APPROVED = 1
     REJECTED = 2
@@ -87,15 +91,26 @@ class Comment(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     active = models.BooleanField(default=False)
+    """
+    CharField that has a max length of 10, a default value of 'pending', 
+    and a list of choices.
+    """
     status = models.CharField(max_length=10, default='pending', choices=[
             ('review', 'Review'), ('accepted', 'Accepted'), ('spam', 'Spam')
         ])
 
     class Meta:
+        """
+        Objects will be returned in the order they were created, with the 
+        oldest one first.
+        """
         ordering = ['created_on']
 
     def __str__(self):
+        """
+        The __str__ function is a special function that is called when you
+        all str() on an object
+        :return: The body of the comment and the name of the 
+        person who posted it.
+        """
         return 'Comment {} by {}'.format(self.body, self.name)
-    # approve url
-    # def get_approve_url(self):
-    #    return reverse('comments:approve', args=[str(self.id)])
