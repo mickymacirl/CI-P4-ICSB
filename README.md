@@ -261,7 +261,7 @@ Implementation of Footer
 
 * [X] Contact information is correct - Ensure contact information is correct
 
-Footer Image
+![Footer](/docs/readme/rm-footer.jpg)
 
 ### User Story - As a developer, I must create a navigation bar that works on any device
 
