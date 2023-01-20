@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 
 if os.path.isfile("env.py"):
     import env
@@ -47,10 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'allauth',
     'allauth.account',
+    'cloudinary_storage',
+    'django.contrib.staticfiles',
     'allauth.socialaccount',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
     'BLOG',
     'crispy_forms',
 ]
@@ -97,9 +99,7 @@ LOGIN_REDIRECT_URL = '/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.normpath(os.path.join(BASE_DIR, 'templates')),
-        ],
+        'DIRS': [os.path.normpath(os.path.join(BASE_DIR, 'templates')),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
