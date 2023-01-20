@@ -243,7 +243,7 @@ Implementation of Header
 
 * [X] Logo setup - Create logo and configure logo in header of the website.
 
-![Header1](/docs/readme/rm-header.jpg)
+![Header](/docs/readme/rm-header.jpg)
 
 ### User Story - As a developer, I must create a footer with social media links and contact information
 
@@ -261,7 +261,7 @@ Implementation of Footer
 
 * [X] Contact information is correct - Ensure contact information is correct
 
-![Footer1](/docs/readme/rm-footer.jpg)
+![Footer](/docs/readme/rm-footer.jpg)
 
 ### User Story - As a developer, I must create a navigation bar that works on any device
 
@@ -283,7 +283,7 @@ Implementation of Navigation Bar
 
 * [X] Logout - Only logged-in users can see - The Logout page is only visible to users who are logged in.
 
-[Menu1](/docs/readme/rm-menu.jpg)
+![Menu1](/docs/readme/rm-menu.jpg)
 
 ### User Story - As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
 
@@ -293,7 +293,7 @@ Implementation of Home Page
 
 * [X] The home page is created with the theme of the website layout - Create home page to view main blog.
 
-[Home1](./docs/readme/rm-home.jpg)
+![Home](./docs/readme/rm-home.jpg)
 
 ### User Story - As a developer, I must create the basic base.html page and project structure so the layout is uniform
 
@@ -307,7 +307,7 @@ Implementation of Base.html
 
 * [X] The footer information  is correct - Ensure The footer information is correct.
 
-[Base1](/docs/readme/rm-base.jpg)
+![Base](/docs/readme/rm-base.jpg)
 
 ### User Story - As a developer, I must implement a 404 error page to alert users when they try to access a page that doesn't exist
 
@@ -331,7 +331,7 @@ Implementation of 500 Error Page
 
 * [X] Error information is expanded upon - Ensure message is explained and option to report to blog admins.
 
-[5001](/docs/readme/rm-error500.jpg)
+![500](/docs/readme/rm-error500.jpg)
 
 ### User Story - As a developer, I must implement a 403 error page to alert users when they do not the right to access this page
 
@@ -363,7 +363,7 @@ Implementation of About Us Page
 
 * [X] About Us page so users can find information about the site owners - Create About Us page.
 
-About Us Page Image
+![About](/docs/readme/rm-about.jpg)
 
 ### User Story - As a developer, I must set up AllAuth so that website users can sign up and access the features
 
