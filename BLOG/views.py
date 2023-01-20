@@ -163,7 +163,7 @@ class PostListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     """
     List view of Post objects, and it's called PostListView.
     The first line of the class tells Django to use the ListView generic view.
-    The next line tells# Django to use the post_list.html template.
+    The next line tells Django to use the post_list.html template.
     The last line tells Django to use the context name posts
     for the list of posts
     """
@@ -172,15 +172,28 @@ class PostListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     context_object_name = 'posts'
 
     def test_func(self):
+        """
+        If the user is staff, return True.
+        :return: The user is being returned.
+        """
         return self.request.user.is_staff
 
 
 class PostDetailView(DetailView, LoginRequiredMixin):
+    """
+    This view is a DetailView that uses the Post model and the post_view.html 
+    template.
+    """
     model = Post
     template_name = 'post_view.html'
 
 
 class PostCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
+    """
+    PostCreateView class inherits from the CreateView class, which is a 
+    generic view that displays a form for creating an object, redisplaying 
+    the form with validation errors (if there are any) and saving the object
+    """
     model = Post
     template_name = 'post_create_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
@@ -188,34 +201,50 @@ class PostCreateView(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     success_url = reverse_lazy('post_list')
 
     def test_func(self):
+        """
+        If the user is staff, then the user can view the page
+        :return: The user is being returned.
+        """
         return self.request.user.is_staff
 
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    This is a class based view that inherits from the UpdateView class.
+    """
     model = Post
     template_name = 'post_edit_form.html'
     fields = ['author', 'title', 'content', 'category', 'status', 'is_pinned']
     context_object_name = 'post'
     success_url = reverse_lazy('post_list')
     """
-    Only Admin can access this page
-    def test_func():
-        return self.request.user.is_superuser and self.request.user.is_staff
+    Only Staff can access this page
     """
     def test_func(self):
         return self.request.user.is_staff
 
 
 class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    This is a class based view that inherits from the DeleteView class.
+    """
     model = Post
     template_name = 'post_confirm_delete.html'
     success_url = '/posts/'
 
     def test_func(self):
+        """
+        Staff can them view the page. If they are not staff, redirect them to
+        the home page
+        :return: The user is being returned.
+        """
         return self.request.user.is_staff
 
 
 class CommentApprovalView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """
+    This is a class based view that inherits from the UpdateView class.
+    """
     model = Comment
     commentsAll = Comment.objects.all()
     commentsActive = Comment.objects.filter(active=True)
@@ -227,4 +256,8 @@ class CommentApprovalView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     success_url = reverse_lazy('home')
 
     def test_func(self):
+        """
+        If the user is not a superuser, redirect them to the home page
+        :return: The user is being returned.
+        """
         return self.request.user.is_superuser
