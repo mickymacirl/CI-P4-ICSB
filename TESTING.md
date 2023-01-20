@@ -537,7 +537,7 @@ which is larger at high resolutions to make it easier to read, but can cause iss
 menu was implemented as an alternative for users on smaller screens. Despite the error, the website was designed with the user in mind
 and includes multiple ways for users to navigate, such as the customized menus for different access levels and navbar links, for added convenience.
 
-![HTML Validator](/docs/testing/testing-wave.jpg)
+![WAVE](/docs/testing/testing-wave.jpg)
 
 ## Validator Testing
 
