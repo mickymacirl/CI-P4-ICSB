@@ -429,13 +429,23 @@ Implementation of Posts
 
    > The admin can set a post to be "pinned", which means it will be displayed at the top of the list of posts on the website.
 
+Post Admin
+
 ![Post Admin](/docs/readme/rm-postadmin.jpg)
+
+Post Admin Create
 
 ![Post Admin Create](/docs/readme/rm-create.jpg)
 
+Post Admin Edit
+
 ![Post Admin Edit](/docs/readme/rm-edit.jpg)
 
+Post Admin Delete
+
 ![Post Admin Delete](/docs/readme/rm-delete.jpg)
+
+Post Admin View
 
 ![Post Admin View](/docs/readme/rm-view.jpg)
 
