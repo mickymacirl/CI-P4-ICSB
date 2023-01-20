@@ -499,6 +499,31 @@ Actual:
 
 The comment is successfully posted at the top of the screen.
 
+## UserPassesTestMixin
+
+Ensure UserPassesTestMixin is functional
+
+1. Open the website and navigate to the login page.
+2. Attempt to access a view protected by UserPassesTestMixin, such as the post creation page.
+3. Verify that the user is redirected to the login page and cannot access the protected view.
+4. Log in as a non-staff user and attempt to access the protected view again.
+5. Verify that the user is still unable to access the protected view.
+6. Log in as a staff user and attempt to access the protected view again.
+7. Verify that the user is now able to access the protected view.
+8. Log in as a superuser and attempt to access the protected view again.
+9. Verify that the superuser is able to access the protected view as well.
+10. Test that the user can perform the expected crud operations on post and comment
+11. Test that the user can view the post and comment if authenticated only
+12. Test that only staff and superuser can perform the crud operations on post and comment
+
+Expected:
+
+These tests ensure that the UserPassesTestMixin is properly implemented and only allowing the correct users access to the protected views.
+
+Actual:
+
+These tests ensured that the UserPassesTestMixin is properly implemented and only allowing the correct users access to the protected views.
+
 ## Footer
 
 Testing was performed on the footer links by clicking the font awesome icons and ensuring that the facebook icon opened facebook in a new tab and the twitter icon opened twitter in a new tab. These behaved as expected.
