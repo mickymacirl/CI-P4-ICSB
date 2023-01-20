@@ -551,7 +551,7 @@ Implementation of User Comments
 
 * [X] Users can comment on posts - Users can leave their thoughts and insights on posts on the Irish Cyber Security Blog.
 
-User Comments Image
+![Comments](/docs/readme/rm-showcomments.jpg)
 
 ### User Story - As a Cybersecurity professional, I want to be able to filter Irish Cyber Security Blog posts by category (e.g., Threats, Solutions, Industry) so that I can focus on the topics that are most relevant to me
 
@@ -561,7 +561,7 @@ Implementation of Filter Posts
 
 * [X] User can filter posts by categories - Users can filter Irish Cyber Security Blog posts by categories (e.g., Threats, Solutions, Industry) so that they can focus on the most relevant topics.
 
-Filter Posts Image
+Not completed.
 
 ### User Story - As a Cybersecurity professional, I want to save Irish Cyber Security News articles for later reading so that I can revisit them when I have more time
 
@@ -571,7 +571,7 @@ Implementation of Bookmark Post
 
 * [X] User can bookmark the post for later reading - A user can save a post on the Irish Cyber Security Blog for later reading so they can revisit the post later when they have more time.
 
-Bookmark Posts Image
+Not completed.
 
 ### Future Features
 
