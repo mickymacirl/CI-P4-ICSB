@@ -660,7 +660,7 @@ Fixed by adding the following to the post model, that if the slug field is empty
 
 This was fixed by using the RegexValidator provided by Django to validate the input for the title field, with the error message, "Only alphabet, spaces and - characters are allowed." displayed.
 
-* ~~The title field of the Posts Model is causing an line too long error.~~
+* ~~The title field of the Posts Model is causing a line too long error.~~
 
 Fixed by wrapping the lines.
 
@@ -676,4 +676,4 @@ Fixed by wrapping the lines.
                                related_name='blog_posts'
                                )
 
-* Bug with static files and have ran out of time to fix this issues, I uploaded the style.css file to cloudinary to serve the button and form colors.
+* Bug with static files and have ran out of time to fix this issue, I uploaded the style.css file to cloudinary to serve the button and form colors.
