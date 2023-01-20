@@ -1,6 +1,6 @@
 # Irish Cyber Security Blog
 
-![Irish Cyber Security Blog Banner](/docs/readme/rm-logo.jpg)
+![Irish Cyber Security Blog Banner](/docs/readme/rm_logo.jpg)
 
 Irish Cyber Security Blog is a **blog** to *store information* about **irish cyber security topics**, *share thoughts and insights with others in the community and stay up to date with the latest threats and solutions*.
 It allows users to **read**, **comment on** and **bookmark** posts posted by the administrators of the blog.
