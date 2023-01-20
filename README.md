@@ -611,6 +611,28 @@ Admin Page
 
 ## Database Design
 
+### Database Model
+
+The database model diagram was designed using graph_models django extension on a test github repositry. This draft of the entity relationship diagram does not include all models used in the final database.
+
+![Database Model](/docs/readme/rm-database.jpg)
+
+### Custom Model
+
+Both the Post and Comment models are based on Django Central's simple blog tutorial project.
+However, the models were modified to better suit the needs of this project.
+This includes shortening the post title and adding is_pinned to allow for a pinned post. RegexValidator was added to post title that checks if the input contains only alphabet, spaces, and - characters, and if not, raises a message passed as msg to prevent a bug during testing, which is recorded in the Bugs section. I created a save method for the Post model class as part of this bug. If the slug field is empty, the method replaces spaces in the title field with dashes and assigns the result to the slug field. The category field was also added, allowing administrators to categorize posts.
+
+As required by the project's assessment criteria, one custom model (the is pinned_model) was added that was not covered by a tutorial.
+
+### Create, Read, Update and Delete
+
+The CRUD principle was used for the approval process of this blog, staff can create, read, update and delete posts and superusers can approve comments for administration in the blog admin section.
+Create: An authenticated user can submit a comment for review.
+Read: A user can browse and read blog posts create by admin.
+Update: A staff user can edit and update posts.
+Delete: A staff user can delete published posts.
+
 ## Security
 
 ## LoginRequiredMixin and UserPassesTestMixin
@@ -787,6 +809,8 @@ https://djangocentral.com/building-a-blog-application-with-django/
 https://djangocentral.com/creating-comments-system-with-django/
 
 https://docs.djangoproject.com/en/4.1/ref/models/instances/
+
+https://django-extensions.readthedocs.io/en/latest/graph_models.html
 
 ### Design Blog
 
