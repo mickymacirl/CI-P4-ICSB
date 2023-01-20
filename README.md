@@ -283,7 +283,7 @@ Implementation of Navigation Bar
 
 * [X] Logout - Only logged-in users can see - The Logout page is only visible to users who are logged in.
 
-![Menu1](/docs/readme/rm-menu.jpg)
+![Menu](/docs/readme/rm-menu.jpg)
 
 ### User Story - As a Cybersecurity professional, I want to be able to view Irish Cyber Security Blog so that I can stay up-to-date on the latest threats and solutions
 
@@ -353,7 +353,7 @@ Implementation of Contact Us Page
 
 * [X] Contact Us page so users can contact the site owners - Create Contact Us page.
 
-Contact Us Page Image
+![Contact](/docs/readme/rm-contact.jpg)
 
 ### User Story - As a Cybersecurity professional, I want to be able to find out information about the site owners of the Irish Cyber Security Blog so that I am kept informed
 
@@ -377,7 +377,7 @@ Implementation of AllAuth
 
 * [X] Customize AllAuth templates to the site theme - Ensure AllAuth templates have the sites theme.
 
-AllAuth Image
+Completed.
 
 ### User Story - As a Cybersecurity professional, I want to be able to register to Irish Cyber Security News so that I can stay up-to-date on the latest news and events in the industry
 
@@ -389,7 +389,7 @@ Implementation of Registration
 
 * [X] Test functionality - Test that users can register for the blog.
 
-Register Image
+
 
 ### User Story - As an admin, I need to be able to administer Posts
 

@@ -19,7 +19,7 @@
               src="https://res.cloudinary.com/ds197sglr/image/upload/v1673550784/logo_transparent_background_htmouu.png"
               alt="Icon Login">
             <h2 style="text-align: center;">{% trans "Sign In" %}</h2>
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <form class="form-control" method="POST" action="{% url 'account_login' %}">
               {% csrf_token %}
               {{ form.as_p }}
               {% if redirect_field_value %}

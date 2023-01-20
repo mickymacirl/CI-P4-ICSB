@@ -17,7 +17,7 @@
             <p>
               <h2 class="preview-title" style="text-align: center; color:#FF0000">Are you sure you want to delete?</h2>
             </p>
-            <form method="post" style="text-align: center;">
+            <form class="form-control" method="post" style="text-align: center;">
               {% csrf_token %}
               {{ form|crispy }}
               <input type="submit" value="Save" class="btn btn-primary head_text btnform text-white" onclick = "if (! confirm('Are you sure you want to Continue?')) { return false; }">
