@@ -307,7 +307,7 @@ Implementation of Base.html
 
 * [X] The footer information  is correct - Ensure The footer information is correct.
 
-Base.html Image
+[Base](/docs/readme/rm-base.jpg)
 
 ### User Story - As a developer, I must implement a 404 error page to alert users when they try to access a page that doesn't exist
 
