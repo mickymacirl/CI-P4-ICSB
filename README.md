@@ -389,7 +389,7 @@ Implementation of Registration
 
 * [X] Test functionality - Test that users can register for the blog.
 
-
+![Register](/docs/readme/rem-reg.jpg)
 
 ### User Story - As an admin, I need to be able to administer Posts
 
@@ -461,7 +461,7 @@ Implementation of Comments
 
    > The admin can mark a comment as active, making it visible on the website.
 
-Comment Image
+![Post1](/docs/readme/rm-postadmin.jpg)
 
 ### User Story - As an admin, I need to be able to administer users
 
