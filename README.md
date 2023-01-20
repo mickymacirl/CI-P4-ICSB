@@ -331,7 +331,7 @@ Implementation of 500 Error Page
 
 * [X] Error information is expanded upon - Ensure message is explained and option to report to blog admins.
 
-500 Error Page Image
+[500](/docs/readme/rm-error500.jpg)
 
 ### User Story - As a developer, I must implement a 403 error page to alert users when they do not the right to access this page
 
